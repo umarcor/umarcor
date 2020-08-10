@@ -22,7 +22,7 @@
 - [dbhi/dbhi](https://github.com/dbhi/dbhi)
   - [dbhi/docker](https://github.com/dbhi/docker)
   - [beehive-lab/mambo](https://github.com/beehive-lab/mambo) [[📋](https://github.com/umarcor/mambo)]
-- [dbhi/qus](https://github.com/dbhi/qus)
+- [dbhi/qus](https://github.com/dbhi/qus): Build and execute OCI images for foreign architectures using QEMU's user-mode emulation
   - [qemu/qemu](https://github.com/qemu/qemu) [[📋](https://github.com/umarcor/qemu)]
   - [docker/binfmt](https://github.com/docker/binfmt) [[📋](https://github.com/umarcor/binfmt)]
 - [dbhi/vsc-hdl](https://github.com/dbhi/vsc-hdl)
