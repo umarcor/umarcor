@@ -3,8 +3,6 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=umarcor&layout=compact&title_color=63cda9"/>
 </p>
 
----
-
 - 📔 [ghdl.rtfd.io](https://ghdl.rtfd.io) | [ghdl/ghdl](https://github.com/ghdl/ghdl) [[📋](https://github.com/umarcor/ghdl)]
   - [ghdl/ghdl-cosim](https://github.com/ghdl/ghdl-cosim) [[📋](https://github.com/umarcor/ghdl-cosim)]
   - [ghdl/setup-ghdl-ci](https://github.com/ghdl/setup-ghdl-ci) [[📋](https://github.com/umarcor/setup-ghdl-ci)]
@@ -12,9 +10,6 @@
   - [VUnit/cosim](https://github.com/VUnit/cosim) [[📋](https://github.com/umarcor/vunit-cosim)]
   - [VUnit/vunit_action](https://github.com/VUnit/vunit_action)
 - 📔 [gtkwave.sourceforge.net](http://gtkwave.sourceforge.net/) | [gtkwave/gtkwave](https://github.com/gtkwave/gtkwave) [[📋](https://github.com/umarcor/gtkwave)]
-
----
-
 - 📃 [LarsAsplund/github-facts](https://github.com/LarsAsplund/github-facts): What Can GitHub Tell Us About the HDL Industry?
 - 📓 [dbhi/fpconv](https://github.com/dbhi/fpconv): Data type exploration and visualization in arithmetic algorithms/circuits
   - [wohali/vcd_parsealyze](https://github.com/wohali/vcd_parsealyze) [[umarcor/vcd_parsealyze](https://github.com/umarcor/vcd_parsealyze)]
@@ -24,9 +19,6 @@
 - [umarcor/MSEA](https://github.com/umarcor/MSEA)
 - [dbhi/vboard](https://github.com/dbhi/vboard)
   - [Xyce/Xyce](https://github.com/Xyce/Xyce) [[📋](https://github.com/umarcor/Xyce)]
-
----
-
 - [dbhi/dbhi](https://github.com/dbhi/dbhi)
   - [dbhi/docker](https://github.com/dbhi/docker)
   - [beehive-lab/mambo](https://github.com/beehive-lab/mambo) [[📋](https://github.com/umarcor/mambo)]
@@ -34,9 +26,6 @@
   - [qemu/qemu](https://github.com/qemu/qemu) [[📋](https://github.com/umarcor/qemu)]
   - [docker/binfmt](https://github.com/docker/binfmt) [[📋](https://github.com/umarcor/binfmt)]
 - [dbhi/vsc-hdl](https://github.com/dbhi/vsc-hdl)
-
----
-
 - [fossi-foundation/wishbone](https://github.com/fossi-foundation/wishbone) [[📋](https://github.com/umarcor/wishbone)]
 - [umarcor/hwstudio](https://github.com/umarcor/hwstudio)
 
