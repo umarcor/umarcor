@@ -3,6 +3,7 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=umarcor&layout=compact&title_color=63cda9"/>
 </p>
 
+- 📰 [vhdl.github.io/news](https://vhdl.github.io/news/) | [VHDL](https://github.com/VHDL)
 - 📔 [ghdl.rtfd.io](https://ghdl.rtfd.io) | [ghdl/ghdl](https://github.com/ghdl/ghdl) [[📋](https://github.com/umarcor/ghdl)]
   - [ghdl/ghdl-cosim](https://github.com/ghdl/ghdl-cosim) [[📋](https://github.com/umarcor/ghdl-cosim)]
   - [ghdl/setup-ghdl-ci](https://github.com/ghdl/setup-ghdl-ci) [[📋](https://github.com/umarcor/setup-ghdl-ci)]
