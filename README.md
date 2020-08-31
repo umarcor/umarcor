@@ -4,8 +4,8 @@
 </p>
 
 - 📰 [vhdl.github.io/news](https://vhdl.github.io/news/) | [VHDL](https://github.com/VHDL)
-- 📔 [ghdl.rtfd.io](https://ghdl.rtfd.io) | [ghdl/ghdl](https://github.com/ghdl/ghdl) [[📋](https://github.com/umarcor/ghdl)]
-  - [ghdl/ghdl-cosim](https://github.com/ghdl/ghdl-cosim) [[📋](https://github.com/umarcor/ghdl-cosim)]
+- 📔 [ghdl.github.io/ghdl](https://ghdl.github.io/ghdl) | [ghdl/ghdl](https://github.com/ghdl/ghdl) [[📋](https://github.com/umarcor/ghdl)]
+  - 📔 [ghdl.github.io/ghdl-cosim](https://ghdl.github.io/ghdl-cosim) | [ghdl/ghdl-cosim](https://github.com/ghdl/ghdl-cosim) [[📋](https://github.com/umarcor/ghdl-cosim)]
   - [ghdl/setup-ghdl-ci](https://github.com/ghdl/setup-ghdl-ci) [[📋](https://github.com/umarcor/setup-ghdl-ci)]
 - 📔 [vunit.github.io](https://vunit.github.io) | [VUnit/vunit](https://github.com/VUnit/vunit) [[📋](https://github.com/dbhi/vunit)]
   - [VUnit/cosim](https://github.com/VUnit/cosim) [[📋](https://github.com/umarcor/vunit-cosim)]
@@ -27,8 +27,8 @@
   - [qemu/qemu](https://github.com/qemu/qemu) [[📋](https://github.com/umarcor/qemu)]
   - [docker/binfmt](https://github.com/docker/binfmt) [[📋](https://github.com/umarcor/binfmt)]
 - [dbhi/vsc-hdl](https://github.com/dbhi/vsc-hdl)
-- [fossi-foundation/wishbone](https://github.com/fossi-foundation/wishbone) [[📋](https://github.com/umarcor/wishbone)]
 - [umarcor/hwstudio](https://github.com/umarcor/hwstudio)
+- [fossi-foundation/wishbone](https://github.com/fossi-foundation/wishbone) [[📋](https://github.com/umarcor/wishbone)]
 
 <!--
 ### Hi there 👋
