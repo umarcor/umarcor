@@ -10,6 +10,7 @@
 - 📔 [vunit.github.io](https://vunit.github.io) | [VUnit/vunit](https://github.com/VUnit/vunit) [[📋](https://github.com/dbhi/vunit)]
   - [VUnit/cosim](https://github.com/VUnit/cosim) [[📋](https://github.com/umarcor/vunit-cosim)]
   - [VUnit/vunit_action](https://github.com/VUnit/vunit_action)
+  - 📓 [Combining VUnit tests with cocotb components](https://github.com/umarcor/vunit-cocotb) [[ktbarrett/vunit-cocotb](https://github.com/ktbarrett/vunit-cocotb)]
 - 📔 [gtkwave.sourceforge.net](http://gtkwave.sourceforge.net/) | [gtkwave/gtkwave](https://github.com/gtkwave/gtkwave) [[📋](https://github.com/umarcor/gtkwave)]
 - 📃 [LarsAsplund/github-facts](https://github.com/LarsAsplund/github-facts): What Can GitHub Tell Us About the HDL Industry?
 - 📓 [dbhi/fpconv](https://github.com/dbhi/fpconv): Data type exploration and visualization in arithmetic algorithms/circuits
