@@ -5,12 +5,8 @@
 
 - [Hardware Description Languages](https://github.com/hdl)
 - [vhdl.github.io/news](https://vhdl.github.io/news/) | [VHDL](https://github.com/VHDL)
-- 📓 [Open Source Verification Bundle](https://github.com/umarcor/osvb)
-  - 📃 [LarsAsplund/github-facts](https://github.com/LarsAsplund/github-facts): What Can GitHub Tell Us About the HDL Industry?
-  - [ktbarrett/vunit-cocotb](https://github.com/ktbarrett/vunit-cocotb)
-  - 📓 [dbhi/fpconv](https://github.com/dbhi/fpconv): Data type exploration and visualization in arithmetic algorithms/circuits
-    - [wohali/vcd_parsealyze](https://github.com/wohali/vcd_parsealyze) [[umarcor/vcd_parsealyze](https://github.com/umarcor/vcd_parsealyze)]
-  - 📓 [sigrokproject/pulseview](https://github.com/sigrokproject/pulseview) [[📋](https://github.com/umarcor/pulseview)]: Reading waveforms from HDL simulators with PulseView ([tree/ghdl/ghdl](https://github.com/umarcor/pulseview/tree/ghdl/ghdl))
+- [Open Source Verification Bundle](https://github.com/umarcor/osvb): [ktbarrett/vunit-cocotb](https://github.com/ktbarrett/vunit-cocotb) | [umarcor/vcd_parsealyze](https://github.com/umarcor/vcd_parsealyze) | [umarcor/pulseview/tree/ghdl/ghdl](https://github.com/umarcor/pulseview/tree/ghdl/ghdl) | [dbhi/fpconv](https://github.com/dbhi/fpconv)
+- [LarsAsplund/github-facts](https://github.com/LarsAsplund/github-facts): What Can GitHub Tell Us About the HDL Industry?
 ---
 
 - 📔 [ghdl.github.io/ghdl](https://ghdl.github.io/ghdl) | [ghdl/ghdl](https://github.com/ghdl/ghdl) [[📋](https://github.com/umarcor/ghdl)]
