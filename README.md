@@ -1,12 +1,8 @@
-<p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=umarcor&show_icons=true&title_color=63cda9&icon_color=63cda9"/>
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=umarcor&layout=compact&title_color=63cda9"/>
-</p>
-
 - [Hardware Description Languages](https://github.com/hdl)
 - [vhdl.github.io/news](https://vhdl.github.io/news/) | [VHDL](https://github.com/VHDL)
 - [Open Source Verification Bundle](https://github.com/umarcor/osvb): [ktbarrett/vunit-cocotb](https://github.com/ktbarrett/vunit-cocotb) | [umarcor/vcd_parsealyze](https://github.com/umarcor/vcd_parsealyze) | [umarcor/pulseview/tree/ghdl/ghdl](https://github.com/umarcor/pulseview/tree/ghdl/ghdl) | [dbhi/fpconv](https://github.com/dbhi/fpconv)
 - [LarsAsplund/github-facts](https://github.com/LarsAsplund/github-facts): What Can GitHub Tell Us About the HDL Industry?
+
 ---
 
 - 📔 [ghdl.github.io/ghdl](https://ghdl.github.io/ghdl) | [ghdl/ghdl](https://github.com/ghdl/ghdl) [[📋](https://github.com/umarcor/ghdl)]
@@ -35,19 +31,6 @@
 - [umarcor/hwstudio](https://github.com/umarcor/hwstudio)
 - [fossi-foundation/wishbone](https://github.com/fossi-foundation/wishbone) [[📋](https://github.com/umarcor/wishbone)]
 
-<!--
-### Hi there 👋
+---
 
-**umarcor/umarcor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[<img align="left" alt="[metrics.lecoq.io] umarcor GitHub metrics" src="https://metrics.lecoq.io/umarcor?template=classic&base.header=0&base.metadata=0&lines=1&languages=1&notable=1&languages.limit=10&languages.colors=github&languages.threshold=0%25&notable.repositories=false">](https://metrics.lecoq.io/about/umarcor)
