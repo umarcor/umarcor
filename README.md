@@ -1,3 +1,7 @@
+<p align="center">
+<a href="https://metrics.lecoq.io/about/umarcor"><img alt="[metrics.lecoq.io] umarcor GitHub metrics" src="https://metrics.lecoq.io/umarcor?template=classic&base.header=0&base.metadata=0&languages=1&notable=1&lines=1&languages.limit=10&languages.colors=github&languages.threshold=0%25&notable.repositories=false"></a>
+</p>
+
 [![github.com/hdl](https://img.shields.io/badge/HDL-Hardware%20Description%20Languages-f2f1ef.svg?longCache=true&style=flat-square&logo=GitHub)](https://github.com/hdl)
 [![github.com/VHDL](https://img.shields.io/badge/VHDL-Open%20Source%20VHDL%20Group-f2f1ef.svg?longCache=true&style=flat-square&logo=GitHub)](https://github.com/VHDL)
 [![vhdl.github.io/news](https://img.shields.io/website.svg?label=vhdl.github.io%2Fnews&longCache=true&style=flat-square&url=http%3A%2F%2Fvhdl.github.io%2Fnews%2Findex.html&logo=Hugo&logoColor=f2f1ef)](https://vhdl.github.io/news/)
@@ -35,5 +39,3 @@
 [![github.com/umarcor/SIEAV](https://img.shields.io/badge/umarcor/hwstudio-Hardware%20Studio-f2f1ef.svg?longCache=true&style=flat-square&logo=GitHub)](https://github.com/umarcor/hwstudio) [![umarcor.github.io/hwstudio](https://img.shields.io/website.svg?label=umarcor.github.io%2Fhwstudio&longCache=true&style=flat-square&url=http%3A%2F%2Fumarcor.github.io%2Fhwstudio%2Findex.html&logo=Godot-Engine&logoColor=f2f1ef)](https://umarcor.github.io/hwstudio/)
 
 [![github.com/fossi-foundation/wishbone](https://img.shields.io/badge/fossi-foundation/wishbone-555555.svg?longCache=true&style=flat-square&logo=GitHub)](https://github.com/fossi-foundation/wishbone) [[📋](https://github.com/umarcor/wishbone)]
-
-[<img align="left" alt="[metrics.lecoq.io] umarcor GitHub metrics" src="https://metrics.lecoq.io/umarcor?template=classic&base.header=0&base.metadata=0&languages=1&notable=1&lines=1&languages.limit=10&languages.colors=github&languages.threshold=0%25&notable.repositories=false">](https://metrics.lecoq.io/about/umarcor)
