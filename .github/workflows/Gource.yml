@@ -1,0 +1,34 @@
+name: Gource
+
+on:
+  push:
+  schedule:
+    - cron: '0 0 * * 4'
+  workflow_dispatch:
+
+env:
+  DOCKER_BUILDKIT: 1
+
+jobs:
+
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Build container image
+      run: |
+        cd gource
+        docker build -t ghcr.io/umarcor/umarcor/gource .
+
+    - name: Login to ghcr.io
+      uses: docker/login-action@v1
+      with:
+        registry: ghcr.io
+        username: gha
+        password: ${{ github.token }}
+
+    - name: 'Push container image to registry'
+      run: |
+        docker push ghcr.io/umarcor/umarcor/gource
