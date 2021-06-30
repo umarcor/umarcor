@@ -1,5 +1,7 @@
 # VHDL
 
+- [Examples from VHDL-2019: Just the New Stuff](https://gitlab.com/synthworks/VHDL_2019)
+
 ## Sites
 
 - Wikipedia: [VHDL](https://en.wikipedia.org/wiki/VHDL)
