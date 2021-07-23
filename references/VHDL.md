@@ -13,4 +13,5 @@
 
 ## Reports
 
+* [IEEE-SA P1076 Open Source Pilot: Open Source at the VHDL Analysis and Standardization Group](https://slides.com/paebbels/ieee-open-source-forum-vienna-ieee-p1076-open-source-pilot-2018-05-16#/7)
 * [The VHDL Standard: An overview of activities, organizations and European tool efforts](http://microelectronics.esa.int/vhdl/doc/VHDLReport.pdf)
