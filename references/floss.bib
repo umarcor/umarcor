@@ -359,7 +359,7 @@ series = {PLDI 2020}
   doi={}
 }
 
-@article{murray20,
+@article{murray20micro,
   author={Murray, Kevin E. and Elgammal, Mohamed A. and Betz, Vaughn and Ansell, Tim and Rothman, Keith and Comodi, Alessandro},
   journal={IEEE Micro},
   title={SymbiFlow and VPR: An Open-Source Design Flow for Commercial and Novel FPGAs},
@@ -368,4 +368,40 @@ series = {PLDI 2020}
   number={4},
   pages={49-57},
   doi={10.1109/MM.2020.2998435}
+}
+
+@article{murray20acm,
+author = {Murray, Kevin E. and Petelin, Oleg and Zhong, Sheng and Wang, Jia Min and Eldafrawy, Mohamed and Legault, Jean-Philippe and Sha, Eugene and Graham, Aaron G. and Wu, Jean and Walker, Matthew J. P. and Zeng, Hanqing and Patros, Panagiotis and Luu, Jason and Kent, Kenneth B. and Betz, Vaughn},
+title = {VTR 8: High-Performance CAD and Customizable FPGA Architecture Modelling},
+year = {2020},
+issue_date = {June 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {13},
+number = {2},
+issn = {1936-7406},
+url = {https://doi.org/10.1145/3388617},
+doi = {10.1145/3388617},
+abstract = {Developing Field-programmable Gate Array (FPGA) architectures is challenging due to
+the competing requirements of various application domains and changing manufacturing
+process technology. This is compounded by the difficulty of fairly evaluating FPGA
+architectural choices, which requires sophisticated high-quality Computer Aided Design
+(CAD) tools to target each potential architecture. This article describes version
+8.0 of the open source Verilog to Routing (VTR) project, which provides such a design
+flow. VTR 8 expands the scope of FPGA architectures that can be modelled, allowing
+VTR to target and model many details of both commercial and proposed FPGA architectures.
+The VTR design flow also serves as a baseline for evaluating new CAD algorithms. It
+is therefore important, for both CAD algorithm comparisons and the validity of architectural
+conclusions, that VTR produce high-quality circuit implementations. VTR 8 significantly
+improves optimization quality (reductions of 15% minimum routable channel width, 41%
+wirelength, and 12% critical path delay), run-time (5.3\texttimes{} faster) and memory footprint
+(3.3\texttimes{} lower). Finally, we demonstrate VTR is run-time and memory footprint efficient,
+while producing circuit implementations of reasonable quality compared to highly-tuned
+architecture-specific industrial tools—showing that architecture generality, good
+implementation quality, and run-time efficiency are not mutually exclusive goals.},
+journal = {ACM Trans. Reconfigurable Technol. Syst.},
+month = may,
+articleno = {9},
+numpages = {55},
+keywords = {electronic design automation (EDA), Computer aided design (CAD), versatile place and route (VPR), verilog to routing (VTR), routing, placement, packing, field programmable gate array (FPGA)}
 }
