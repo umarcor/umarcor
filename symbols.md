@@ -42,8 +42,11 @@
 
 ---
 
-- 🟪 MINGW32
+- 🟪 MSYS2
+- ⬛ MINGW32
 - 🟦 MINGW64
+- 🟨 UCRT64
+- 🟧 CLANG64
 - 🥡 Standalone tarball/zipfile
 
 Ref: https://github.com/ikatyang/emoji-cheat-sheet
