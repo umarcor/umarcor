@@ -1,0 +1,79 @@
+EDAA:
+  title: Electronic Design Automation Abstraction (EDAA)
+  tree:
+    <<: &EDAA-repos
+      EDAA: edaa-org/edaa-org.github.io
+      EDAA/pyEDAA.ProjectModel: edaa-org/pyEDAA.ProjectModel
+      EDAA/pySVModel: edaa-org/pySVModel
+      EDAA/pyEDAA.IPXACT: edaa-org/pyEDAA.IPXACT
+      EDAA/pyEDAA.Reports: edaa-org/pyEDAA.Reports
+      EDAA/pyVHDLModel: VHDL/pyVHDLModel
+
+EDAA-all:
+  title: Electronic Design Automation Abstraction (EDAA) | Workflows
+  tree:
+    <<: *EDAA-repos
+    EDAA/Workflows/CoCoTb: cocotb/cocotb
+    EDAA/Workflows/FuseSoC: olofk/fusesoc
+    EDAA/Workflows/Edalize: olofk/edalize
+    EDAA/Workflows/PyFPGA: PyFPGA/pyfpga
+    EDAA/Workflows/pyIPCMI: Paebbels/pyIPCMI
+    #EDAA/Workflows/tsfpga:
+    EDAA/Workflows/VUnit: VUnit/vunit
+    EDAA/Workflows/Xeda: XedaHQ/xeda
+    EDAA/Workflows/OSVVM-Scripts: OSVVM/OSVVM-Scripts
+
+ghdl:
+  title: github.com/ghdl
+  args:
+    - --file-filter
+    - ghdl/testsuite/vests
+  tree:
+    ghdl: ghdl/ghdl
+    ghdl-yosys-plugin: ghdl/ghdl-yosys-plugin
+    ghdl-language-server: ghdl/ghdl-language-server
+    ghdl-cosim: ghdl/ghdl-cosim
+    docker: ghdl/docker
+    extended-tests: ghdl/extended-tests
+    setup-ghdl-ci: ghdl/setup-ghdl-ci
+
+osvvm:
+  title: github.com/OSVVM
+  tree:
+    OsvvmLibraries: OSVVM/OsvvmLibraries
+    OsvvmLibraries/Scripts: OSVVM/OSVVM-Scripts
+    OsvvmLibraries/UART: OSVVM/UART
+    OsvvmLibraries/OSVVM: OSVVM/OSVVM
+    OsvvmLibraries/Documentation: OSVVM/Documentation
+    OsvvmLibraries/Common: OSVVM/OSVVM-Common
+    OsvvmLibraries/AXI4: OSVVM/AXI4
+
+vunit:
+  title: VUnit
+  tree:
+    VUnit: VUnit/vunit
+
+hdlc:
+  title: HDL Containers
+  tree:
+    HDLC: hdl/containers
+
+neorv32:
+  title: NEORV32
+  tree:
+    NEORV32: stnolting/neorv32
+
+cocotb:
+  title: CoCoTb
+  tree:
+    CoCoTb: cocotb/cocotb
+
+openFPGALoader:
+  title: openFPGALoader
+  tree:
+    openFPGALoader: trabucayre/openFPGALoader
+
+cobra:
+  title: Cobra
+  tree:
+    Cobra: spf13/cobra

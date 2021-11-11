@@ -3,7 +3,7 @@ name: Gource
 on:
   push:
   schedule:
-    - cron: '0 0 * * 4'
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 env:
@@ -11,24 +11,142 @@ env:
 
 jobs:
 
-  build-image:
+# https://github.com/acaudwell/Gource/wiki/Visualizing-Multiple-Repositories
+# https://trac.ffmpeg.org/wiki/Encode/H.264
+
+  GetLogs:
     runs-on: ubuntu-latest
+    outputs:
+      jobs: ${{ steps.jobs.outputs.jobs }}
+      cfg: ${{ steps.jobs.outputs.cfg }}
     steps:
 
-    - uses: actions/checkout@v2
+    - name: '🧰 Checkout'
+      uses: actions/checkout@v2
 
-    - name: Build container image
+    - run: |
+        sudo apt update -qq
+        sudo apt install -y gource
+
+    - name: Get logs
+      shell: python
       run: |
-        cd gource
-        docker build -t ghcr.io/umarcor/umarcor/gource .
+        from pathlib import Path
+        from subprocess import check_call
+        import yaml
 
-    - name: Login to ghcr.io
-      uses: docker/login-action@v1
+        ROOT = Path('gource').resolve()
+        LogDir = ROOT / 'logs'
+        LogDir.mkdir(exist_ok=True)
+
+        with (ROOT / 'config.yml').open('r') as fptr:
+            data = yaml.load(fptr, Loader=yaml.FullLoader)
+
+        for repo in list(set([
+            repo
+            for _, job in data.items()
+            for _, repo in job['tree'].items()
+        ])):
+            idx = f"{repo.replace('/','--')}"
+            for cmd in [
+                ['git', 'clone', f'https://github.com/{repo}', idx],
+                ['cp', ROOT / '.mailmap', idx ],
+                ['gource', '--output-custom-log', LogDir / f'{idx}.log', idx]
+            ]:
+                check_call(cmd)
+
+    - name: Generate list of jobs
+      id: jobs
+      shell: python
+      run: |
+        from pathlib import Path
+        import yaml
+        with (Path('gource') / 'config.yml').open('r') as fptr:
+            cfg = yaml.load(fptr, Loader=yaml.FullLoader)
+            print(f"::set-output name=cfg::{cfg!s}")
+            jobs = [{'name': key, 'title': job['title']} for key, job in cfg.items()]
+            print(f"::set-output name=jobs::{jobs!s}")
+
+    - name: '📤 Upload artifact'
+      uses: actions/upload-artifact@v2
       with:
-        registry: ghcr.io
-        username: gha
-        password: ${{ github.token }}
+        name: logs
+        path: gource/logs
 
-    - name: 'Push container image to registry'
+
+  GenerateVideo:
+    needs: GetLogs
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.GetLogs.outputs.jobs) }}
+    name: ${{ matrix.name }} | ${{ matrix.title }}
+    steps:
+
+    - name: '🧰 Checkout'
+      uses: actions/checkout@v2
+
+    - name: '📥 Download artifact: package'
+      uses: actions/download-artifact@v2
+      with:
+        name: logs
+        path: gource/logs
+
+    - name: Combine logs and generate video
+      shell: python
       run: |
-        docker push ghcr.io/umarcor/umarcor/gource
+        from pathlib import Path
+        from subprocess import check_call
+
+        ROOT = Path('.').resolve() / 'gource'
+        LogDir = ROOT / 'logs'
+        CombinedDir = ROOT / 'combined'
+        CombinedDir.mkdir(exist_ok=True)
+
+        job = ${{ needs.GetLogs.outputs.cfg }}['${{ matrix.name }}']
+
+        for key, repo in job['tree'].items():
+            logFile = f"{repo.replace('/','--')}.log"
+            check_call(['cp', str(LogDir / logFile), str(CombinedDir / logFile)])
+            check_call(['sed', '-i', '-r', f's#(.+)\|#\\1|/{key}#', str(CombinedDir / logFile)])
+
+        check_call(f'cat {CombinedDir!s}/*.log | sort -n > gource/combined.log', shell=True)
+
+        check_call([
+          "docker",
+          "run",
+          "--rm",
+          "-v",
+          f"{ROOT!s}:/wrk",
+          "-w",
+          "/wrk",
+          "-e", f"GOURCE_TITLE={job['title']}",
+          "ghcr.io/umarcor/gource",
+          "./xrun.sh",
+        ] + (job['args'] if 'args' in job else []) + [
+          "combined.log"
+        ])
+
+        check_call(['mv', 'gource/gource.mp4', '${{ matrix.name }}.mp4'])
+
+    - name: '📤 Upload artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ matrix.name }}
+        path: ${{ matrix.name }}.mp4
+        if-no-files-found: error
+
+
+  Release:
+    needs: GenerateVideo
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v2
+      with:
+        path: artifact
+    - uses: eine/tip@master
+      with:
+        token: ${{ github.token }}
+        files: artifact/**/*
+        tag: gource-videos
