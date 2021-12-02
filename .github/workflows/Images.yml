@@ -16,8 +16,15 @@ jobs:
 
     - uses: actions/checkout@v2
 
-    - name: Build container image
-      run: docker build -t ghcr.io/umarcor/gource -< gource/Dockerfile
+    - name: Build container images
+      run: |
+        docker build -t ghcr.io/umarcor/gource -< gource/Dockerfile
+        docker build -t ghcr.io/umarcor/gource/xrun gource -f- <<EOF
+        FROM ghcr.io/umarcor/gource
+        COPY run.sh /run.sh
+        COPY xrun.sh /xrun.sh
+        CMD ['/xrun.sh']
+        EOF
 
     - name: Login to ghcr.io
       uses: docker/login-action@v1
@@ -26,5 +33,5 @@ jobs:
         username: gha
         password: ${{ github.token }}
 
-    - name: 'Push container image to registry'
-      run: docker push ghcr.io/umarcor/gource
+    - name: Push container images to registry
+      run: for image in gource gource/xrun; do docker push ghcr.io/umarcor/"$image"; done
