@@ -14,21 +14,20 @@ jobs:
 # https://github.com/acaudwell/Gource/wiki/Visualizing-Multiple-Repositories
 # https://trac.ffmpeg.org/wiki/Encode/H.264
 
-  GetLogs:
+
+  Params:
     runs-on: ubuntu-latest
     outputs:
-      jobs: ${{ steps.jobs.outputs.jobs }}
-      cfg: ${{ steps.jobs.outputs.cfg }}
+      cfg: ${{ steps.params.outputs.cfg }}
+      jobs: ${{ steps.params.outputs.jobs }}
+      mailmap: ${{ steps.params.outputs.mailmap }}
     steps:
 
     - name: '🧰 Checkout'
       uses: actions/checkout@v2
 
-    - run: |
-        sudo apt update -qq
-        sudo apt install -y gource
-
-    - name: Get logs
+    - name: Convert YAML config to JSON string
+      id: params
       shell: python
       run: |
         from pathlib import Path
@@ -40,102 +39,77 @@ jobs:
         LogDir.mkdir(exist_ok=True)
 
         with (ROOT / 'config.yml').open('r') as fptr:
-            data = yaml.load(fptr, Loader=yaml.FullLoader)
-
-        for repo in list(set([
-            repo
-            for _, job in data.items()
-            for _, repo in job['tree'].items()
-        ])):
-            idx = f"{repo.replace('/','--')}"
-            for cmd in [
-                ['git', 'clone', f'https://github.com/{repo}', idx],
-                ['cp', ROOT / '.mailmap', idx ],
-                ['gource', '--output-custom-log', LogDir / f'{idx}.log', idx]
-            ]:
-                check_call(cmd)
-
-    - name: Generate list of jobs
-      id: jobs
-      shell: python
-      run: |
-        from pathlib import Path
-        import yaml
-        with (Path('gource') / 'config.yml').open('r') as fptr:
             cfg = yaml.load(fptr, Loader=yaml.FullLoader)
             print(f"::set-output name=cfg::{cfg!s}")
             jobs = [{'name': key, 'title': job['title']} for key, job in cfg.items()]
             print(f"::set-output name=jobs::{jobs!s}")
 
-    - name: '📤 Upload artifact'
-      uses: actions/upload-artifact@v2
-      with:
-        name: logs
-        path: gource/logs
+        with (ROOT / '.mailmap').open('r') as fptr:
+            print(f"::set-output name=mailmap::{','.join(fptr.read().splitlines())!s}")
 
-
-  GenerateVideo:
-    needs: GetLogs
+  GetLogs:
+    needs: Params
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include: ${{ fromJson(needs.GetLogs.outputs.jobs) }}
-    name: ${{ matrix.name }} | ${{ matrix.title }}
     steps:
 
-    - name: '🧰 Checkout'
-      uses: actions/checkout@v2
+    - run: |
+        sudo apt update -qq
+        sudo apt install -y gource
 
-    - name: '📥 Download artifact: package'
-      uses: actions/download-artifact@v2
-      with:
-        name: logs
-        path: gource/logs
-
-    - name: Combine logs and generate video
+    - name: Generate list of jobs and get logs
       shell: python
       run: |
         from pathlib import Path
         from subprocess import check_call
 
-        ROOT = Path('.').resolve() / 'gource'
-        LogDir = ROOT / 'logs'
-        CombinedDir = ROOT / 'combined'
-        CombinedDir.mkdir(exist_ok=True)
+        cfg = ${{ needs.Params.outputs.cfg }}
+        LogDir = Path('logs').resolve()
+        LogDir.mkdir(exist_ok=True)
 
-        job = ${{ needs.GetLogs.outputs.cfg }}['${{ matrix.name }}']
-
-        for key, repo in job['tree'].items():
-            logFile = f"{repo.replace('/','--')}.log"
-            check_call(['cp', str(LogDir / logFile), str(CombinedDir / logFile)])
-            check_call(['sed', '-i', '-r', f's#(.+)\|#\\1|/{key}#', str(CombinedDir / logFile)])
-
-        check_call(f'cat {CombinedDir!s}/*.log | sort -n > gource/combined.log', shell=True)
-
-        check_call([
-          "docker",
-          "run",
-          "--rm",
-          "-v",
-          f"{ROOT!s}:/wrk",
-          "-w",
-          "/wrk",
-          "-e", f"GOURCE_TITLE={job['title']}",
-          "ghcr.io/umarcor/gource",
-          "./xrun.sh",
-        ] + (job['args'] if 'args' in job else []) + [
-          "combined.log"
-        ])
-
-        check_call(['mv', 'gource/gource.mp4', '${{ matrix.name }}.mp4'])
+        for repo in list(set([
+            repo
+            for _, job in cfg.items()
+            for _, repo in job['tree'].items()
+        ])):
+            idx = f"{repo.replace('/','--')}"
+            check_call(['git', 'clone', f'https://github.com/{repo}', idx])
+            with (Path(idx) / '.mailmap').open('w') as fptr:
+                fptr.write('''${{ needs.Params.outputs.mailmap }}'''.replace(',','\n'))
+            check_call(['gource', '--output-custom-log', LogDir / f'{idx}.log', idx])
 
     - name: '📤 Upload artifact'
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ matrix.name }}
-        path: ${{ matrix.name }}.mp4
-        if-no-files-found: error
+        name: logs
+        path: logs
+
+
+  GenerateVideo:
+    needs:
+      - Params
+      - GetLogs
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.Params.outputs.jobs) }}
+    name: ${{ matrix.name }} | ${{ matrix.title }}
+    steps:
+
+    - name: Get job from config
+      shell: python
+      id: job
+      run: |
+        name = '${{ matrix.name }}'
+        job = ${{ needs.Params.outputs.cfg }}[name]
+        job['name'] = name
+        print(f"::set-output name=job::{job!s}")
+
+    - name: Combine logs and generate video
+      uses: umarcor/umarcor/gource@gource
+      with:
+        artifact: logs
+        job: ${{ steps.job.outputs.job }}
 
 
   Release:

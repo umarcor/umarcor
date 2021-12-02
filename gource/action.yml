@@ -1,0 +1,65 @@
+name: Gource and FFmpeg
+description: Generate a video from the (combined) logs of SCM repositories.
+inputs:
+  logs:
+    description: Path to the location of the logs.
+    required: false
+    default: './gource/logs'
+  artifact:
+    description: Name of the artifact containing the logs.
+    required: false
+    default: logs
+  job:
+    description: String object with fields 'name', 'title', 'tree' and 'args'.
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: ${{ inputs.artifact }}
+        path: ${{ inputs.logs }}
+
+    - shell: python
+      run: |
+        # Combine logs and generate video
+        from pathlib import Path
+        from subprocess import check_call
+
+        LogDir = Path('${{ inputs.logs }}').resolve()
+        CombinedDir = LogDir.parent / 'combined'
+        CombinedDir.mkdir(exist_ok=True)
+
+        job = ${{ inputs.job }}
+
+        for key, repo in job['tree'].items():
+            logFile = f"{repo.replace('/','--')}.log"
+            check_call(['cp', str(LogDir / logFile), str(CombinedDir / logFile)])
+            check_call(['sed', '-i', '-r', f's#(.+)\|#\\1|/{key}#', str(CombinedDir / logFile)])
+
+        check_call(f'cat {CombinedDir!s}/*.log | sort -n > {CombinedDir.parent!s}/combined.log', shell=True)
+
+        check_call([
+          "docker",
+          "run",
+          "--rm",
+          "-v",
+          f"{LogDir.parent!s}:/wrk",
+          "-w",
+          "/wrk",
+          "-e", f"GOURCE_TITLE={job['title']}",
+          "ghcr.io/umarcor/gource/xrun",
+          "/xrun.sh",
+        ] + (job['args'] if 'args' in job else []) + [
+          "combined.log"
+        ])
+
+        check_call(['mv', 'gource/gource.mp4', f'{job["name"]}.mp4'])
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: ${{ fromJson(inputs.job).name }}
+        path: ${{ fromJson(inputs.job).name }}.mp4
+        if-no-files-found: error
