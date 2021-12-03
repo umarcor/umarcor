@@ -1,0 +1,57 @@
+name: Gource (get logs)
+description: Generate Gource logs of SCM repositories.
+inputs:
+  cfg:
+    description: Dictionary of objects with fields 'name', 'title', 'tree' and 'args'.
+    required: true
+  mailmap:
+    description: Comma separated 'mailmap' entries.
+    required: false
+    default: ''
+  artifact:
+    description: Name of the artifact containing the logs.
+    required: false
+    default: glogs
+
+runs:
+  using: 'composite'
+  steps:
+
+  - shell: bash
+    run: |
+      sudo apt update -qq
+      sudo apt install -y gource
+
+  - name: Generate list of jobs and get logs
+    shell: python
+    run: |
+      from pathlib import Path
+      from subprocess import check_call
+
+      cfg = ${{ inputs.cfg }}
+      LogDir = Path('/tmp/glogs').resolve()
+      LogDir.mkdir(exist_ok=True)
+
+      mailmap = '''${{ inputs.mailmap }}'''.replace(',','\n')
+
+      for repo in list(set([
+          repo
+          for _, job in cfg.items()
+          for repo in job['tree'].keys()
+      ])):
+          idx = f"{repo.replace('/','--')}"
+          check_call(['git', 'clone', f'https://{repo}', idx])
+          if len(mailmap) != 0:
+              with (Path(idx) / '.mailmap').open('w') as fptr:
+                  fptr.write(mailmap)
+          authors = LogDir / f'{idx}.authors'
+          check_call(f'git log --pretty="%an <%ae>" | sort | uniq > {authors}', shell=True, cwd=idx)
+          check_call(['gource', '--output-custom-log', LogDir / f'{idx}.log', idx])
+
+      check_call(f'cat {LogDir!s}/*.authors | sort | uniq > {LogDir!s}/authors.mails', shell=True)
+      check_call(['rm', '-rf', f'{LogDir!s}/*.authors'])
+
+  - uses: actions/upload-artifact@v2
+    with:
+      name: ${{ inputs.artifact }}
+      path: /tmp/glogs

@@ -1,14 +1,10 @@
 name: Gource and FFmpeg
 description: Generate a video from the (combined) logs of SCM repositories.
 inputs:
-  logs:
-    description: Path to the location of the logs.
-    required: false
-    default: './gource/logs'
   artifact:
     description: Name of the artifact containing the logs.
     required: false
-    default: logs
+    default: glogs
   job:
     description: String object with fields 'name', 'title', 'tree' and 'args'.
     required: true
@@ -20,7 +16,7 @@ runs:
     - uses: actions/download-artifact@v2
       with:
         name: ${{ inputs.artifact }}
-        path: ${{ inputs.logs }}
+        path: /tmp/glogs
 
     - shell: python
       id: job
@@ -29,12 +25,11 @@ runs:
         from pathlib import Path
         from subprocess import check_call
 
-        LogDir = Path('${{ inputs.logs }}').resolve()
+        LogDir = Path('/tmp/glogs').resolve()
         CombinedDir = LogDir.parent / 'combined'
         CombinedDir.mkdir(exist_ok=True)
 
         job = ${{ inputs.job }}
-        print(f"::set-output name=name::{job['name']!s}")
 
         for repo, loc in job['tree'].items():
             logFile = f"{repo.replace('/','--')}.log"
@@ -69,13 +64,14 @@ runs:
           "combined.log"
         ])
 
-        check_call(['mv', str(LogDir.parent / f'{job["name"]}.mp4'), './'])
-        check_call(['mv', str(LogDir.parent / f'{job["name"]}.jpg'), './'])
+        print(f"::set-output name=name::{job['name']!s}")
+        artifact = LogDir.parent / f'{job["name"]}'
+        print(f"::set-output name=artifact::{artifact!s}")
 
     - uses: actions/upload-artifact@v2
       with:
         name: ${{ steps.job.outputs.name }}
         path: |
-          ${{ steps.job.outputs.name }}.mp4
-          ${{ steps.job.outputs.name }}.jpg
+          ${{ steps.job.outputs.artifact }}.mp4
+          ${{ steps.job.outputs.artifact }}.jpg
         if-no-files-found: error

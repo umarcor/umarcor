@@ -85,41 +85,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - run: |
-        sudo apt update -qq
-        sudo apt install -y gource
-
-    - name: Generate list of jobs and get logs
-      shell: python
-      run: |
-        from pathlib import Path
-        from subprocess import check_call
-
-        cfg = ${{ needs.Params.outputs.cfg }}
-        LogDir = Path('logs').resolve()
-        LogDir.mkdir(exist_ok=True)
-
-        for repo in list(set([
-            repo
-            for _, job in cfg.items()
-            for repo in job['tree'].keys()
-        ])):
-            idx = f"{repo.replace('/','--')}"
-            check_call(['git', 'clone', f'https://{repo}', idx])
-            with (Path(idx) / '.mailmap').open('w') as fptr:
-                fptr.write('''${{ needs.Params.outputs.mailmap }}'''.replace(',','\n'))
-            authors = LogDir / f'{idx}.authors'
-            check_call(f'git log --pretty="%an <%ae>" | sort | uniq > {authors}', shell=True, cwd=idx)
-            check_call(['gource', '--output-custom-log', LogDir / f'{idx}.log', idx])
-
-        check_call(f'cat {LogDir!s}/*.authors | sort | uniq > {LogDir!s}/authors.mails', shell=True)
-        check_call(['rm', '-rf', f'{LogDir!s}/*.authors'])
-
-    - name: '📤 Upload artifact'
-      uses: actions/upload-artifact@v2
+    - name: Get logs
+      uses: umarcor/umarcor/gource/logs@gource
       with:
-        name: logs
-        path: logs
+        cfg: ${{ needs.Params.outputs.cfg }}
+        mailmap: ${{ needs.Params.outputs.mailmap }}
+        artifact: glogs
 
 
   GenerateVideo:
@@ -142,9 +113,9 @@ jobs:
         print(f"::set-output name=job::{job!s}")
 
     - name: Combine logs and generate video
-      uses: umarcor/umarcor/gource@gource
+      uses: umarcor/umarcor/gource/video@gource
       with:
-        artifact: logs
+        artifact: glogs
         job: ${{ steps.job.outputs.job }}
 
 
@@ -157,8 +128,8 @@ jobs:
         path: artifact
     - run: |
         cd artifact
-        tar czvf logs.tar.gz logs
-        rm -rf logs
+        tar czvf glogs.tar.gz glogs
+        rm -rf glogs
     - uses: eine/tip@master
       with:
         token: ${{ github.token }}
