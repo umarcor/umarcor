@@ -97,7 +97,12 @@ jobs:
             check_call(['git', 'clone', f'https://github.com/{repo}', idx])
             with (Path(idx) / '.mailmap').open('w') as fptr:
                 fptr.write('''${{ needs.Params.outputs.mailmap }}'''.replace(',','\n'))
+            authors = LogDir / f'{idx}.authors'
+            check_call(f'git log --pretty="%an <%ae>" | sort | uniq > {authors}', shell=True, cwd=idx)
             check_call(['gource', '--output-custom-log', LogDir / f'{idx}.log', idx])
+
+        check_call(f'cat {LogDir!s}/*.authors | sort | uniq > {LogDir!s}/authors.mails', shell=True)
+        check_call(['rm', '-rf', f'{LogDir!s}/*.authors'])
 
     - name: '📤 Upload artifact'
       uses: actions/upload-artifact@v2
