@@ -91,7 +91,7 @@ jobs:
         for repo in list(set([
             repo
             for _, job in cfg.items()
-            for _, repo in job['tree'].items()
+            for repo in job['tree'].keys()
         ])):
             idx = f"{repo.replace('/','--')}"
             check_call(['git', 'clone', f'https://github.com/{repo}', idx])

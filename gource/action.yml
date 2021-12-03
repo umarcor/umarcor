@@ -23,6 +23,7 @@ runs:
         path: ${{ inputs.logs }}
 
     - shell: python
+      id: job
       run: |
         # Combine logs and generate video
         from pathlib import Path
@@ -33,11 +34,14 @@ runs:
         CombinedDir.mkdir(exist_ok=True)
 
         job = ${{ inputs.job }}
+        print(f"::set-output name=name::{job['name']!s}")
 
-        for key, repo in job['tree'].items():
+        for repo, loc in job['tree'].items():
             logFile = f"{repo.replace('/','--')}.log"
             check_call(['cp', str(LogDir / logFile), str(CombinedDir / logFile)])
-            check_call(['sed', '-i', '-r', f's#(.+)\|#\\1|/{key}#', str(CombinedDir / logFile)])
+            if (loc is None) or len(loc) == 0:
+                continue
+            check_call(['sed', '-i', '-r', f's#(.+)\|#\\1|/{loc}#', str(CombinedDir / logFile)])
 
         CombinedLog = CombinedDir.parent / 'combined.log'
 
@@ -70,8 +74,8 @@ runs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: ${{ fromJson(inputs.job).name }}
+        name: ${{ steps.job.outputs.name }}
         path: |
-          ${{ fromJson(inputs.job).name }}.mp4
-          ${{ fromJson(inputs.job).name }}.jpg
+          ${{ steps.job.outputs.name }}.mp4
+          ${{ steps.job.outputs.name }}.jpg
         if-no-files-found: error

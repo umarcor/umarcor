@@ -2,26 +2,26 @@ EDAA:
   title: Electronic Design Automation Abstraction (EDAA)
   tree:
     <<: &EDAA-repos
-      '': edaa-org/edaa-org.github.io
-      pyEDAA.ProjectModel: edaa-org/pyEDAA.ProjectModel
-      pySVModel: edaa-org/pySVModel
-      pyEDAA.IPXACT: edaa-org/pyEDAA.IPXACT
-      pyEDAA.Reports: edaa-org/pyEDAA.Reports
-      pyVHDLModel: VHDL/pyVHDLModel
+      edaa-org/edaa-org.github.io: ~
+      edaa-org/pyEDAA.ProjectModel: pyEDAA.ProjectModel
+      edaa-org/pySVModel: pySVModel
+      edaa-org/pyEDAA.IPXACT: pyEDAA.IPXACT
+      edaa-org/pyEDAA.Reports: pyEDAA.Reports
+      VHDL/pyVHDLModel: pyVHDLModel
 
 EDAA-all:
   title: Electronic Design Automation Abstraction (EDAA) | Workflows
   tree:
     <<: *EDAA-repos
-    Workflows/CoCoTb: cocotb/cocotb
-    Workflows/LibreCores/FuseSoC: olofk/fusesoc
-    Workflows/LibreCores/Edalize: olofk/edalize
-    Workflows/PyFPGA: PyFPGA/pyfpga
-    Workflows/pyIPCMI: Paebbels/pyIPCMI
-    #Workflows/tsfpga:
-    Workflows/VUnit: VUnit/vunit
-    Workflows/Xeda: XedaHQ/xeda
-    Workflows/OSVVM-Scripts: OSVVM/OSVVM-Scripts
+    cocotb/cocotb: Workflows/CoCoTb
+    olofk/fusesoc: Workflows/LibreCores/FuseSoC
+    olofk/edalize: Workflows/LibreCores/Edalize
+    PyFPGA/pyfpga: Workflows/PyFPGA
+    Paebbels/pyIPCMI: Workflows/pyIPCMI
+    #: Workflows/tsfpga
+    VUnit/vunit: Workflows/VUnit
+    XedaHQ/xeda: Workflows/Xeda
+    OSVVM/OSVVM-Scripts: Workflows/OSVVM-Scripts
 
 ghdl:
   title: github.com/ghdl
@@ -29,89 +29,89 @@ ghdl:
     - --file-filter
     - ghdl/testsuite/vests
   tree:
-    ghdl: ghdl/ghdl
-    ghdl-yosys-plugin: ghdl/ghdl-yosys-plugin
-    ghdl-language-server: ghdl/ghdl-language-server
-    ghdl-cosim: ghdl/ghdl-cosim
-    docker: ghdl/docker
-    extended-tests: ghdl/extended-tests
-    setup-ghdl-ci: ghdl/setup-ghdl-ci
+    ghdl/ghdl: ghdl
+    ghdl/ghdl-yosys-plugin: ghdl-yosys-plugin
+    ghdl/ghdl-language-server: ghdl-language-server
+    ghdl/ghdl-cosim: ghdl-cosim
+    ghdl/docker: docker
+    ghdl/extended-tests: extended-tests
+    ghdl/setup-ghdl-ci: setup-ghdl-ci
 
 osvvm:
   title: github.com/OSVVM
   tree:
-    '': OSVVM/OsvvmLibraries
-    Scripts: OSVVM/OSVVM-Scripts
-    UART: OSVVM/UART
-    OSVVM: OSVVM/OSVVM
-    Documentation: OSVVM/Documentation
-    Common: OSVVM/OSVVM-Common
-    AXI4: OSVVM/AXI4
+    OSVVM/OsvvmLibraries: ~
+    OSVVM/OSVVM-Scripts: Scripts
+    OSVVM/UART: UART
+    OSVVM/OSVVM: OSVVM
+    OSVVM/Documentation: Documentation
+    OSVVM/OSVVM-Common: Common
+    OSVVM/AXI4: AXI4
 
 osvb:
   title: Open Source Verification Bundle (OSVB)
   tree:
-    '': umarcor/osvb
-    mods/VUnit: VUnit/vunit
-    mods/cocotb: cocotb/cocotb
-    mods/OSVVM/OsvvmLibraries: OSVVM/OsvvmLibraries
-    mods/OSVVM/OsvvmLibraries/Scripts: OSVVM/OSVVM-Scripts
-    mods/OSVVM/OsvvmLibraries/UART: OSVVM/UART
-    mods/OSVVM/OsvvmLibraries/OSVVM: OSVVM/OSVVM
-    mods/OSVVM/OsvvmLibraries/Documentation: OSVVM/Documentation
-    mods/OSVVM/OsvvmLibraries/Common: OSVVM/OSVVM-Common
-    mods/OSVVM/OsvvmLibraries/AXI4: OSVVM/AXI4
-    mods/svunit: svunit/svunit
-    mods/UVVM: uvvm/uvvm
+    umarcor/osvb: ~
+    VUnit/vunit: mods/VUnit
+    cocotb/cocotb: mods/cocotb
+    OSVVM/OsvvmLibraries: mods/OSVVM/OsvvmLibraries
+    OSVVM/OSVVM-Scripts: mods/OSVVM/OsvvmLibraries/Scripts
+    OSVVM/UART: mods/OSVVM/OsvvmLibraries/UART
+    OSVVM/OSVVM: mods/OSVVM/OsvvmLibraries/OSVVM
+    OSVVM/Documentation: mods/OSVVM/OsvvmLibraries/Documentation
+    OSVVM/OSVVM-Common: mods/OSVVM/OsvvmLibraries/Common
+    OSVVM/AXI4: mods/OSVVM/OsvvmLibraries/AXI4
+    svunit/svunit: mods/svunit
+    uvvm/uvvm: mods/UVVM
 
 osvb-noroot:
   title: Open Source Verification Bundle (OSVB)
   args:
     - --hide-root
   tree:
-    OSVB: umarcor/osvb
-    VUnit: VUnit/vunit
-    cocotb: cocotb/cocotb
-    OsvvmLibraries: OSVVM/OsvvmLibraries
-    OsvvmLibraries/Scripts: OSVVM/OSVVM-Scripts
-    OsvvmLibraries/UART: OSVVM/UART
-    OsvvmLibraries/OSVVM: OSVVM/OSVVM
-    OsvvmLibraries/Documentation: OSVVM/Documentation
-    OsvvmLibraries/Common: OSVVM/OSVVM-Common
-    OsvvmLibraries/AXI4: OSVVM/AXI4
-    svunit: svunit/svunit
-    UVVM: uvvm/uvvm
+    umarcor/osvb: OSVB
+    VUnit/vunit: VUnit
+    cocotb/cocotb: cocotb
+    OSVVM/OsvvmLibraries: OsvvmLibraries
+    OSVVM/OSVVM-Scripts: OsvvmLibraries/Scripts
+    OSVVM/UART: OsvvmLibraries/UART
+    OSVVM/OSVVM: OsvvmLibraries/OSVVM
+    OSVVM/Documentation: OsvvmLibraries/Documentation
+    OSVVM/OSVVM-Common: OsvvmLibraries/Common
+    OSVVM/AXI4: OsvvmLibraries/AXI4
+    svunit/svunit: svunit
+    uvvm/uvvm: UVVM
 
 vunit:
   title: VUnit
   tree:
-    '': VUnit/vunit
+    VUnit/vunit: ~
 
 hdlc:
   title: HDL Containers
   tree:
-    '': hdl/containers
+    hdl/containers: ~
 
 neorv32:
   title: NEORV32
   tree:
-    '': stnolting/neorv32
+    stnolting/neorv32: ~
 
 cocotb:
   title: CoCoTb
   tree:
-    '': cocotb/cocotb
+    cocotb/cocotb: ~
 
 openFPGALoader:
   title: openFPGALoader
   tree:
-    '': trabucayre/openFPGALoader
+    trabucayre/openFPGALoader:
 
 spf13:
   title: Cobra, Viper and pflag
   args:
     - --hide-root
   tree:
-    cobra: spf13/cobra
-    viper: spf13/viper
-    pflag: spf13/pflag
+    spf13/cobra: cobra
+    spf13/viper: viper
+    spf13/pflag: pflag
