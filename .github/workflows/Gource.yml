@@ -94,7 +94,7 @@ jobs:
             for repo in job['tree'].keys()
         ])):
             idx = f"{repo.replace('/','--')}"
-            check_call(['git', 'clone', f'https://github.com/{repo}', idx])
+            check_call(['git', 'clone', f'https://{repo}', idx])
             with (Path(idx) / '.mailmap').open('w') as fptr:
                 fptr.write('''${{ needs.Params.outputs.mailmap }}'''.replace(',','\n'))
             authors = LogDir / f'{idx}.authors'

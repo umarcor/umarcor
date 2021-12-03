@@ -2,26 +2,26 @@ EDAA:
   title: Electronic Design Automation Abstraction (EDAA)
   tree:
     <<: &EDAA-repos
-      edaa-org/edaa-org.github.io: ~
-      edaa-org/pyEDAA.ProjectModel: pyEDAA.ProjectModel
-      edaa-org/pySVModel: pySVModel
-      edaa-org/pyEDAA.IPXACT: pyEDAA.IPXACT
-      edaa-org/pyEDAA.Reports: pyEDAA.Reports
-      VHDL/pyVHDLModel: pyVHDLModel
+      github.com/edaa-org/edaa-org.github.io: ~
+      github.com/edaa-org/pyEDAA.ProjectModel: pyEDAA.ProjectModel
+      github.com/edaa-org/pySVModel: pySVModel
+      github.com/edaa-org/pyEDAA.IPXACT: pyEDAA.IPXACT
+      github.com/edaa-org/pyEDAA.Reports: pyEDAA.Reports
+      github.com/VHDL/pyVHDLModel: pyVHDLModel
 
 EDAA-all:
   title: Electronic Design Automation Abstraction (EDAA) | Workflows
   tree:
     <<: *EDAA-repos
-    cocotb/cocotb: Workflows/CoCoTb
-    olofk/fusesoc: Workflows/LibreCores/FuseSoC
-    olofk/edalize: Workflows/LibreCores/Edalize
-    PyFPGA/pyfpga: Workflows/PyFPGA
-    Paebbels/pyIPCMI: Workflows/pyIPCMI
-    #: Workflows/tsfpga
-    VUnit/vunit: Workflows/VUnit
-    XedaHQ/xeda: Workflows/Xeda
-    OSVVM/OSVVM-Scripts: Workflows/OSVVM-Scripts
+    github.com/cocotb/cocotb: Workflows/CoCoTb
+    github.com/olofk/fusesoc: Workflows/LibreCores/FuseSoC
+    github.com/olofk/edalize: Workflows/LibreCores/Edalize
+    github.com/PyFPGA/pyfpga: Workflows/PyFPGA
+    github.com/Paebbels/pyIPCMI: Workflows/pyIPCMI
+    gitlab.com/tsfpga/tsfpga: Workflows/tsfpga
+    github.com/VUnit/vunit: Workflows/VUnit
+    github.com/XedaHQ/xeda: Workflows/Xeda
+    github.com/OSVVM/OSVVM-Scripts: Workflows/OSVVM-Scripts
 
 ghdl:
   title: github.com/ghdl
@@ -29,89 +29,89 @@ ghdl:
     - --file-filter
     - ghdl/testsuite/vests
   tree:
-    ghdl/ghdl: ghdl
-    ghdl/ghdl-yosys-plugin: ghdl-yosys-plugin
-    ghdl/ghdl-language-server: ghdl-language-server
-    ghdl/ghdl-cosim: ghdl-cosim
-    ghdl/docker: docker
-    ghdl/extended-tests: extended-tests
-    ghdl/setup-ghdl-ci: setup-ghdl-ci
+    github.com/ghdl/ghdl: ghdl
+    github.com/ghdl/ghdl-yosys-plugin: ghdl-yosys-plugin
+    github.com/ghdl/ghdl-language-server: ghdl-language-server
+    github.com/ghdl/ghdl-cosim: ghdl-cosim
+    github.com/ghdl/docker: docker
+    github.com/ghdl/extended-tests: extended-tests
+    github.com/ghdl/setup-ghdl-ci: setup-ghdl-ci
 
 osvvm:
   title: github.com/OSVVM
   tree:
-    OSVVM/OsvvmLibraries: ~
-    OSVVM/OSVVM-Scripts: Scripts
-    OSVVM/UART: UART
-    OSVVM/OSVVM: OSVVM
-    OSVVM/Documentation: Documentation
-    OSVVM/OSVVM-Common: Common
-    OSVVM/AXI4: AXI4
+    github.com/OSVVM/OsvvmLibraries: ~
+    github.com/OSVVM/OSVVM-Scripts: Scripts
+    github.com/OSVVM/UART: UART
+    github.com/OSVVM/OSVVM: OSVVM
+    github.com/OSVVM/Documentation: Documentation
+    github.com/OSVVM/OSVVM-Common: Common
+    github.com/OSVVM/AXI4: AXI4
 
 osvb:
   title: Open Source Verification Bundle (OSVB)
   tree:
-    umarcor/osvb: ~
-    VUnit/vunit: mods/VUnit
-    cocotb/cocotb: mods/cocotb
-    OSVVM/OsvvmLibraries: mods/OSVVM/OsvvmLibraries
-    OSVVM/OSVVM-Scripts: mods/OSVVM/OsvvmLibraries/Scripts
-    OSVVM/UART: mods/OSVVM/OsvvmLibraries/UART
-    OSVVM/OSVVM: mods/OSVVM/OsvvmLibraries/OSVVM
-    OSVVM/Documentation: mods/OSVVM/OsvvmLibraries/Documentation
-    OSVVM/OSVVM-Common: mods/OSVVM/OsvvmLibraries/Common
-    OSVVM/AXI4: mods/OSVVM/OsvvmLibraries/AXI4
-    svunit/svunit: mods/svunit
-    uvvm/uvvm: mods/UVVM
+    github.com/umarcor/osvb: ~
+    github.com/VUnit/vunit: mods/VUnit
+    github.com/cocotb/cocotb: mods/cocotb
+    github.com/OSVVM/OsvvmLibraries: mods/OSVVM/OsvvmLibraries
+    github.com/OSVVM/OSVVM-Scripts: mods/OSVVM/OsvvmLibraries/Scripts
+    github.com/OSVVM/UART: mods/OSVVM/OsvvmLibraries/UART
+    github.com/OSVVM/OSVVM: mods/OSVVM/OsvvmLibraries/OSVVM
+    github.com/OSVVM/Documentation: mods/OSVVM/OsvvmLibraries/Documentation
+    github.com/OSVVM/OSVVM-Common: mods/OSVVM/OsvvmLibraries/Common
+    github.com/OSVVM/AXI4: mods/OSVVM/OsvvmLibraries/AXI4
+    github.com/svunit/svunit: mods/svunit
+    github.com/uvvm/uvvm: mods/UVVM
 
 osvb-noroot:
   title: Open Source Verification Bundle (OSVB)
   args:
     - --hide-root
   tree:
-    umarcor/osvb: OSVB
-    VUnit/vunit: VUnit
-    cocotb/cocotb: cocotb
-    OSVVM/OsvvmLibraries: OsvvmLibraries
-    OSVVM/OSVVM-Scripts: OsvvmLibraries/Scripts
-    OSVVM/UART: OsvvmLibraries/UART
-    OSVVM/OSVVM: OsvvmLibraries/OSVVM
-    OSVVM/Documentation: OsvvmLibraries/Documentation
-    OSVVM/OSVVM-Common: OsvvmLibraries/Common
-    OSVVM/AXI4: OsvvmLibraries/AXI4
-    svunit/svunit: svunit
-    uvvm/uvvm: UVVM
+    github.com/umarcor/osvb: OSVB
+    github.com/VUnit/vunit: VUnit
+    github.com/cocotb/cocotb: cocotb
+    github.com/OSVVM/OsvvmLibraries: OsvvmLibraries
+    github.com/OSVVM/OSVVM-Scripts: OsvvmLibraries/Scripts
+    github.com/OSVVM/UART: OsvvmLibraries/UART
+    github.com/OSVVM/OSVVM: OsvvmLibraries/OSVVM
+    github.com/OSVVM/Documentation: OsvvmLibraries/Documentation
+    github.com/OSVVM/OSVVM-Common: OsvvmLibraries/Common
+    github.com/OSVVM/AXI4: OsvvmLibraries/AXI4
+    github.com/svunit/svunit: svunit
+    github.com/uvvm/uvvm: UVVM
 
 vunit:
   title: VUnit
   tree:
-    VUnit/vunit: ~
+    github.com/VUnit/vunit: ~
 
 hdlc:
   title: HDL Containers
   tree:
-    hdl/containers: ~
+    github.com/hdl/containers: ~
 
 neorv32:
   title: NEORV32
   tree:
-    stnolting/neorv32: ~
+    github.com/stnolting/neorv32: ~
 
 cocotb:
   title: CoCoTb
   tree:
-    cocotb/cocotb: ~
+    github.com/cocotb/cocotb: ~
 
 openFPGALoader:
   title: openFPGALoader
   tree:
-    trabucayre/openFPGALoader:
+    github.com/trabucayre/openFPGALoader:
 
 spf13:
   title: Cobra, Viper and pflag
   args:
     - --hide-root
   tree:
-    spf13/cobra: cobra
-    spf13/viper: viper
-    spf13/pflag: pflag
+    github.com/spf13/cobra: cobra
+    github.com/spf13/viper: viper
+    github.com/spf13/pflag: pflag
