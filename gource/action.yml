@@ -39,7 +39,15 @@ runs:
             check_call(['cp', str(LogDir / logFile), str(CombinedDir / logFile)])
             check_call(['sed', '-i', '-r', f's#(.+)\|#\\1|/{key}#', str(CombinedDir / logFile)])
 
-        check_call(f'cat {CombinedDir!s}/*.log | sort -n > {CombinedDir.parent!s}/combined.log', shell=True)
+        CombinedLog = CombinedDir.parent / 'combined.log'
+
+        check_call(f'cat {CombinedDir!s}/*.log | sort -n > {CombinedLog!s}', shell=True)
+
+        with CombinedLog.open('r') as fptr:
+            clog = fptr.read().splitlines()
+        with CombinedLog.open('w') as fptr:
+            fptr.write(f'{clog[0].split("|")[0]}|Gource|A|/.root\n')
+            fptr.write("\n".join(clog))
 
         check_call([
           "docker",

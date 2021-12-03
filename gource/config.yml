@@ -2,26 +2,26 @@ EDAA:
   title: Electronic Design Automation Abstraction (EDAA)
   tree:
     <<: &EDAA-repos
-      EDAA: edaa-org/edaa-org.github.io
-      EDAA/pyEDAA.ProjectModel: edaa-org/pyEDAA.ProjectModel
-      EDAA/pySVModel: edaa-org/pySVModel
-      EDAA/pyEDAA.IPXACT: edaa-org/pyEDAA.IPXACT
-      EDAA/pyEDAA.Reports: edaa-org/pyEDAA.Reports
-      EDAA/pyVHDLModel: VHDL/pyVHDLModel
+      '': edaa-org/edaa-org.github.io
+      pyEDAA.ProjectModel: edaa-org/pyEDAA.ProjectModel
+      pySVModel: edaa-org/pySVModel
+      pyEDAA.IPXACT: edaa-org/pyEDAA.IPXACT
+      pyEDAA.Reports: edaa-org/pyEDAA.Reports
+      pyVHDLModel: VHDL/pyVHDLModel
 
 EDAA-all:
   title: Electronic Design Automation Abstraction (EDAA) | Workflows
   tree:
     <<: *EDAA-repos
-    EDAA/Workflows/CoCoTb: cocotb/cocotb
-    EDAA/Workflows/FuseSoC: olofk/fusesoc
-    EDAA/Workflows/Edalize: olofk/edalize
-    EDAA/Workflows/PyFPGA: PyFPGA/pyfpga
-    EDAA/Workflows/pyIPCMI: Paebbels/pyIPCMI
-    #EDAA/Workflows/tsfpga:
-    EDAA/Workflows/VUnit: VUnit/vunit
-    EDAA/Workflows/Xeda: XedaHQ/xeda
-    EDAA/Workflows/OSVVM-Scripts: OSVVM/OSVVM-Scripts
+    Workflows/CoCoTb: cocotb/cocotb
+    Workflows/LibreCores/FuseSoC: olofk/fusesoc
+    Workflows/LibreCores/Edalize: olofk/edalize
+    Workflows/PyFPGA: PyFPGA/pyfpga
+    Workflows/pyIPCMI: Paebbels/pyIPCMI
+    #Workflows/tsfpga:
+    Workflows/VUnit: VUnit/vunit
+    Workflows/Xeda: XedaHQ/xeda
+    Workflows/OSVVM-Scripts: OSVVM/OSVVM-Scripts
 
 ghdl:
   title: github.com/ghdl
@@ -40,40 +40,40 @@ ghdl:
 osvvm:
   title: github.com/OSVVM
   tree:
-    OsvvmLibraries: OSVVM/OsvvmLibraries
-    OsvvmLibraries/Scripts: OSVVM/OSVVM-Scripts
-    OsvvmLibraries/UART: OSVVM/UART
-    OsvvmLibraries/OSVVM: OSVVM/OSVVM
-    OsvvmLibraries/Documentation: OSVVM/Documentation
-    OsvvmLibraries/Common: OSVVM/OSVVM-Common
-    OsvvmLibraries/AXI4: OSVVM/AXI4
+    '': OSVVM/OsvvmLibraries
+    Scripts: OSVVM/OSVVM-Scripts
+    UART: OSVVM/UART
+    OSVVM: OSVVM/OSVVM
+    Documentation: OSVVM/Documentation
+    Common: OSVVM/OSVVM-Common
+    AXI4: OSVVM/AXI4
 
 vunit:
   title: VUnit
   tree:
-    VUnit: VUnit/vunit
+    '': VUnit/vunit
 
 hdlc:
   title: HDL Containers
   tree:
-    HDLC: hdl/containers
+    '': hdl/containers
 
 neorv32:
   title: NEORV32
   tree:
-    NEORV32: stnolting/neorv32
+    '': stnolting/neorv32
 
 cocotb:
   title: CoCoTb
   tree:
-    CoCoTb: cocotb/cocotb
+    '': cocotb/cocotb
 
 openFPGALoader:
   title: openFPGALoader
   tree:
-    openFPGALoader: trabucayre/openFPGALoader
+    '': trabucayre/openFPGALoader
 
 cobra:
   title: Cobra
   tree:
-    Cobra: spf13/cobra
+    '': spf13/cobra
