@@ -119,6 +119,10 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         path: artifact
+    - run: |
+        cd artifact
+        tar czvf logs.tar.gz logs
+        rm -rf logs
     - uses: eine/tip@master
       with:
         token: ${{ github.token }}
