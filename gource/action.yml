@@ -58,16 +58,20 @@ runs:
           "-w",
           "/wrk",
           "-e", f"GOURCE_TITLE={job['title']}",
+          "-e", f"GOURCE_NAME={job['name']}",
           "ghcr.io/umarcor/gource/xrun",
           "/xrun.sh",
         ] + (job['args'] if 'args' in job else []) + [
           "combined.log"
         ])
 
-        check_call(['mv', 'gource/gource.mp4', f'{job["name"]}.mp4'])
+        check_call(['mv', str(LogDir.parent / f'{job["name"]}.mp4'), './'])
+        check_call(['mv', str(LogDir.parent / f'{job["name"]}.jpg'), './'])
 
     - uses: actions/upload-artifact@v2
       with:
         name: ${{ fromJson(inputs.job).name }}
-        path: ${{ fromJson(inputs.job).name }}.mp4
+        path: |
+          ${{ fromJson(inputs.job).name }}.mp4
+          ${{ fromJson(inputs.job).name }}.jpg
         if-no-files-found: error
