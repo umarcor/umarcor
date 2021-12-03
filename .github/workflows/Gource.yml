@@ -38,16 +38,36 @@ jobs:
         LogDir = ROOT / 'logs'
         LogDir.mkdir(exist_ok=True)
 
+        enabled = [
+            'EDAA',
+            'EDAA-all',
+            'ghdl',
+            'osvvm',
+            'osvb',
+            'osvb-noroot',
+            'vunit',
+            'hdlc',
+            'neorv32',
+            'cocotb',
+            'openFPGALoader',
+            'spf13',
+        ]
+
         with (ROOT / 'config.yml').open('r') as fptr:
             cfg = yaml.load(fptr, Loader=yaml.FullLoader)
             for key in cfg:
                 cfg[key]['name'] = key
             print(f"::set-output name=cfg::{cfg!s}")
-            jobs = [{'name': key, 'title': job['title']} for key, job in cfg.items()]
+            jobs = [
+                {'name': key, 'title': job['title']}
+                for key, job in cfg.items()
+                if key in enabled
+            ]
             print(f"::set-output name=jobs::{jobs!s}")
 
         with (ROOT / '.mailmap').open('r') as fptr:
             print(f"::set-output name=mailmap::{','.join(fptr.read().splitlines())!s}")
+
 
   GetLogs:
     needs: Params

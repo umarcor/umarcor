@@ -48,6 +48,40 @@ osvvm:
     Common: OSVVM/OSVVM-Common
     AXI4: OSVVM/AXI4
 
+osvb:
+  title: Open Source Verification Bundle (OSVB)
+  tree:
+    '': umarcor/osvb
+    mods/VUnit: VUnit/vunit
+    mods/cocotb: cocotb/cocotb
+    mods/OSVVM/OsvvmLibraries: OSVVM/OsvvmLibraries
+    mods/OSVVM/OsvvmLibraries/Scripts: OSVVM/OSVVM-Scripts
+    mods/OSVVM/OsvvmLibraries/UART: OSVVM/UART
+    mods/OSVVM/OsvvmLibraries/OSVVM: OSVVM/OSVVM
+    mods/OSVVM/OsvvmLibraries/Documentation: OSVVM/Documentation
+    mods/OSVVM/OsvvmLibraries/Common: OSVVM/OSVVM-Common
+    mods/OSVVM/OsvvmLibraries/AXI4: OSVVM/AXI4
+    mods/svunit: svunit/svunit
+    mods/UVVM: uvvm/uvvm
+
+osvb-noroot:
+  title: Open Source Verification Bundle (OSVB)
+  args:
+    - --hide-root
+  tree:
+    OSVB: umarcor/osvb
+    VUnit: VUnit/vunit
+    cocotb: cocotb/cocotb
+    OsvvmLibraries: OSVVM/OsvvmLibraries
+    OsvvmLibraries/Scripts: OSVVM/OSVVM-Scripts
+    OsvvmLibraries/UART: OSVVM/UART
+    OsvvmLibraries/OSVVM: OSVVM/OSVVM
+    OsvvmLibraries/Documentation: OSVVM/Documentation
+    OsvvmLibraries/Common: OSVVM/OSVVM-Common
+    OsvvmLibraries/AXI4: OSVVM/AXI4
+    svunit: svunit/svunit
+    UVVM: uvvm/uvvm
+
 vunit:
   title: VUnit
   tree:
@@ -73,7 +107,11 @@ openFPGALoader:
   tree:
     '': trabucayre/openFPGALoader
 
-cobra:
-  title: Cobra
+spf13:
+  title: Cobra, Viper and pflag
+  args:
+    - --hide-root
   tree:
-    '': spf13/cobra
+    cobra: spf13/cobra
+    viper: spf13/viper
+    pflag: spf13/pflag
