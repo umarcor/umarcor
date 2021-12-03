@@ -40,6 +40,8 @@ jobs:
 
         with (ROOT / 'config.yml').open('r') as fptr:
             cfg = yaml.load(fptr, Loader=yaml.FullLoader)
+            for key in cfg:
+                cfg[key]['name'] = key
             print(f"::set-output name=cfg::{cfg!s}")
             jobs = [{'name': key, 'title': job['title']} for key, job in cfg.items()]
             print(f"::set-output name=jobs::{jobs!s}")
@@ -100,9 +102,7 @@ jobs:
       shell: python
       id: job
       run: |
-        name = '${{ matrix.name }}'
-        job = ${{ needs.Params.outputs.cfg }}[name]
-        job['name'] = name
+        job = ${{ needs.Params.outputs.cfg }}['${{ matrix.name }}']
         print(f"::set-output name=job::{job!s}")
 
     - name: Combine logs and generate video
