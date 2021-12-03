@@ -23,6 +23,21 @@ EDAA-all:
     github.com/XedaHQ/xeda: Workflows/Xeda
     github.com/OSVVM/OSVVM-Scripts: Workflows/OSVVM-Scripts
 
+pyTooling:
+  title: pyTooling
+  tree:
+    github.com/pyTooling/Actions: Actions
+    github.com/pyTooling/pyTooling.CLIAbstraction: pyTooling/CLIAbstraction
+    github.com/pyTooling/pyAttributes: pyAttributes
+    github.com/pyTooling/pyTooling: pyTooling
+    github.com/pyTooling/pyTooling.TerminalUI: pyTooling/TerminalUI
+    github.com/pyTooling/pyTooling.Packaging: pyTooling/Packaging
+    github.com/pyTooling/pyTooling.GenericPath: pyTooling/GenericPath
+    github.com/pyTooling/pyTooling.CommonClasses: pyTooling/CommonClasses
+    github.com/pyTooling/pyTooling.MetaClasses: pyTooling/MetaClasses
+    github.com/pyTooling/pyTooling.Exceptions: pyTooling/Exceptions
+    github.com/pyTooling/pyTooling.CallBy: pyTooling/CallBy
+
 ghdl:
   title: github.com/ghdl
   args:
@@ -82,22 +97,55 @@ osvb-noroot:
     github.com/svunit/svunit: svunit
     github.com/uvvm/uvvm: UVVM
 
-vunit:
+HDL:
+  title: github.com/hdl
+  tree:
+    github.com/hdl/awesome: awesome
+    github.com/hdl/constraints: constraints
+    github.com/hdl/smoke-tests: smoke-tests
+    github.com/hdl/packages: packages
+    github.com/hdl/containers: packages/containers
+    github.com/dbhi/qus: packages/containers/qus
+    github.com/hdl/MINGW-packages: packages/MINGW
+    github.com/hdl/Termux-packages: packages/Termux
+    github.com/hdl/bazel_rules_hdl: packages/bazel_rules_hdl
+    github.com/hdl/conda-eda: packages/conda/eda
+    github.com/hdl/conda-misc: packages/conda/misc
+    github.com/hdl/conda-compilers: packages/conda/compilers
+    github.com/hdl/conda-ci: packages/conda/ci
+    github.com/hdl/conda-prog: packages/conda/prog
+    github.com/hdl/symbolator: symbolator/symbolator
+    github.com/hdl/pyHDLParser: symbolator/pyHDLParser
+
+DBHI:
+  title: Dynamic Binary Hardware Injection (DBHI)
+  tree:
+    github.com/dbhi/dbhi: dbhi
+    github.com/dbhi/vsc-hdl: vsc-hdl
+    github.com/dbhi/vboard: vboard
+    github.com/dbhi/docascode: docascode
+    github.com/dbhi/qus: qus
+    github.com/dbhi/containers: containers
+    github.com/dbhi/run: run
+    github.com/dbhi/binhook: binhook
+    github.com/dbhi/gRPC: gRPC
+
+VUnit:
   title: VUnit
   tree:
     github.com/VUnit/vunit: ~
 
-hdlc:
+HDLC:
   title: HDL Containers
   tree:
     github.com/hdl/containers: ~
 
-neorv32:
+NEORV32:
   title: NEORV32
   tree:
     github.com/stnolting/neorv32: ~
 
-cocotb:
+CoCoTb:
   title: CoCoTb
   tree:
     github.com/cocotb/cocotb: ~
@@ -115,3 +163,252 @@ spf13:
     github.com/spf13/cobra: cobra
     github.com/spf13/viper: viper
     github.com/spf13/pflag: pflag
+
+MSYS2:
+  title: MSYS2
+  tree:
+    <<: &MSYS-repos
+      github.com/MSYS2/MINGW-packages: MINGW-packages
+      github.com/MSYS2/setup-msys2: setup-msys2
+      github.com/MSYS2/MSYS2-packages: MSYS2-packages
+      github.com/MSYS2/msys2.github.io: msys2.github.io
+      github.com/MSYS2/msys2-installer: msys2-installer
+      github.com/MSYS2/msys2-devtools: msys2-devtools
+      github.com/MSYS2/msys2-launcher: msys2-launcher
+      github.com/MSYS2/msys2-main-server: msys2-main-server
+      github.com/MSYS2/msys2-web: msys2-web
+      github.com/MSYS2/msys2-autobuild: msys2-autobuild
+      github.com/MSYS2/msys2-texlive: msys2-texlive
+      github.com/MSYS2/pactoys: pactoys
+      github.com/MSYS2/MSYS2-keyring: MSYS2-keyring
+
+MSYS2-all:
+  title: MSYS2, Cygwin and pacman
+  tree:
+    <<: *MSYS-repos
+    github.com/MSYS2/msys2-runtime: msys2-runtime
+    github.com/MSYS2/msys2-pacman: msys2-pacman
+
+SymbiFlow:
+  title: SymbiFlow
+  tree:
+    github.com/SymbiFlow/yosys-symbiflow-plugins: yosys-symbiflow-plugins
+    github.com/SymbiFlow/prjuray-db: prjuray-db
+    github.com/SymbiFlow/fpga-interchange-tests: fpga-interchange-tests
+    github.com/SymbiFlow/fpga-tool-perf: fpga-tool-perf
+    github.com/SymbiFlow/symbiflow-arch-defs: symbiflow-arch-defs
+    github.com/SymbiFlow/symbiflow-examples: symbiflow-examples
+    github.com/SymbiFlow/prjxray: prjxray
+    github.com/SymbiFlow/actions: actions
+    github.com/SymbiFlow/sphinxcontrib-session: sphinxcontrib-session
+    github.com/SymbiFlow/symbiflow-website: symbiflow-website
+    github.com/SymbiFlow/sphinxcontrib-hdl-diagrams: sphinxcontrib-hdl-diagrams
+    github.com/SymbiFlow/symbiflow-xc-fasm2bels: symbiflow-xc-fasm2bels
+    github.com/SymbiFlow/fasm: fasm
+    github.com/SymbiFlow/fpga-tool-perf-results: fpga-tool-perf-results
+    github.com/SymbiFlow/symbiflow-xc-fasm: symbiflow-xc-fasm
+    github.com/SymbiFlow/prjuray: prjuray
+    github.com/SymbiFlow/ibex-yosys-build: ibex-yosys-build
+    github.com/SymbiFlow/python-sdf-timing: python-sdf-timing
+    github.com/SymbiFlow/symbiflow-common-config: symbiflow-common-config
+    github.com/SymbiFlow/vtr-xml-utils: vtr-xml-utils
+    github.com/SymbiFlow/prjxray-bram-patch: prjxray-bram-patch
+    github.com/SymbiFlow/python-symbiflow-v2x: python-symbiflow-v2x
+    github.com/SymbiFlow/prjxray-db: prjxray-db
+    github.com/SymbiFlow/symbiflow-docs: symbiflow-docs
+    github.com/SymbiFlow/sv-tests: sv-tests
+    github.com/SymbiFlow/sv-tests-results: sv-tests-results
+    github.com/SymbiFlow/symbiflow-rr-graph: symbiflow-rr-graph
+    github.com/SymbiFlow/sphinxcontrib-markdown-symlinks: sphinxcontrib-markdown-symlinks
+    github.com/SymbiFlow/utd-sv: utd-sv
+    github.com/SymbiFlow/axi-vip: axi-vip
+    github.com/SymbiFlow/symbiflow-xc7z-automatic-tester: symbiflow-xc7z-automatic-tester
+    github.com/SymbiFlow/symbiflow-bitstream-viewer: symbiflow-bitstream-viewer
+    github.com/SymbiFlow/make-env: make-env
+    github.com/SymbiFlow/sphinx-verilog-domain: sphinx-verilog-domain
+    github.com/SymbiFlow/symbiflow-arch-pkgs: symbiflow-arch-pkgs
+    github.com/SymbiFlow/uxsdcxx: uxsdcxx
+    github.com/SymbiFlow/symbiflow-tools-data-manager: symbiflow-tools-data-manager
+    github.com/SymbiFlow/prjuray-tools: prjuray-tools
+    github.com/SymbiFlow/symbiflow-robot: symbiflow-robot
+    github.com/SymbiFlow/uvm: uvm
+    github.com/SymbiFlow/rr_graph_lib: rr_graph_lib
+    github.com/SymbiFlow/vtr-rrgraph-reordering-tool: vtr-rrgraph-reordering-tool
+    github.com/SymbiFlow/prjxray-dev-env: prjxray-dev-env
+    github.com/SymbiFlow/ideas: ideas
+    github.com/SymbiFlow/scratchpad: scratchpad
+    github.com/SymbiFlow/prjxray-experiments-archive-2017: prjxray-experiments-archive-2017
+
+CHIPSAlliance:
+  title: CHIPS Alliance
+  tree:
+    github.com/chipsalliance/AIB-specification: AIB/specification
+    github.com/chipsalliance/aib-protocols: AIB/protocols
+    github.com/chipsalliance/aib-phy-hardware: AIB/PHY/hardware
+    github.com/chipsalliance/aib-phy-generator: AIB/PHY/generator
+    github.com/chipsalliance/Cores-SweRVolf: Cores/SweRVolf
+    github.com/chipsalliance/Cores-SweRV: Cores/SweRV
+    github.com/chipsalliance/Cores-SweRV-EL2: Cores/SweRV-EL2
+    github.com/chipsalliance/Cores-SweRV-EH2: Cores/SweRV-EH2
+    github.com/chipsalliance/fpga-interchange-schema: interchange/fpga-interchange-schema
+    github.com/chipsalliance/python-fpga-interchange: interchange/python-fpga-interchange
+    github.com/chipsalliance/chisel3: Chisel/chisel3
+    github.com/chipsalliance/firrtl: Chisel/firrtl
+    github.com/chipsalliance/tree-sitter-firrtl: Chisel/tree-sitter-firrtl
+    github.com/chipsalliance/rocket-chip: Chisel/rocket-chip
+    github.com/chipsalliance/Surelog: SystemVerilog/Surelog
+    github.com/chipsalliance/UHDM: SystemVerilog/UHDM
+    github.com/chipsalliance/UHDM-integration-tests: SystemVerilog/UHDM-integration-tests
+    github.com/chipsalliance/verible: SystemVerilog/verible
+    github.com/chipsalliance/verible-formatter-action: SystemVerilog/verible-formatter-action
+    github.com/chipsalliance/verible-linter-action: SystemVerilog/verible-linter-action
+    github.com/chipsalliance/homebrew-verible: SystemVerilog/homebrew-verible
+    github.com/chipsalliance/sv-tests: SystemVerilog/sv-tests
+    github.com/chipsalliance/tsc: tsc
+    github.com/chipsalliance/SweRV-ISS: SweRV-ISS
+    github.com/chipsalliance/diplomacy: diplomacy
+    github.com/chipsalliance/treadle: treadle
+    github.com/chipsalliance/riscv-fw-infrastructure: riscv-fw-infrastructure
+    github.com/chipsalliance/espresso: espresso
+    github.com/chipsalliance/dromajo: dromajo
+    github.com/chipsalliance/api-config-chipsalliance: api-config-chipsalliance
+    github.com/chipsalliance/wg-analog: wg-analog
+    github.com/chipsalliance/Cores-SweRV-Support-Package: Cores-SweRV-Support-Package
+    github.com/chipsalliance/foundation: foundation
+    github.com/chipsalliance/artwork: artwork
+    github.com/chipsalliance/omnixtend: omnixtend
+    github.com/chipsalliance/rocket-tools: rocket-tools
+    github.com/chipsalliance/tilelink: tilelink
+    github.com/chipsalliance/Cores-SweRV_fpga: Cores-SweRV_fpga
+    github.com/chipsalliance/dromajo-test: dromajo-test
+    github.com/chipsalliance/tools-cocotb-verilator-build: tools-cocotb-verilator-build
+
+VTR:
+  title: Verilog to Routing
+  tree:
+    github.com/verilog-to-routing/vtr-verilog-to-routing: ~
+
+YosysHQ:
+  title: Yosys HQ
+  tree:
+    github.com/YosysHQ/arachne-pnr: arachne-pnr
+    github.com/YosysHQ/yosys: yosys
+    github.com/YosysHQ/yosys-tests: yosys-tests
+    github.com/YosysHQ/pyosys-tests: pyosys-tests
+    github.com/YosysHQ/Sublime-Yosys: Sublime-Yosys
+    github.com/YosysHQ/yosys-bench: yosys-bench
+    github.com/YosysHQ/yosys-plugins: yosys-plugins
+    github.com/YosysHQ/yosys-bigsim: yosys-bigsim
+    github.com/YosysHQ/yosys-oldtests: yosys-oldtests
+    github.com/YosysHQ/nextpnr: nextpnr
+    github.com/YosysHQ/nextpnr-tests: nextpnr-tests
+    github.com/YosysHQ/nextpnr-chipdb: nextpnr-chipdb
+    github.com/YosysHQ/nextpnr-bench: nextpnr-bench
+    github.com/YosysHQ/apicula: apicula
+    github.com/YosysHQ/mcy: mcy
+    github.com/YosysHQ/SymbiYosys: SymbiYosys
+    github.com/YosysHQ/sby-gui: sby-gui
+    github.com/YosysHQ/icestorm: icestorm
+    github.com/YosysHQ/prjtrellis: prjtrellis
+    github.com/YosysHQ/prjtrellis-db: prjtrellis-db
+    github.com/YosysHQ/VlogHammer: VlogHammer
+    github.com/YosysHQ/yosys-manual-build: yosys-manual-build
+    github.com/YosysHQ/oss-cad-suite-build: oss-cad-suite-build
+    github.com/YosysHQ/setup-oss-cad-suite: setup-oss-cad-suite
+    github.com/YosysHQ/fpga-toolchain: fpga-toolchain
+    github.com/YosysHQ/picorv32: picorv32
+    github.com/YosysHQ/riscv-formal: riscv-formal
+
+LibreCores:
+  title: LibreCores
+  tree:
+    github.com/librecores/librecores-web: librecores-web
+    github.com/librecores/librecores-ci-jenkins-server: librecores-ci-jenkins-server
+    github.com/librecores/eda-container-wrapper: eda-container-wrapper
+    github.com/librecores/ci-fusesoc-action: ci-fusesoc-action
+    github.com/librecores/ci-docker-image: ci-docker-image
+    github.com/librecores/docker-images: docker-images
+    github.com/librecores/eda-log-parser: eda-log-parser
+    github.com/librecores/ci-action: ci-action
+    github.com/librecores/librecores-pipeline-lib: librecores-pipeline-lib
+    github.com/librecores/ci.librecores.org: ci.librecores.org
+    github.com/librecores/docker-tools: docker-tools
+    github.com/librecores/lcci-python: lcci-python
+    github.com/librecores/gsoc-museum-edsac: gsoc-museum-edsac
+    github.com/librecores/librecores-backend: librecores-backend
+
+FPGAwars:
+  title: FPGAwars
+  tree:
+    github.com/FPGAwars/icestudio: Icestudio/icestudio-wip
+    github.com/juanmard/icestudio: Icestudio/icestudio-nightly
+    github.com/FPGAwars/apio: apio
+    github.com/FPGAwars/icm: icm
+    github.com/FPGAwars/icerok-server-python: icerok-server-python
+    github.com/FPGAwars/Icestudio-cli: Icestudio-cli
+    github.com/FPGAwars/icestudio-block-icons: icestudio-block-icons
+    github.com/FPGAwars/apio-ide: apio-ide
+    github.com/FPGAwars/alhambra-led: alhambra-led
+    github.com/FPGAwars/Alhambra-II-FPGA: Boards/Alhambra-II-FPGA
+    github.com/FPGAwars/icezum: Boards/icezum
+    github.com/FPGAwars/Icezum-Alhambra-3D-support: Boards/Icezum-Alhambra-3D-support
+    github.com/FPGAwars/Tutorial-verilog-openfpga-icezum: Docs/Tutorial-verilog-openfpga-icezum
+    github.com/FPGAwars/icestudio-wiki: Docs/icestudio-wiki
+    github.com/FPGAwars/Apio-wiki: Docs/Apio-wiki
+    github.com/FPGAwars/apio-examples: Docs/apio-examples
+    github.com/FPGAwars/icestudio-examples: Docs/icestudio-examples
+    github.com/FPGAwars/workshops: Docs/workshops
+    github.com/FPGAwars/icestudio-docs: Docs/icestudio-docs
+    github.com/FPGAwars/InBit: Docs/InBit
+    github.com/FPGAwars/iceLedoscope: Collections/iceLedoscope
+    github.com/FPGAwars/iceSignals: Collections/iceSignals
+    github.com/FPGAwars/iceRegs: Collections/iceRegs
+    github.com/FPGAwars/iceCounter: Collections/iceCounter
+    github.com/FPGAwars/iceFF: Collections/iceFF
+    github.com/FPGAwars/iceGates: Collections/iceGates
+    github.com/FPGAwars/iceWires: Collections/iceWires
+    github.com/FPGAwars/iceK: Collections/iceK
+    github.com/FPGAwars/iceLeds: Collections/iceLeds
+    github.com/FPGAwars/iceComp: Collections/iceComp
+    github.com/FPGAwars/iceHeart: Collections/iceHeart
+    github.com/FPGAwars/iceInputs: Collections/iceInputs
+    github.com/FPGAwars/iceMux: Collections/iceMux
+    github.com/FPGAwars/Collection-Jedi: Collections/Collection-Jedi
+    github.com/FPGAwars/iceArith: Collections/iceArith
+    github.com/FPGAwars/Icestudio-ArithmeticBlocks: Collections/Icestudio-ArithmeticBlocks
+    github.com/FPGAwars/iceRok: Collections/iceRok
+    github.com/FPGAwars/iceMachines: Collections/iceMachines
+    github.com/FPGAwars/icerok-display: Collections/icerok-display
+    github.com/FPGAwars/iceSerial: Collections/iceSerial
+    github.com/FPGAwars/LOVE-FPGA: Collections/LOVE-FPGA
+    github.com/FPGAwars/icestudio-blocks: Collections/icestudio-blocks
+    github.com/FPGAwars/iceGates-TB: Collections/iceGates-TB
+    github.com/FPGAwars/iceFF-TB: Collections/iceFF-TB
+    github.com/FPGAwars/Collection-stdio: Collections/Collection-stdio
+    github.com/FPGAwars/iceMem: Collections/iceMem
+    github.com/FPGAwars/iceMeasure: Collections/iceMeasure
+    github.com/FPGAwars/LOVE-FPGA-Collection: Collections/LOVE-FPGA-Collection
+    github.com/FPGAwars/iceSynth-collection: Collections/iceSynth-collection
+    github.com/FPGAwars/Collection-Jedi-Test: Collections/Collection-Jedi-Test
+    github.com/FPGAwars/collection-default: Collections/collection-default
+    github.com/FPGAwars/collection-generic: Collections/collection-generic
+    github.com/FPGAwars/icestudio-collections: Collections/icestudio-collections
+    github.com/FPGAwars/collection-logic: Collections/collection-logic
+    github.com/FPGAwars/FPGA-peripherals: Collections/FPGA-peripherals
+    github.com/FPGAwars/icebreaker-collection: Collections/icebreaker-collection
+    github.com/FPGAwars/tools-oss-cad-suite: Tools/tools-oss-cad-suite
+    github.com/FPGAwars/toolchain-ecp5: Tools/toolchain-ecp5
+    github.com/FPGAwars/tools-system: Tools/tools-system
+    github.com/FPGAwars/toolchain-icestorm: Tools/toolchain-icestorm
+    github.com/FPGAwars/toolchain-black-iceprog: Tools/toolchain-black-iceprog
+    github.com/FPGAwars/toolchain-icesprog: Tools/toolchain-icesprog
+    github.com/FPGAwars/toolchain-dfu: Tools/toolchain-dfu
+    github.com/FPGAwars/toolchain-fujprog: Tools/toolchain-fujprog
+    github.com/FPGAwars/toolchain-ice40: Tools/toolchain-ice40
+    github.com/FPGAwars/toolchain-yosys: Tools/toolchain-yosys
+    github.com/FPGAwars/toolchain-iverilog: Tools/toolchain-iverilog
+    github.com/FPGAwars/toolchain-verilator: Tools/toolchain-verilator
+    github.com/FPGAwars/tool-scons: Tools/tool-scons
+    github.com/FPGAwars/tools-drivers: Tools/tools-drivers
+    github.com/FPGAwars/tool-gtkwave: Tools/tool-gtkwave
+    github.com/FPGAwars/Platformio-FPGA: Tools/Platformio-FPGA

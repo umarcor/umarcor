@@ -41,16 +41,27 @@ jobs:
         enabled = [
             'EDAA',
             'EDAA-all',
+            'pyTooling',
             'ghdl',
             'osvvm',
             'osvb',
             'osvb-noroot',
-            'vunit',
-            'hdlc',
-            'neorv32',
-            'cocotb',
+            'HDL',
+            'DBHI',
+            'VUnit',
+            'HDLC',
+            'NEORV32',
+            'CoCoTb',
             'openFPGALoader',
             'spf13',
+            #'MSYS2',
+            #'MSYS2-all',
+            'SymbiFlow',
+            'CHIPSAlliance',
+            'VTR',
+            'YosysHQ',
+            'LibreCores',
+            'FPGAwars'
         ]
 
         with (ROOT / 'config.yml').open('r') as fptr:
