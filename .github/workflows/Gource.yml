@@ -53,7 +53,7 @@ jobs:
 
         enabled = [
             'EDAA',
-            'EDAA-all',
+            'EDAA-Workflows',
             'pyTooling',
             'ghdl',
             'osvvm',

@@ -28,7 +28,7 @@ EDAA:
       github.com/edaa-org/pyEDAA.Reports: pyEDAA.Reports
       github.com/VHDL/pyVHDLModel: pyVHDLModel
 
-EDAA-all:
+EDAA-Workflows:
   title: Electronic Design Automation Abstraction (EDAA) | Workflows
   tree:
     <<: *EDAA-repos
