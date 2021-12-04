@@ -18,8 +18,8 @@ jobs:
 
     - name: Build container images
       run: |
-        docker build -t ghcr.io/umarcor/gource -< gource/Dockerfile
-        docker build -t ghcr.io/umarcor/gource/xrun gource -f- <<EOF
+        docker build -t ghcr.io/umarcor/gource -< gource/containers/Dockerfile
+        docker build -t ghcr.io/umarcor/gource/xrun gource/containers -f- <<EOF
         FROM ghcr.io/umarcor/gource
         COPY run.sh /run.sh
         COPY xrun.sh /xrun.sh
