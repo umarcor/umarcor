@@ -126,6 +126,8 @@ HDL:
     github.com/hdl/packages: packages
     github.com/hdl/containers: packages/containers
     github.com/dbhi/qus: packages/containers/qus
+    github.com/ghdl/docker: packages/containers/ghdl-docker
+    github.com/dbhi/containers: packages/containers/dbhi
     github.com/hdl/MINGW-packages: packages/MINGW
     github.com/hdl/Termux-packages: packages/Termux
     github.com/hdl/bazel_rules_hdl: packages/bazel_rules_hdl
