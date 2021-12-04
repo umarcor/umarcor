@@ -99,7 +99,7 @@ jobs:
     steps:
 
     - name: Get logs
-      uses: umarcor/umarcor/gource/logs@gource
+      uses: umarcor/umarcor/gource/logs@main
       with:
         cfg: ${{ needs.Params.outputs.cfg }}
         mailmap: ${{ needs.Params.outputs.mailmap }}
@@ -126,7 +126,7 @@ jobs:
         print(f"::set-output name=job::{job!s}")
 
     - name: Combine logs and generate video
-      uses: umarcor/umarcor/gource/video@gource
+      uses: umarcor/umarcor/gource/video@main
       with:
         artifact: glogs
         job: ${{ steps.job.outputs.job }}
