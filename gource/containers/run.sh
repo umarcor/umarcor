@@ -2,7 +2,7 @@
 
 gource \
   --key \
-  -c 0.75 \
+  -c 0.7 \
   --highlight-users \
   --highlight-dirs \
   --hide bloom,filenames \
