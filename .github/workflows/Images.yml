@@ -1,6 +1,10 @@
 name: Images
 
 on:
+  push:
+    paths:
+      - '.github/workflows/Images.yml'
+      - 'gource/containers/**'
   schedule:
     - cron: '0 0 * * 4'
   workflow_dispatch:
