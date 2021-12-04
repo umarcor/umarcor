@@ -35,6 +35,7 @@ EDAA-Workflows:
     github.com/cocotb/cocotb: Workflows/CoCoTb
     github.com/olofk/fusesoc: Workflows/LibreCores/FuseSoC
     github.com/olofk/edalize: Workflows/LibreCores/Edalize
+    github.com/m-kru/fsva: Workflows/LibreCores/fsva
     github.com/PyFPGA/pyfpga: Workflows/PyFPGA
     github.com/Paebbels/pyIPCMI: Workflows/pyIPCMI
     gitlab.com/tsfpga/tsfpga: Workflows/tsfpga
