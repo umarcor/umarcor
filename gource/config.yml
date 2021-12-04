@@ -316,32 +316,32 @@ YosysHQ:
   title: Yosys HQ
   tree:
     github.com/YosysHQ/arachne-pnr: arachne-pnr
-    github.com/YosysHQ/yosys: yosys
-    github.com/YosysHQ/yosys-tests: yosys-tests
-    github.com/YosysHQ/pyosys-tests: pyosys-tests
-    github.com/YosysHQ/Sublime-Yosys: Sublime-Yosys
-    github.com/YosysHQ/yosys-bench: yosys-bench
-    github.com/YosysHQ/yosys-plugins: yosys-plugins
-    github.com/YosysHQ/yosys-bigsim: yosys-bigsim
-    github.com/YosysHQ/yosys-oldtests: yosys-oldtests
-    github.com/YosysHQ/nextpnr: nextpnr
-    github.com/YosysHQ/nextpnr-tests: nextpnr-tests
-    github.com/YosysHQ/nextpnr-chipdb: nextpnr-chipdb
-    github.com/YosysHQ/nextpnr-bench: nextpnr-bench
+    github.com/YosysHQ/yosys: Yosys/yosys
+    github.com/YosysHQ/yosys-tests: Yosys/yosys-tests
+    github.com/YosysHQ/pyosys-tests: Yosys/pyosys-tests
+    github.com/YosysHQ/Sublime-Yosys: Yosys/Sublime-Yosys
+    github.com/YosysHQ/yosys-bench: Yosys/yosys-bench
+    github.com/YosysHQ/yosys-plugins: Yosys/yosys-plugins
+    github.com/YosysHQ/yosys-bigsim: Yosys/yosys-bigsim
+    github.com/YosysHQ/yosys-oldtests: Yosys/yosys-oldtests
+    github.com/YosysHQ/yosys-manual-build: Yosys/yosys-manual-build
+    github.com/YosysHQ/nextpnr: nextpnr/nextpnr
+    github.com/YosysHQ/nextpnr-tests: nextpnr/nextpnr-tests
+    github.com/YosysHQ/nextpnr-chipdb: nextpnr/nextpnr-chipdb
+    github.com/YosysHQ/nextpnr-bench: nextpnr/nextpnr-bench
     github.com/YosysHQ/apicula: apicula
     github.com/YosysHQ/mcy: mcy
-    github.com/YosysHQ/SymbiYosys: SymbiYosys
-    github.com/YosysHQ/sby-gui: sby-gui
+    github.com/YosysHQ/SymbiYosys: SymbiYosys/SymbiYosys
+    github.com/YosysHQ/sby-gui: SymbiYosys/sby-gui
     github.com/YosysHQ/icestorm: icestorm
     github.com/YosysHQ/prjtrellis: prjtrellis
     github.com/YosysHQ/prjtrellis-db: prjtrellis-db
     github.com/YosysHQ/VlogHammer: VlogHammer
-    github.com/YosysHQ/yosys-manual-build: yosys-manual-build
-    github.com/YosysHQ/oss-cad-suite-build: oss-cad-suite-build
-    github.com/YosysHQ/setup-oss-cad-suite: setup-oss-cad-suite
-    github.com/YosysHQ/fpga-toolchain: fpga-toolchain
-    github.com/YosysHQ/picorv32: picorv32
-    github.com/YosysHQ/riscv-formal: riscv-formal
+    github.com/YosysHQ/oss-cad-suite-build: Toolchains/oss-cad-suite-build
+    github.com/YosysHQ/setup-oss-cad-suite: Toolchains/setup-oss-cad-suite
+    github.com/YosysHQ/fpga-toolchain: Toolchains/fpga-toolchain
+    github.com/YosysHQ/picorv32: RISCV/picorv32
+    github.com/YosysHQ/riscv-formal: RISCV/riscv-formal
 
 LibreCores:
   title: LibreCores
