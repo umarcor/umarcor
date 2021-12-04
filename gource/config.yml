@@ -166,8 +166,12 @@ NEORV32:
 
 CoCoTb:
   title: CoCoTb
+  args:
+    - --hide-root
   tree:
-    github.com/cocotb/cocotb: ~
+    github.com/cocotb/cocotb: cocotb
+    github.com/tpoikela/uvm-python: uvm-python
+    github.com/pyuvm/pyuvm: pyuvm
 
 openFPGALoader:
   title: openFPGALoader
