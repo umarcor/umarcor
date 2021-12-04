@@ -42,10 +42,6 @@ Gordon McGregor <email@gordonmcgregor.net> <gordon.mcgregor@nitero.com>
 Gordon McGregor <email@gordonmcgregor.net> <gordon.mcgregor@verilab.com>
 David Stadelmann <david.stadelmann@gmail.com> <david.stadelmann@gmail.com>
 David Stadelmann <david.stadelmann@gmail.com> <david.stadelmann@scs.ch>
-dependabot-preview[bot] <dependabot-preview[bot]@users.noreply.github.com> <27856297+dependabot-preview[bot]@users.noreply.github.com>
-dependabot-preview[bot] <dependabot-preview[bot]@users.noreply.github.com> <dependabot-preview[bot]@users.noreply.github.com>
-dependabot[bot] <support@dependabot.com> <49699333+dependabot[bot]@users.noreply.github.com>
-dependabot[bot] <support@dependabot.com> <support@dependabot.com>
 Edu Garcia <28616+Arcnor@users.noreply.github.com> <28616+Arcnor@users.noreply.github.com>
 elgorwi <elgorwi@hotmail.com> <elgorwi@hotmail.com>
 elgorwi <elgorwi@hotmail.com> <elgorwi@users.noreply.github.com>
@@ -104,6 +100,7 @@ Marlon James <marlon.james@gmail.com> <marlon.james@garmin.com>
 Marlon James <marlon.james@gmail.com> <Marlon.James@garmin.com>
 Marlon James <marlon.james@gmail.com> <47790688+garmin-mjames@users.noreply.github.com>
 Matt Venn <matt@mattvenn.net> <matt@mattvenn.net>
+Michał Kruszewski <mkru@protonmail.com> <mkru@protonmail.com>
 Miodrag Milanović <mmicko@gmail.com> <mmicko@gmail.com>
 Olaf van den Berg <olaf.vandenberg@siemens.com> <olaf.vandenberg@siemens.com>
 Olof Kindgren <olof.kindgren@gmail.com> <olof.kindgren@gmail.com>
@@ -142,10 +139,6 @@ Stefan Wallentowitz <stefan@wallentowitz.de> <stefan.wallentowitz@hm.edu>
 Stefan Wallentowitz <stefan@wallentowitz.de> <stefan.wallentowitz@tum.de>
 Stuart Hodgson <stuart.hodgson@potentialventures.com> <stuart.hodgson@potentialventures.com>
 Stuart Hodgson <stuart.hodgson@potentialventures.com> <staurt.hodgson@potentialventures.com>
-SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools@google.com>
-SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot+kokoro@google.com>
-SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot@google.com>
-Symbiflow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot+kokoro@google.com>
 Tim Ansell <me@mith.ro> <me@mith.ro>
 Tim Ansell <me@mith.ro> <mithro@mithis.com>
 Tim Ansell <me@mith.ro> <tansell@google.com>
@@ -181,3 +174,15 @@ Xiretza <xiretza@xiretza.xyz> <xiretza@xiretza.xyz>
 Xiretza <xiretza@xiretza.xyz> <Xiretza@users.noreply.github.com>
 zipotron <zipotron@gmail.com> <zipotron@gmail.com>
 zipotron <zipotron@gmail.com> <zipotron@localhost.localdomain>
+Circle-CI[bot] <circleci@cf-graph.regro.github.com> <circleci@cf-graph.regro.github.com>
+Conda-Forge[bot] <conda-forge@googlegroups.com> <conda-forge@googlegroups.com>
+Conda-Forge[bot] <conda-forge@googlegroups.com> <pelson.pub+conda-forge@gmail.com>
+dependabot-preview[bot] <dependabot-preview[bot]@users.noreply.github.com> <27856297+dependabot-preview[bot]@users.noreply.github.com>
+dependabot-preview[bot] <dependabot-preview[bot]@users.noreply.github.com> <dependabot-preview[bot]@users.noreply.github.com>
+dependabot[bot] <support@dependabot.com> <49699333+dependabot[bot]@users.noreply.github.com>
+dependabot[bot] <support@dependabot.com> <support@dependabot.com>
+SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools@google.com>
+SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot+kokoro@google.com>
+SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot@google.com>
+Symbiflow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot+kokoro@google.com>
+Travis-CI[bot] <travis@example.org> <travis@example.org>
