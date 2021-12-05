@@ -173,6 +173,7 @@ CoCoTb:
     - --hide-root
   tree:
     github.com/cocotb/cocotb: cocotb
+    github.com/cocotb/cocotb-bus: cocotb-bus
     github.com/tpoikela/uvm-python: uvm-python
     github.com/pyuvm/pyuvm: pyuvm
 
