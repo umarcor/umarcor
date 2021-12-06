@@ -56,6 +56,8 @@ jobs:
             'EDAA-Workflows',
             'pyTooling',
             'ghdl',
+            'verilator',
+            'iverilog',
             'osvvm',
             'osvb',
             'osvb-noroot',

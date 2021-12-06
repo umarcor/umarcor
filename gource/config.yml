@@ -72,6 +72,20 @@ ghdl:
     github.com/ghdl/extended-tests: extended-tests
     github.com/ghdl/setup-ghdl-ci: setup-ghdl-ci
 
+verilator:
+  title: github.com/verilator
+  tree:
+    github.com/verilator/verilator: verilator
+    github.com/verilator/verilator_ext_tests: verilator_ext_tests
+    github.com/verilator/example-systemverilog: example-systemverilog
+    github.com/verilator/uvm: uvm
+
+iverilog:
+  title: Icarus Verilog
+  tree:
+    github.com/steveicarus/iverilog: iverilog
+    github.com/steveicarus/ivtest: ivtest
+
 osvvm:
   title: github.com/OSVVM
   tree:
