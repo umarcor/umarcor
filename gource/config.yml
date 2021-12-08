@@ -38,6 +38,7 @@ EDAA-Workflows:
     github.com/m-kru/fsva: Workflows/LibreCores/fsva
     github.com/PyFPGA/pyfpga: Workflows/PyFPGA
     github.com/Paebbels/pyIPCMI: Workflows/pyIPCMI
+    github.com/siliconcompiler/siliconcompiler: Workflows/SiliconCompiler
     gitlab.com/tsfpga/tsfpga: Workflows/tsfpga
     github.com/VUnit/vunit: Workflows/VUnit
     github.com/XedaHQ/xeda: Workflows/Xeda
