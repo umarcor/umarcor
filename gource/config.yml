@@ -384,13 +384,13 @@ FPGAwars:
   tree:
     github.com/FPGAwars/icestudio: Icestudio/icestudio-wip
     github.com/juanmard/icestudio: Icestudio/icestudio-nightly
-    github.com/FPGAwars/apio: apio
+    github.com/FPGAwars/apio: Apio/apio
+    github.com/FPGAwars/apio-ide: Apio/apio-ide
     github.com/FPGAwars/icm: icm
     github.com/FPGAwars/icerok-server-python: icerok-server-python
-    github.com/FPGAwars/Icestudio-cli: Icestudio-cli
-    github.com/FPGAwars/icestudio-block-icons: icestudio-block-icons
-    github.com/FPGAwars/apio-ide: apio-ide
-    github.com/FPGAwars/alhambra-led: alhambra-led
+    github.com/FPGAwars/Icestudio-cli: Icestudio/cli
+    github.com/FPGAwars/icestudio-block-icons: Icestudio/block-icons
+    github.com/FPGAwars/alhambra-led: Collections/Development/alhambra-led
     github.com/FPGAwars/Alhambra-II-FPGA: Boards/Alhambra-II-FPGA
     github.com/FPGAwars/icezum: Boards/icezum
     github.com/FPGAwars/Icezum-Alhambra-3D-support: Boards/Icezum-Alhambra-3D-support
@@ -402,42 +402,44 @@ FPGAwars:
     github.com/FPGAwars/workshops: Docs/workshops
     github.com/FPGAwars/icestudio-docs: Docs/icestudio-docs
     github.com/FPGAwars/InBit: Docs/InBit
-    github.com/FPGAwars/iceLedoscope: Collections/iceLedoscope
-    github.com/FPGAwars/iceSignals: Collections/iceSignals
-    github.com/FPGAwars/iceRegs: Collections/iceRegs
-    github.com/FPGAwars/iceCounter: Collections/iceCounter
-    github.com/FPGAwars/iceFF: Collections/iceFF
-    github.com/FPGAwars/iceGates: Collections/iceGates
-    github.com/FPGAwars/iceWires: Collections/iceWires
-    github.com/FPGAwars/iceK: Collections/iceK
-    github.com/FPGAwars/iceLeds: Collections/iceLeds
-    github.com/FPGAwars/iceComp: Collections/iceComp
-    github.com/FPGAwars/iceHeart: Collections/iceHeart
-    github.com/FPGAwars/iceInputs: Collections/iceInputs
-    github.com/FPGAwars/iceMux: Collections/iceMux
-    github.com/FPGAwars/Collection-Jedi: Collections/Collection-Jedi
-    github.com/FPGAwars/iceArith: Collections/iceArith
-    github.com/FPGAwars/Icestudio-ArithmeticBlocks: Collections/Icestudio-ArithmeticBlocks
-    github.com/FPGAwars/iceRok: Collections/iceRok
-    github.com/FPGAwars/iceMachines: Collections/iceMachines
-    github.com/FPGAwars/icerok-display: Collections/icerok-display
-    github.com/FPGAwars/iceSerial: Collections/iceSerial
-    github.com/FPGAwars/LOVE-FPGA: Collections/LOVE-FPGA
-    github.com/FPGAwars/icestudio-blocks: Collections/icestudio-blocks
-    github.com/FPGAwars/iceGates-TB: Collections/iceGates-TB
-    github.com/FPGAwars/iceFF-TB: Collections/iceFF-TB
-    github.com/FPGAwars/Collection-stdio: Collections/Collection-stdio
-    github.com/FPGAwars/iceMem: Collections/iceMem
-    github.com/FPGAwars/iceMeasure: Collections/iceMeasure
-    github.com/FPGAwars/LOVE-FPGA-Collection: Collections/LOVE-FPGA-Collection
-    github.com/FPGAwars/iceSynth-collection: Collections/iceSynth-collection
-    github.com/FPGAwars/Collection-Jedi-Test: Collections/Collection-Jedi-Test
-    github.com/FPGAwars/collection-default: Collections/collection-default
-    github.com/FPGAwars/collection-generic: Collections/collection-generic
-    github.com/FPGAwars/icestudio-collections: Collections/icestudio-collections
-    github.com/FPGAwars/collection-logic: Collections/collection-logic
-    github.com/FPGAwars/FPGA-peripherals: Collections/FPGA-peripherals
-    github.com/FPGAwars/icebreaker-collection: Collections/icebreaker-collection
+    github.com/FPGAwars/iceK: Collections/Stable/iceK
+    github.com/FPGAwars/iceWires: Collections/Stable/iceWires
+    github.com/FPGAwars/iceIO: Collections/Development/iceIO
+    github.com/FPGAwars/iceLedoscope: Collections/Development/iceLedoscope
+    github.com/FPGAwars/iceSignals: Collections/Development/iceSignals
+    github.com/FPGAwars/iceRegs: Collections/Development/iceRegs
+    github.com/FPGAwars/iceCounter: Collections/Development/iceCounter
+    github.com/FPGAwars/iceFF: Collections/Development/iceFF
+    github.com/FPGAwars/iceFF-TB: Collections/Development/Testbench/iceFF
+    github.com/FPGAwars/iceGates: Collections/Development/iceGates
+    github.com/FPGAwars/iceGates-TB: Collections/Development/Testbench/iceGates
+    github.com/FPGAwars/icePLL: Collections/Development/icePLL
+    github.com/FPGAwars/iceLeds: Collections/Development/iceLeds
+    github.com/FPGAwars/iceComp: Collections/Development/iceComp
+    github.com/FPGAwars/iceHeart: Collections/Development/iceHeart
+    github.com/FPGAwars/iceInputs: Collections/Development/iceInputs
+    github.com/FPGAwars/iceMux: Collections/Development/iceMux
+    github.com/FPGAwars/Collection-Jedi: Collections/Development/Collection-Jedi
+    github.com/FPGAwars/iceArith: Collections/Development/iceArith
+    github.com/FPGAwars/Icestudio-ArithmeticBlocks: Collections/Development/Icestudio-ArithmeticBlocks
+    github.com/FPGAwars/iceRok: Collections/Development/iceRok
+    github.com/FPGAwars/iceMachines: Collections/Development/iceMachines
+    github.com/FPGAwars/icerok-display: Collections/Development/icerok-display
+    github.com/FPGAwars/iceSerial: Collections/Development/iceSerial
+    github.com/FPGAwars/LOVE-FPGA: Collections/Development/LOVE-FPGA
+    github.com/FPGAwars/icestudio-blocks: Collections/Development/icestudio-blocks
+    github.com/FPGAwars/Collection-stdio: Collections/Development/Collection-stdio
+    github.com/FPGAwars/iceMem: Collections/Development/iceMem
+    github.com/FPGAwars/iceMeasure: Collections/Development/iceMeasure
+    github.com/FPGAwars/LOVE-FPGA-Collection: Collections/Development/LOVE-FPGA-Collection
+    github.com/FPGAwars/iceSynth-collection: Collections/Development/iceSynth-collection
+    github.com/FPGAwars/Collection-Jedi-Test: Collections/Development/Collection-Jedi-Test
+    github.com/FPGAwars/collection-default: Collections/Development/collection-default
+    github.com/FPGAwars/collection-generic: Collections/Development/collection-generic
+    github.com/FPGAwars/icestudio-collections: Collections/Development/icestudio-collections
+    github.com/FPGAwars/collection-logic: Collections/Development/collection-logic
+    github.com/FPGAwars/FPGA-peripherals: Collections/Development/FPGA-peripherals
+    github.com/FPGAwars/icebreaker-collection: Collections/Development/icebreaker-collection
     github.com/FPGAwars/tools-oss-cad-suite: Tools/tools-oss-cad-suite
     github.com/FPGAwars/toolchain-ecp5: Tools/toolchain-ecp5
     github.com/FPGAwars/tools-system: Tools/tools-system
