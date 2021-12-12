@@ -175,7 +175,10 @@ VUnit:
 HDLC:
   title: HDL Containers
   tree:
-    github.com/hdl/containers: ~
+    github.com/hdl/containers: containers
+    github.com/dbhi/qus: dbhi/qus
+    github.com/dbhi/containers: dbhi/containers
+    github.com/ghdl/docker: ghdl-docker
 
 NEORV32:
   title: NEORV32
