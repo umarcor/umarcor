@@ -237,52 +237,52 @@ MSYS2-all:
 SymbiFlow:
   title: SymbiFlow
   tree:
-    github.com/SymbiFlow/yosys-symbiflow-plugins: yosys-symbiflow-plugins
-    github.com/SymbiFlow/prjuray-db: prjuray-db
-    github.com/SymbiFlow/fpga-interchange-tests: fpga-interchange-tests
-    github.com/SymbiFlow/fpga-tool-perf: fpga-tool-perf
-    github.com/SymbiFlow/symbiflow-arch-defs: symbiflow-arch-defs
-    github.com/SymbiFlow/symbiflow-examples: symbiflow-examples
-    github.com/SymbiFlow/prjxray: prjxray
+    github.com/SymbiFlow/symbiflow-arch-defs: Architectures/symbiflow-arch-defs
+    github.com/SymbiFlow/symbiflow-arch-pkgs: Architectures/symbiflow-arch-pkgs
+    github.com/SymbiFlow/prjuray: Architectures/U-ray/prjuray
+    github.com/SymbiFlow/prjuray-db: Architectures/U-ray/prjuray-db
+    github.com/SymbiFlow/prjuray-tools: Architectures/U-ray/prjuray-tools
+    github.com/SymbiFlow/prjxray: Architectures/X-ray/prjxray
+    github.com/SymbiFlow/prjxray-db: Architectures/X-ray/prjxray-db
+    github.com/SymbiFlow/prjxray-bram-patch: Architectures/X-ray/prjxray-bram-patch
+    github.com/SymbiFlow/prjxray-experiments-archive-2017: Architectures/X-ray/prjxray-experiments-archive-2017
+    github.com/SymbiFlow/fasm: FASM/fasm
+    github.com/SymbiFlow/symbiflow-xc-fasm: FASM/symbiflow-xc-fasm
+    github.com/SymbiFlow/symbiflow-xc-fasm2bels: FASM/symbiflow-xc-fasm2bels
+    github.com/SymbiFlow/fpga-interchange-tests: Interchange/fpga-interchange-tests
+    github.com/SymbiFlow/fpga-tool-perf: Perf/fpga-tool-perf
+    github.com/SymbiFlow/fpga-tool-perf-results: Perf/fpga-tool-perf-results
+    github.com/SymbiFlow/sphinxcontrib-session: sphinx/sphinxcontrib-session
+    github.com/SymbiFlow/sphinxcontrib-hdl-diagrams: sphinx/sphinxcontrib-hdl-diagrams
+    github.com/SymbiFlow/sphinxcontrib-markdown-symlinks: sphinx/sphinxcontrib-markdown-symlinks
+    github.com/SymbiFlow/sphinx-verilog-domain: sphinx/sphinx-verilog-domain
+    github.com/SymbiFlow/symbiflow-examples: Examples/symbiflow-examples
+    github.com/SymbiFlow/make-env: Examples/make-env
+    github.com/SymbiFlow/yosys-symbiflow-plugins: Yosys/yosys-symbiflow-plugins
     github.com/SymbiFlow/actions: actions
-    github.com/SymbiFlow/sphinxcontrib-session: sphinxcontrib-session
     github.com/SymbiFlow/symbiflow-website: symbiflow-website
-    github.com/SymbiFlow/sphinxcontrib-hdl-diagrams: sphinxcontrib-hdl-diagrams
-    github.com/SymbiFlow/symbiflow-xc-fasm2bels: symbiflow-xc-fasm2bels
-    github.com/SymbiFlow/fasm: fasm
-    github.com/SymbiFlow/fpga-tool-perf-results: fpga-tool-perf-results
-    github.com/SymbiFlow/symbiflow-xc-fasm: symbiflow-xc-fasm
-    github.com/SymbiFlow/prjuray: prjuray
+    github.com/SymbiFlow/symbiflow-docs: symbiflow-docs
+    github.com/SymbiFlow/symbiflow-robot: symbiflow-robot
     github.com/SymbiFlow/ibex-yosys-build: ibex-yosys-build
     github.com/SymbiFlow/python-sdf-timing: python-sdf-timing
     github.com/SymbiFlow/symbiflow-common-config: symbiflow-common-config
     github.com/SymbiFlow/vtr-xml-utils: vtr-xml-utils
-    github.com/SymbiFlow/prjxray-bram-patch: prjxray-bram-patch
     github.com/SymbiFlow/python-symbiflow-v2x: python-symbiflow-v2x
-    github.com/SymbiFlow/prjxray-db: prjxray-db
-    github.com/SymbiFlow/symbiflow-docs: symbiflow-docs
     github.com/SymbiFlow/sv-tests: sv-tests
     github.com/SymbiFlow/sv-tests-results: sv-tests-results
     github.com/SymbiFlow/symbiflow-rr-graph: symbiflow-rr-graph
-    github.com/SymbiFlow/sphinxcontrib-markdown-symlinks: sphinxcontrib-markdown-symlinks
     github.com/SymbiFlow/utd-sv: utd-sv
     github.com/SymbiFlow/axi-vip: axi-vip
     github.com/SymbiFlow/symbiflow-xc7z-automatic-tester: symbiflow-xc7z-automatic-tester
     github.com/SymbiFlow/symbiflow-bitstream-viewer: symbiflow-bitstream-viewer
-    github.com/SymbiFlow/make-env: make-env
-    github.com/SymbiFlow/sphinx-verilog-domain: sphinx-verilog-domain
-    github.com/SymbiFlow/symbiflow-arch-pkgs: symbiflow-arch-pkgs
     github.com/SymbiFlow/uxsdcxx: uxsdcxx
     github.com/SymbiFlow/symbiflow-tools-data-manager: symbiflow-tools-data-manager
-    github.com/SymbiFlow/prjuray-tools: prjuray-tools
-    github.com/SymbiFlow/symbiflow-robot: symbiflow-robot
     github.com/SymbiFlow/uvm: uvm
     github.com/SymbiFlow/rr_graph_lib: rr_graph_lib
     github.com/SymbiFlow/vtr-rrgraph-reordering-tool: vtr-rrgraph-reordering-tool
     github.com/SymbiFlow/prjxray-dev-env: prjxray-dev-env
     github.com/SymbiFlow/ideas: ideas
     github.com/SymbiFlow/scratchpad: scratchpad
-    github.com/SymbiFlow/prjxray-experiments-archive-2017: prjxray-experiments-archive-2017
 
 CHIPSAlliance:
   title: CHIPS Alliance
