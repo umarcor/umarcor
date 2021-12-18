@@ -39,6 +39,7 @@ EDAA-Workflows:
     github.com/olofk/fusesoc: Workflows/LibreCores/FuseSoC
     github.com/olofk/edalize: Workflows/LibreCores/Edalize
     github.com/m-kru/fsva: Workflows/LibreCores/fsva
+    github.com/c-rus/legoHDL: Workflows/legoHDL
     github.com/PyFPGA/pyfpga: Workflows/PyFPGA
     github.com/Paebbels/pyIPCMI: Workflows/pyIPCMI
     github.com/siliconcompiler/siliconcompiler: Workflows/SiliconCompiler
