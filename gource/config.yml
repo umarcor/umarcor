@@ -61,16 +61,16 @@ pyTooling:
   title: pyTooling
   tree:
     github.com/pyTooling/Actions: Actions
-    github.com/pyTooling/pyTooling.CLIAbstraction: pyTooling/CLIAbstraction
     github.com/pyTooling/pyAttributes: pyAttributes
+    github.com/pyTooling/pyTooling.CLIAbstraction: pyTooling.CLIAbstraction
+    github.com/pyTooling/pyTooling.TerminalUI: pyTooling.TerminalUI
+    github.com/pyTooling/pyTooling.GenericPath: pyTooling.GenericPath
     github.com/pyTooling/pyTooling: pyTooling
-    github.com/pyTooling/pyTooling.TerminalUI: pyTooling/TerminalUI
-    github.com/pyTooling/pyTooling.Packaging: pyTooling/Packaging
-    github.com/pyTooling/pyTooling.GenericPath: pyTooling/GenericPath
-    github.com/pyTooling/pyTooling.CommonClasses: pyTooling/CommonClasses
-    github.com/pyTooling/pyTooling.MetaClasses: pyTooling/MetaClasses
-    github.com/pyTooling/pyTooling.Exceptions: pyTooling/Exceptions
     github.com/pyTooling/pyTooling.CallBy: pyTooling/CallBy
+    github.com/pyTooling/pyTooling.CommonClasses: pyTooling/CommonClasses
+    github.com/pyTooling/pyTooling.Exceptions: pyTooling/Exceptions
+    github.com/pyTooling/pyTooling.MetaClasses: pyTooling/MetaClasses
+    github.com/pyTooling/pyTooling.Packaging: pyTooling/Packaging
 
 ghdl:
   title: github.com/ghdl
