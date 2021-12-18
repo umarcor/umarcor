@@ -48,6 +48,9 @@ EDAA-Workflows:
       github.com/umarcor/osvb: Workflows/OSVB
       github.com/VUnit/vunit: Workflows/OSVB/mods/VUnit
       github.com/cocotb/cocotb: Workflows/OSVB/mods/CoCoTb
+      github.com/cocotb/cocotb-bus: Workflows/OSVB/mods/CoCoTb/cocotb-bus
+      github.com/tpoikela/uvm-python: Workflows/OSVB/mods/CoCoTb/uvm-python
+      github.com/pyuvm/pyuvm: Workflows/OSVB/mods/CoCoTb/pyuvm
       github.com/OSVVM/OsvvmLibraries: Workflows/OSVB/mods/OSVVM/OsvvmLibraries
       github.com/OSVVM/OSVVM-Scripts: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/Scripts
       github.com/OSVVM/UART: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/UART
@@ -57,6 +60,23 @@ EDAA-Workflows:
       github.com/OSVVM/AXI4: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/AXI4
       github.com/svunit/svunit: Workflows/OSVB/mods/svunit
       github.com/uvvm/uvvm: Workflows/OSVB/mods/UVVM
+
+EDAA-Utilities:
+  title: Electronic Design Automation Abstraction (EDAA) | Workflows and Utilities
+  tree:
+    <<: &EDAA-utilities
+      <<: *EDAA-workflows
+      github.com/pyTooling/Actions: Utilities/Actions
+      github.com/pyTooling/pyAttributes: Utilities/pyAttributes
+      github.com/pyTooling/pyTooling.CLIAbstraction: Utilities/pyTooling.CLIAbstraction
+      github.com/pyTooling/pyTooling.TerminalUI: Utilities/pyTooling.TerminalUI
+      github.com/pyTooling/pyTooling.GenericPath: Utilities/pyTooling.GenericPath
+      github.com/pyTooling/pyTooling: Utilities/pyTooling
+      github.com/pyTooling/pyTooling.CallBy: Utilities/pyTooling/Archived/CallBy
+      github.com/pyTooling/pyTooling.CommonClasses: Utilities/pyTooling/Archived/CommonClasses
+      github.com/pyTooling/pyTooling.Exceptions: Utilities/pyTooling/Archived/Exceptions
+      github.com/pyTooling/pyTooling.MetaClasses: Utilities/pyTooling/Archived/MetaClasses
+      github.com/pyTooling/pyTooling.Packaging: Utilities/pyTooling/Archived/Packaging
 
 pyTooling:
   title: pyTooling
@@ -72,22 +92,6 @@ pyTooling:
     github.com/pyTooling/pyTooling.Exceptions: Archived/Exceptions
     github.com/pyTooling/pyTooling.MetaClasses: Archived/MetaClasses
     github.com/pyTooling/pyTooling.Packaging: Archived/Packaging
-
-EDAA-Utilities:
-  title: Electronic Design Automation Abstraction (EDAA) | Workflows and Utilities
-  tree:
-    <<: *EDAA-workflows
-    github.com/pyTooling/Actions: Utilities/Actions
-    github.com/pyTooling/pyAttributes: Utilities/pyAttributes
-    github.com/pyTooling/pyTooling.CLIAbstraction: Utilities/pyTooling.CLIAbstraction
-    github.com/pyTooling/pyTooling.TerminalUI: Utilities/pyTooling.TerminalUI
-    github.com/pyTooling/pyTooling.GenericPath: Utilities/pyTooling.GenericPath
-    github.com/pyTooling/pyTooling: Utilities/pyTooling
-    github.com/pyTooling/pyTooling.CallBy: Utilities/pyTooling/Archived/CallBy
-    github.com/pyTooling/pyTooling.CommonClasses: Utilities/pyTooling/Archived/CommonClasses
-    github.com/pyTooling/pyTooling.Exceptions: Utilities/pyTooling/Archived/Exceptions
-    github.com/pyTooling/pyTooling.MetaClasses: Utilities/pyTooling/Archived/MetaClasses
-    github.com/pyTooling/pyTooling.Packaging: Utilities/pyTooling/Archived/Packaging
 
 ghdl:
   title: github.com/ghdl
@@ -298,7 +302,6 @@ SymbiFlow:
     github.com/SymbiFlow/symbiflow-common-config: symbiflow-common-config
     github.com/SymbiFlow/vtr-xml-utils: vtr-xml-utils
     github.com/SymbiFlow/python-symbiflow-v2x: python-symbiflow-v2x
-    github.com/SymbiFlow/sv-tests: sv-tests
     github.com/SymbiFlow/sv-tests-results: sv-tests-results
     github.com/SymbiFlow/symbiflow-rr-graph: symbiflow-rr-graph
     github.com/SymbiFlow/utd-sv: utd-sv
@@ -411,6 +414,65 @@ LibreCores:
     github.com/librecores/lcci-python: lcci-python
     github.com/librecores/gsoc-museum-edsac: gsoc-museum-edsac
     github.com/librecores/librecores-backend: librecores-backend
+
+Hitchhiker:
+  title: A hitchhiker in the open-source electronic design automation (EDA) galaxies
+  tree:
+    <<: *EDAA-utilities
+    github.com/ghdl/ghdl: Tools/GHDL/ghdl
+    github.com/ghdl/ghdl-yosys-plugin: Tools/GHDL/ghdl-yosys-plugin
+    github.com/ghdl/ghdl-language-server: Tools/GHDL/ghdl-language-server
+    github.com/ghdl/ghdl-cosim: Tools/GHDL/ghdl-cosim
+    github.com/ghdl/extended-tests: Tools/GHDL/extended-tests
+    github.com/ghdl/setup-ghdl-ci: Tools/GHDL/setup-ghdl-ci
+    github.com/verilator/verilator: Tools/verilator/verilator
+    github.com/verilator/verilator_ext_tests: Tools/verilator/verilator_ext_tests
+    github.com/verilator/example-systemverilog: Tools/verilator/example-systemverilog
+    github.com/verilator/uvm: Tools/verilator/uvm
+    github.com/steveicarus/iverilog: Tools/IcarusVerilog/iverilog
+    github.com/steveicarus/ivtest: Tools/IcarusVerilog/ivtest
+    github.com/hdl/awesome: Tools/HDL/awesome
+    github.com/hdl/constraints: Tools/HDL/constraints
+    github.com/hdl/smoke-tests: Tools/HDL/smoke-tests
+    github.com/hdl/packages: Tools/HDL/packages
+    github.com/hdl/containers: Tools/HDL/packages/containers
+    github.com/dbhi/qus: Tools/HDL/packages/containers/qus
+    github.com/ghdl/docker: Tools/HDL/packages/containers/ghdl-docker
+    github.com/dbhi/containers: Tools/HDL/packages/containers/dbhi
+    github.com/hdl/MINGW-packages: Tools/HDL/packages/MINGW
+    github.com/hdl/Termux-packages: Tools/HDL/packages/Termux
+    github.com/hdl/bazel_rules_hdl: Tools/HDL/packages/bazel_rules_hdl
+    github.com/hdl/conda-eda: Tools/HDL/packages/conda/eda
+    github.com/hdl/conda-misc: Tools/HDL/packages/conda/misc
+    github.com/hdl/conda-compilers: Tools/HDL/packages/conda/compilers
+    github.com/hdl/conda-ci: Tools/HDL/packages/conda/ci
+    github.com/hdl/conda-prog: Tools/HDL/packages/conda/prog
+    github.com/hdl/symbolator: Tools/HDL/symbolator/symbolator
+    github.com/hdl/pyHDLParser: Tools/HDL/symbolator/pyHDLParser
+    github.com/trabucayre/openFPGALoader: Tools/openFPGALoader
+    github.com/verilog-to-routing/vtr-verilog-to-routing: Tools/Verilog-To-Routing
+    github.com/SymbiFlow/symbiflow-arch-defs: Tools/SymbiFlow/Architectures/symbiflow-arch-defs
+    github.com/SymbiFlow/prjuray: Tools/SymbiFlow/Architectures/U-ray/prjuray
+    github.com/SymbiFlow/prjxray: Tools/SymbiFlow/Architectures/X-ray/prjxray
+    github.com/SymbiFlow/fasm: Tools/SymbiFlow/FASM/fasm
+    github.com/SymbiFlow/fpga-tool-perf: Tools/SymbiFlow/Perf/fpga-tool-perf
+    github.com/SymbiFlow/fpga-tool-perf-results: Tools/SymbiFlow/Perf/fpga-tool-perf-results
+    github.com/SymbiFlow/sphinxcontrib-hdl-diagrams: Tools/SymbiFlow/sphinx/sphinxcontrib-hdl-diagrams
+    github.com/SymbiFlow/sphinx-verilog-domain: Tools/SymbiFlow/sphinx/sphinx-verilog-domain
+    github.com/SymbiFlow/yosys-symbiflow-plugins: Tools/SymbiFlow/yosys-symbiflow-plugins
+    github.com/SymbiFlow/symbiflow-bitstream-viewer: Tools/SymbiFlow/symbiflow-bitstream-viewer
+    github.com/YosysHQ/yosys: Tools/YosysHQ/yosys
+    github.com/YosysHQ/nextpnr: Tools/YosysHQ//nextpnr
+    github.com/YosysHQ/apicula: Tools/YosysHQ/apicula
+    github.com/YosysHQ/icestorm: Tools/YosysHQ/icestorm
+    github.com/YosysHQ/prjtrellis: Tools/YosysHQ/prjtrellis
+    github.com/chipsalliance/fpga-interchange-schema: Tools/CHIPSAlliance/interchange/fpga-interchange-schema
+    github.com/chipsalliance/python-fpga-interchange: Tools/CHIPSAlliance/interchange/python-fpga-interchange
+    github.com/chipsalliance/chisel3: Tools/CHIPSAlliance/Chisel/chisel3
+    github.com/chipsalliance/firrtl: Tools/CHIPSAlliance/Chisel/firrtl
+    github.com/chipsalliance/Surelog: Tools/CHIPSAlliance/SystemVerilog/Surelog
+    github.com/chipsalliance/UHDM: Tools/CHIPSAlliance/SystemVerilog/UHDM
+    github.com/chipsalliance/verible: Tools/CHIPSAlliance/SystemVerilog/verible
 
 FPGAwars:
   title: FPGAwars
