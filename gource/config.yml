@@ -22,11 +22,14 @@ EDAA:
   tree:
     <<: &EDAA-repos
       github.com/edaa-org/edaa-org.github.io: ~
-      github.com/edaa-org/pyEDAA.ProjectModel: pyEDAA.ProjectModel
-      github.com/edaa-org/pySVModel: pySVModel
-      github.com/edaa-org/pyEDAA.IPXACT: pyEDAA.IPXACT
-      github.com/edaa-org/pyEDAA.Reports: pyEDAA.Reports
-      github.com/VHDL/pyVHDLModel: pyVHDLModel
+      github.com/edaa-org/pyEDAA.ProjectModel: ProjectAndConfiguration/ProjectModel
+      github.com/edaa-org/pyEDAA.CLITool: InteractingWithCLIs/CLITool
+      github.com/edaa-org/pyEDAA.OutputFilter: InteractingWithCLIs/OutputFilter
+      github.com/edaa-org/pyEDAA.IPXACT: LanguagesAndData/IPXACT
+      github.com/edaa-org/pyEDAA.Reports: LanguagesAndData/Reports
+      github.com/edaa-org/pyEDAA.UCIS: LanguagesAndData/UCIS
+      github.com/edaa-org/pySVModel: LanguagesAndData/pySVModel
+      github.com/VHDL/pyVHDLModel: LanguagesAndData/pyVHDLModel
 
 EDAA-Workflows:
   title: Electronic Design Automation Abstraction (EDAA) | Workflows
