@@ -54,6 +54,7 @@ jobs:
         enabled = [
             'EDAA',
             'EDAA-Workflows',
+            'EDAA-Utilities',
             'pyTooling',
             'ghdl',
             'verilator',
