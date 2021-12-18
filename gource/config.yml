@@ -35,7 +35,6 @@ EDAA-Workflows:
   title: Electronic Design Automation Abstraction (EDAA) | Workflows
   tree:
     <<: *EDAA-repos
-    github.com/cocotb/cocotb: Workflows/CoCoTb
     github.com/olofk/fusesoc: Workflows/LibreCores/FuseSoC
     github.com/olofk/edalize: Workflows/LibreCores/Edalize
     github.com/m-kru/fsva: Workflows/LibreCores/fsva
@@ -44,9 +43,19 @@ EDAA-Workflows:
     github.com/Paebbels/pyIPCMI: Workflows/pyIPCMI
     github.com/siliconcompiler/siliconcompiler: Workflows/SiliconCompiler
     gitlab.com/tsfpga/tsfpga: Workflows/tsfpga
-    github.com/VUnit/vunit: Workflows/VUnit
     github.com/XedaHQ/xeda: Workflows/Xeda
-    github.com/OSVVM/OSVVM-Scripts: Workflows/OSVVM-Scripts
+    github.com/umarcor/osvb: Workflows/OSVB
+    github.com/VUnit/vunit: Workflows/OSVB/mods/VUnit
+    github.com/cocotb/cocotb: Workflows/OSVB/mods/CoCoTb
+    github.com/OSVVM/OsvvmLibraries: Workflows/OSVB/mods/OSVVM/OsvvmLibraries
+    github.com/OSVVM/OSVVM-Scripts: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/Scripts
+    github.com/OSVVM/UART: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/UART
+    github.com/OSVVM/OSVVM: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/OSVVM
+    github.com/OSVVM/Documentation: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/Documentation
+    github.com/OSVVM/OSVVM-Common: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/Common
+    github.com/OSVVM/AXI4: Workflows/OSVB/mods/OSVVM/OsvvmLibraries/AXI4
+    github.com/svunit/svunit: Workflows/OSVB/mods/svunit
+    github.com/uvvm/uvvm: Workflows/OSVB/mods/UVVM
 
 pyTooling:
   title: pyTooling
