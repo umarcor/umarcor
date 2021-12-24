@@ -74,11 +74,6 @@ EDAA-Utilities:
       github.com/pyTooling/pyTooling.TerminalUI: Utilities/pyTooling.TerminalUI
       github.com/pyTooling/pyTooling.GenericPath: Utilities/pyTooling.GenericPath
       github.com/pyTooling/pyTooling: Utilities/pyTooling
-      github.com/pyTooling/pyTooling.CallBy: Utilities/pyTooling/Archived/CallBy
-      github.com/pyTooling/pyTooling.CommonClasses: Utilities/pyTooling/Archived/CommonClasses
-      github.com/pyTooling/pyTooling.Exceptions: Utilities/pyTooling/Archived/Exceptions
-      github.com/pyTooling/pyTooling.MetaClasses: Utilities/pyTooling/Archived/MetaClasses
-      github.com/pyTooling/pyTooling.Packaging: Utilities/pyTooling/Archived/Packaging
 
 pyTooling:
   title: pyTooling
@@ -89,11 +84,6 @@ pyTooling:
     github.com/pyTooling/pyTooling.TerminalUI: pyTooling.TerminalUI
     github.com/pyTooling/pyTooling.GenericPath: pyTooling.GenericPath
     github.com/pyTooling/pyTooling: pyTooling
-    github.com/pyTooling/pyTooling.CallBy: Archived/CallBy
-    github.com/pyTooling/pyTooling.CommonClasses: Archived/CommonClasses
-    github.com/pyTooling/pyTooling.Exceptions: Archived/Exceptions
-    github.com/pyTooling/pyTooling.MetaClasses: Archived/MetaClasses
-    github.com/pyTooling/pyTooling.Packaging: Archived/Packaging
 
 ghdl:
   title: github.com/ghdl
