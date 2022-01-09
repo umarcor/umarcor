@@ -417,6 +417,7 @@ Hitchhiker:
     - Unai Martinez-Corral
     - --highlight-user
     - Unai Martinez-Corral
+    - --hide bloom,filenames,usernames
   tree:
     <<: *EDAA-utilities
     github.com/ghdl/ghdl: Tools/GHDL/ghdl
