@@ -410,6 +410,9 @@ LibreCores:
 
 Hitchhiker:
   title: A hitchhiker in the open-source electronic design automation (EDA) galaxies
+  args:
+    - --follow-user
+    - Unai Martinez-Corral
   tree:
     <<: *EDAA-utilities
     github.com/ghdl/ghdl: Tools/GHDL/ghdl
