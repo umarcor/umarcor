@@ -411,6 +411,8 @@ LibreCores:
 Hitchhiker:
   title: A hitchhiker in the open-source electronic design automation (EDA) galaxies
   args:
+    - --camera-mode
+    - track
     - --follow-user
     - Unai Martinez-Corral
   tree:
