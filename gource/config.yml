@@ -24,6 +24,7 @@ EDAA:
       github.com/edaa-org/edaa-org.github.io: ~
       github.com/edaa-org/pyEDAA.ProjectModel: ProjectAndConfiguration/ProjectModel
       github.com/edaa-org/pyEDAA.CLITool: InteractingWithCLIs/CLITool
+      github.com/edaa-org/pyEDAA.ToolSetup: InteractingWithCLIs/ToolSetup
       github.com/edaa-org/pyEDAA.OutputFilter: InteractingWithCLIs/OutputFilter
       github.com/edaa-org/pyEDAA.Launcher: InteractingWithCLIs/CLITool
       github.com/edaa-org/pyEDAA.IPXACT: LanguagesAndData/IPXACT
