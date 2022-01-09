@@ -373,7 +373,6 @@ YosysHQ:
     github.com/YosysHQ/yosys-manual-build: Yosys/yosys-manual-build
     github.com/YosysHQ/nextpnr: nextpnr/nextpnr
     github.com/YosysHQ/nextpnr-tests: nextpnr/nextpnr-tests
-    github.com/YosysHQ/nextpnr-chipdb: nextpnr/nextpnr-chipdb
     github.com/YosysHQ/nextpnr-bench: nextpnr/nextpnr-bench
     github.com/YosysHQ/apicula: apicula
     github.com/YosysHQ/mcy: mcy
