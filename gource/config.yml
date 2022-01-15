@@ -210,7 +210,8 @@ HDLC:
 NEORV32:
   title: NEORV32
   tree:
-    github.com/stnolting/neorv32: ~
+    github.com/stnolting/neorv32-setups: ~
+    github.com/stnolting/neorv32: neorv32
 
 CoCoTb:
   title: CoCoTb
