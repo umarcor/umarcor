@@ -212,6 +212,7 @@ NEORV32:
   tree:
     github.com/stnolting/neorv32-setups: ~
     github.com/stnolting/neorv32: neorv32
+    github.com/hdl/constraints: constraints
 
 CoCoTb:
   title: CoCoTb
