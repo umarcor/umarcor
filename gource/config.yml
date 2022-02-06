@@ -409,6 +409,45 @@ LibreCores:
     github.com/librecores/gsoc-museum-edsac: gsoc-museum-edsac
     github.com/librecores/librecores-backend: librecores-backend
 
+LiteX:
+  title: LiteX
+  tree:
+    github.com/litex-hub/barebox: barebox
+    github.com/litex-hub/litex-boards: boards
+    github.com/litex-hub/fpga_101: fpga_101
+    github.com/litex-hub/linux-on-litex-rocket: Linux-on-LiteX/rocket
+    github.com/litex-hub/linux-on-litex-vexriscv: Linux-on-LiteX/vexriscv
+    github.com/litex-hub/pythondata-cpu-microwatt: pythondata/cpu/microwatt
+    github.com/litex-hub/pythondata-cpu-ibex: pythondata/cpu/ibex
+    github.com/litex-hub/pythondata-cpu-vexriscv: pythondata/cpu/vexriscv
+    github.com/litex-hub/pythondata-cpu-vexriscv_smp: pythondata/cpu/vexriscv_smp
+    github.com/litex-hub/pythondata-cpu-blackparrot: pythondata/cpu/blackparrot
+    github.com/litex-hub/pythondata-cpu-cv32e40p: pythondata/cpu/cv32e40p
+    github.com/litex-hub/pythondata-cpu-serv: pythondata/cpu/serv
+    github.com/litex-hub/pythondata-cpu-picorv32: pythondata/cpu/picorv32
+    github.com/litex-hub/pythondata-cpu-rocket: pythondata/cpu/rocket
+    github.com/litex-hub/pythondata-cpu-marocchino: pythondata/cpu/marocchino
+    github.com/litex-hub/pythondata-cpu-mor1kx: pythondata/cpu/mor1kx
+    github.com/litex-hub/pythondata-cpu-minerva: pythondata/cpu/minerva
+    github.com/litex-hub/pythondata-cpu-lm32: pythondata/cpu/lm32
+    github.com/litex-hub/pythondata-cpu-cv32e41p: pythondata/cpu/cv32e41p
+    github.com/litex-hub/pythondata-cpu-jcore: pythondata/cpu/jcore
+    github.com/litex-hub/pythondata-misc-opentitan: pythondata/misc/opentitan
+    github.com/litex-hub/pythondata-misc-tapcfg: pythondata/misc/tapcfg
+    github.com/litex-hub/pythondata-misc-usb_ohci: pythondata/misc/usb_ohci
+    github.com/litex-hub/pythondata-software-picolibc: pythondata/software/picolibc
+    github.com/litex-hub/pythondata-software-compiler_rt: pythondata/software/compiler_rt
+    github.com/litex-hub/pythondata-auto: pythondata/auto
+    github.com/litex-hub/litespi: lite/spi
+    github.com/litex-hub/litehyperbus: lite/hyperbus
+    github.com/litex-hub/zephyr-on-litex-vexriscv: Zephyr-on-LiteX/vexriscv
+    github.com/litex-hub/wishbone-utils: wishbone-utils
+    github.com/litex-hub/litex-renode: Renode
+    github.com/litex-hub/litex-conda-packages: conda/packages
+    github.com/litex-hub/conda-build-prepare: conda/build-prepare
+    github.com/litex-hub/litex-on-profpga-systems: proFPGA
+    github.com/litex-hub/litex-buildenv-udev: buildenv-udev
+
 Hitchhiker:
   title: A hitchhiker in the open-source electronic design automation (EDA) galaxies
   tree:

@@ -78,6 +78,7 @@ jobs:
             'VTR',
             'YosysHQ',
             'LibreCores',
+            'LiteX',
             'FPGAwars'
         ]
 
