@@ -52,7 +52,7 @@ jobs:
         LogDir.mkdir(exist_ok=True)
 
         enabled = [
-            'Hitchhiker',
+            #'Hitchhiker',
             'EDAA',
             'EDAA-Workflows',
             'EDAA-Utilities',
