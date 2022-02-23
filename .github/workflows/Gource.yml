@@ -73,7 +73,7 @@ jobs:
             'spf13',
             #'MSYS2',
             #'MSYS2-all',
-            'SymbiFlow',
+            'F4PGA',
             'CHIPSAlliance',
             'VTR',
             'YosysHQ',
