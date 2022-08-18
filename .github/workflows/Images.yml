@@ -24,6 +24,7 @@ on:
     paths:
       - '.github/workflows/Images.yml'
       - 'gource/containers/**'
+      - 'gitinspector.Dockerfile'
   schedule:
     - cron: '0 0 * * 4'
   workflow_dispatch:
@@ -33,7 +34,7 @@ env:
 
 jobs:
 
-  Gource:
+  Images:
     runs-on: ubuntu-latest
     steps:
 
@@ -41,6 +42,7 @@ jobs:
 
     - name: Build container images
       run: |
+        docker build -t ghcr.io/umarcor/gitinspector -< gitinspector.Dockerfile
         docker build -t ghcr.io/umarcor/gource -< gource/containers/Dockerfile
         docker build -t ghcr.io/umarcor/gource/xrun gource/containers -f- <<EOF
         FROM ghcr.io/umarcor/gource
@@ -57,4 +59,4 @@ jobs:
         password: ${{ github.token }}
 
     - name: Push container images to registry
-      run: for image in gource gource/xrun; do docker push ghcr.io/umarcor/"$image"; done
+      run: for image in gitinspector gource gource/xrun; do docker push ghcr.io/umarcor/"$image"; done
