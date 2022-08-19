@@ -33,11 +33,6 @@ jobs:
 
       #- uses: actions/checkout@v3
 
-#      - run: |
-#          git clone https://github.com/chipsalliance/f4pga
-#          cd f4pga
-#          git status
-
       - run: git clone https://github.com/chipsalliance/f4pga
 
 #          cat > run.sh <<'EOF'
@@ -47,7 +42,8 @@ jobs:
 #          EOF
 #          chmod +x run.sh
 
-      - run: docker run --rm -v $(pwd):/wrk -w /wrk/f4pga ghcr.io/umarcor/gitinspector gitinspector
+      - run: docker run --rm -itv $(pwd):/wrk -w /wrk/f4pga ghcr.io/umarcor/gitinspector gitinspector
+
 #sh ./run.sh
 
       - run: |
