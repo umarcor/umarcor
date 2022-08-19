@@ -54,8 +54,17 @@ jobs:
         LogDir = ROOT / 'logs'
         LogDir.mkdir(exist_ok=True)
 
+        # TODO Append to the enabled list, when the workflow is triggered by an scheduled event
+        scheduled_only = [
+            'Hitchhiker',
+            'MSYS2',
+            'MSYS2-all',
+            'CHIPSAlliance',
+            'LiteX',
+            'FPGAwars'
+        ]
+
         enabled = [
-            #'Hitchhiker',
             'EDAA',
             'EDAA-Workflows',
             'EDAA-Utilities',
@@ -74,16 +83,11 @@ jobs:
             'CoCoTb',
             'openFPGALoader',
             'spf13',
-            #'MSYS2',
-            #'MSYS2-all',
             'f4pga-core',
             'F4PGA',
-            'CHIPSAlliance',
             'VTR',
             'YosysHQ',
             'LibreCores',
-            'LiteX',
-            'FPGAwars'
         ]
 
         with (ROOT / 'config.yml').open('r') as fptr:
