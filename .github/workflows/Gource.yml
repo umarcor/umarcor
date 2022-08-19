@@ -21,6 +21,9 @@ name: Gource
 
 on:
   push:
+    paths:
+      - '.github/workflows/Gource.yml'
+      - 'gource/**'
   schedule:
     - cron: '0 0 1 * *'
   workflow_dispatch:
