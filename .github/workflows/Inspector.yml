@@ -42,7 +42,7 @@ jobs:
 #          EOF
 #          chmod +x run.sh
 
-      - run: docker run --rm -itv $(pwd):/wrk -w /wrk/f4pga ghcr.io/umarcor/gitinspector gitinspector
+      - run: docker run --rm -iv $(pwd):/wrk -w /wrk/f4pga ghcr.io/umarcor/gitinspector gitinspector
 
 #sh ./run.sh
 
