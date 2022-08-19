@@ -51,12 +51,12 @@ jobs:
         CMD ['/xrun.sh']
         EOF
 
-    - name: Login to ghcr.io
-      uses: docker/login-action@v1
-      with:
-        registry: ghcr.io
-        username: gha
-        password: ${{ github.token }}
-
     - name: Push container images to registry
-      run: for image in gitinspector gource gource/xrun; do docker push ghcr.io/umarcor/"$image"; done
+      uses: pyTooling/Actions/with-post-step@r0
+      with:
+        main: |
+          echo '${{ github.token }}' | docker login ghcr.io -u gha --password-stdin
+          for image in gitinspector gource gource/xrun; do
+            docker push ghcr.io/umarcor/"$image"
+          done
+        post: docker logout ghcr.io
