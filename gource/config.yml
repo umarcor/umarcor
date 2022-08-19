@@ -263,6 +263,23 @@ MSYS2-all:
     github.com/MSYS2/msys2-runtime: msys2-runtime
     github.com/MSYS2/msys2-pacman: msys2-pacman
 
+f4pga-core:
+  title: FOSS Flows For FPGA (F4PGA) | f4pga
+  tree:
+    github.com/f4pga/f4pga-website: website
+    github.com/chipsalliance/f4pga: f4pga
+    github.com/chipsalliance/python-sdf-timing: f4pga/utils/python-sdf-timing
+    github.com/chipsalliance/f4pga-xc-fasm: f4pga/utils/f4pga-xc-fasm
+    github.com/chipsalliance/f4pga-xc-fasm2bels: f4pga/utils/f4pga-xc-fasm2bels
+    github.com/chipsalliance/f4pga-examples: examples
+    github.com/SymbiFlow/f4pga-arch-defs: arch-defs
+    github.com/chipsalliance/yosys-f4pga-plugins: yosys-f4pga-plugins
+    github.com/chipsalliance/fasm: specs/FASM
+    github.com/chipsalliance/fpga-interchange-schema: specs/Interchange/fpga-interchange-schema
+    github.com/chipsalliance/python-fpga-interchange: specs/Interchange/python-fpga-interchange
+    github.com/chipsalliance/fpga-interchange-tests: perf/fpga-interchange-tests
+    github.com/chipsalliance/fpga-tool-perf: perf/fpga-tool-perf
+
 F4PGA:
   title: FOSS Flows For FPGA (F4PGA)
   tree:
@@ -284,17 +301,17 @@ F4PGA:
     github.com/SymbiFlow/prjxray-dev-env: Architectures/X-ray/prjxray-dev-env
     github.com/chipsalliance/fasm: Specs/FASM/fasm
     github.com/chipsalliance/f4pga-xc-fasm: Specs/FASM/f4pga-xc-fasm
-    github.com/SymbiFlow/f4pga-xc-fasm2bels: Specs/FASM/f4pga-xc-fasm2bels
+    github.com/chipsalliance/f4pga-xc-fasm2bels: Specs/FASM/f4pga-xc-fasm2bels
     github.com/chipsalliance/fpga-interchange-schema: Specs/Interchange/fpga-interchange-schema
     github.com/chipsalliance/python-fpga-interchange: Specs/Interchange/python-fpga-interchange
-    github.com/chipsalliance/fpga-interchange-tests: Specs/Interchange/fpga-interchange-tests
+    github.com/chipsalliance/fpga-interchange-tests: Perf/fpga-interchange-tests
     github.com/chipsalliance/fpga-tool-perf: Perf/fpga-tool-perf
     #github.com/SymbiFlow/fpga-tool-perf-results: Perf/fpga-tool-perf-results
     #github.com/chipsalliance/sv-tests-results: Perf/chipsalliance/sv-tests-results
     github.com/chipsalliance/python-sdf-timing: Utils/python-sdf-timing
     github.com/chipsalliance/vtr-xml-utils: Utils/vtr-xml-utils
     github.com/chipsalliance/f4pga-v2x: Utils/f4pga-v2x
-    github.com/SymbiFlow/yosys-f4pga-plugins: Utils/Yosys/yosys-f4pga-plugins
+    github.com/chipsalliance/yosys-f4pga-plugins: Utils/Yosys/yosys-f4pga-plugins
     github.com/SymbiFlow/ibex-yosys-build: Utils/Yosys/ibex-yosys-build
     github.com/chipsalliance/f4pga-bitstream-viewer: View/f4pga-bitstream-viewer
     github.com/chipsalliance/f4pga-database-visualizer: View/f4pga-database-visualizer

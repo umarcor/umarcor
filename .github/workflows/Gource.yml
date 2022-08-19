@@ -76,6 +76,7 @@ jobs:
             'spf13',
             #'MSYS2',
             #'MSYS2-all',
+            'f4pga-core',
             'F4PGA',
             'CHIPSAlliance',
             'VTR',
