@@ -32,7 +32,7 @@ runs:
   using: 'composite'
   steps:
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: ${{ inputs.artifact }}
         path: /tmp/glogs
@@ -87,7 +87,7 @@ runs:
         artifact = LogDir.parent / f'{job["name"]}'
         print(f"::set-output name=artifact::{artifact!s}")
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: ${{ steps.job.outputs.name }}
         path: |

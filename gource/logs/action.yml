@@ -70,7 +70,7 @@ runs:
       check_call(f'cat {LogDir!s}/*.authors | sort | uniq > {LogDir!s}/authors.mails', shell=True)
       check_call(['rm', '-rf', f'{LogDir!s}/*.authors'])
 
-  - uses: actions/upload-artifact@v2
+  - uses: actions/upload-artifact@v3
     with:
       name: ${{ inputs.artifact }}
       path: /tmp/glogs
