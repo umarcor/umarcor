@@ -263,6 +263,11 @@ MSYS2-all:
     github.com/MSYS2/msys2-runtime: msys2-runtime
     github.com/MSYS2/msys2-pacman: msys2-pacman
 
+renode:
+  title: Renode
+  tree:
+    github.com/renode/renode: ~
+
 f4pga-core:
   title: FOSS Flows For FPGA (F4PGA) | f4pga
   tree:
