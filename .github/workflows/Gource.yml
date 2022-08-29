@@ -57,6 +57,7 @@ jobs:
         # TODO Append to the enabled list, when the workflow is triggered by an scheduled event
         scheduled_only = [
             'Hitchhiker',
+            'iverilog',
             'MSYS2',
             'MSYS2-all',
             'CHIPSAlliance',
@@ -71,7 +72,6 @@ jobs:
             'pyTooling',
             'ghdl',
             'verilator',
-            'iverilog',
             'osvvm',
             'osvb',
             'osvb-noroot',
@@ -82,6 +82,7 @@ jobs:
             'NEORV32',
             'CoCoTb',
             'openFPGALoader',
+            'renode',
             'spf13',
             'f4pga-core',
             'F4PGA',
