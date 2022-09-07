@@ -66,29 +66,8 @@ jobs:
         ]
 
         enabled = [
-            'EDAA',
-            'EDAA-Workflows',
-            'EDAA-Utilities',
-            'pyTooling',
-            'ghdl',
-            'verilator',
-            'osvvm',
-            'osvb',
-            'osvb-noroot',
-            'HDL',
-            'DBHI',
-            'VUnit',
-            'HDLC',
-            'NEORV32',
-            'CoCoTb',
-            'openFPGALoader',
-            'renode',
-            'spf13',
             'f4pga-core',
-            'F4PGA',
-            'VTR',
-            'YosysHQ',
-            'LibreCores',
+            'f4pga-structure',
         ]
 
         with (ROOT / 'config.yml').open('r') as fptr:
@@ -146,19 +125,19 @@ jobs:
         job: ${{ steps.job.outputs.job }}
 
 
-  Release:
-    needs: GenerateVideo
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/download-artifact@v3
-      with:
-        path: artifact
-    - run: |
-        cd artifact
-        tar czvf glogs.tar.gz glogs
-        rm -rf glogs
-    - uses: pyTooling/Actions/releaser@r0
-      with:
-        token: ${{ github.token }}
-        files: artifact/**/*
-        tag: gource-videos
+#  Release:
+#    needs: GenerateVideo
+#    runs-on: ubuntu-latest
+#    steps:
+#    - uses: actions/download-artifact@v3
+#      with:
+#        path: artifact
+#    - run: |
+#        cd artifact
+#        tar czvf glogs.tar.gz glogs
+#        rm -rf glogs
+#    - uses: pyTooling/Actions/releaser@r0
+#      with:
+#        token: ${{ github.token }}
+#        files: artifact/**/*
+#        tag: gource-videos

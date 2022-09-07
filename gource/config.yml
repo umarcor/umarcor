@@ -269,21 +269,46 @@ renode:
     github.com/renode/renode: ~
 
 f4pga-core:
-  title: FOSS Flows For FPGA (F4PGA) | f4pga
+  title: FOSS Flows For FPGA (F4PGA) | f4pga (proposed)
   tree:
-    github.com/f4pga/f4pga-website: website
-    github.com/chipsalliance/f4pga: f4pga
-    github.com/chipsalliance/python-sdf-timing: f4pga/utils/python-sdf-timing
-    github.com/chipsalliance/f4pga-xc-fasm: f4pga/utils/f4pga-xc-fasm
-    github.com/chipsalliance/f4pga-xc-fasm2bels: f4pga/utils/f4pga-xc-fasm2bels
-    github.com/chipsalliance/f4pga-examples: examples
-    github.com/SymbiFlow/f4pga-arch-defs: arch-defs
-    github.com/chipsalliance/yosys-f4pga-plugins: yosys-f4pga-plugins
-    github.com/chipsalliance/fasm: specs/FASM
-    github.com/chipsalliance/fpga-interchange-schema: specs/Interchange/fpga-interchange-schema
-    github.com/chipsalliance/python-fpga-interchange: specs/Interchange/python-fpga-interchange
-    github.com/chipsalliance/fpga-interchange-tests: perf/fpga-interchange-tests
-    github.com/chipsalliance/fpga-tool-perf: perf/fpga-tool-perf
+    github.com/f4pga/actions: f4pga/actions
+    github.com/f4pga/f4pga-website: f4pga/website
+    github.com/f4pga/f4pga-arch-defs: f4pga/arch-defs
+    github.com/chipsalliance/f4pga: chipsalliance/f4pga
+    github.com/chipsalliance/python-sdf-timing: chipsalliance/f4pga/sdf-timing
+    github.com/chipsalliance/f4pga-xc-fasm: chipsalliance/f4pga/fasm/xc-fasm
+    github.com/chipsalliance/f4pga-xc-fasm2bels: chipsalliance/f4pga/fasm/xc-fasm2bels
+    github.com/chipsalliance/f4pga-examples: chipsalliance/examples
+    github.com/chipsalliance/yosys-f4pga-plugins: chipsalliance/f4pga/yosys-plugins
+    github.com/chipsalliance/fasm: chipsalliance/fasm
+    github.com/chipsalliance/fpga-interchange-schema: chipsalliance/fpga-interchange/schema
+    github.com/chipsalliance/python-fpga-interchange: chipsalliance/fpga-interchange/python
+    github.com/chipsalliance/fpga-interchange-tests: chipsalliance/fpga-interchange/tests
+    github.com/chipsalliance/fpga-tool-perf: chipsalliance/fpga-tool-perf
+    github.com/chipsalliance/f4pga-v2x: chipsalliance/vtr-utils/v2x
+    github.com/chipsalliance/vtr-xml-utils: chipsalliance/vtr-utils/xml
+    github.com/chipsalliance/f4pga-rr-graph: chipsalliance/f4pga/utils/rr-graph
+
+f4pga-structure:
+  title: FOSS Flows For FPGA (F4PGA) | f4pga (current)
+  tree:
+    github.com/f4pga/actions: f4pga/actions
+    github.com/f4pga/f4pga-website: f4pga/website
+    github.com/f4pga/f4pga-arch-defs: f4pga/arch-defs
+    github.com/chipsalliance/f4pga: chipsalliance/f4pga
+    github.com/chipsalliance/python-sdf-timing: chipsalliance/python-sdf-timing
+    github.com/chipsalliance/f4pga-xc-fasm: chipsalliance/f4pga-xc-fasm
+    github.com/chipsalliance/f4pga-xc-fasm2bels: chipsalliance/f4pga-xc-fasm2bels
+    github.com/chipsalliance/f4pga-examples: chipsalliance/examples
+    github.com/chipsalliance/yosys-f4pga-plugins: chipsalliance/yosys-f4pga-plugins
+    github.com/chipsalliance/fasm: chipsalliance/fasm
+    github.com/chipsalliance/fpga-interchange-schema: chipsalliance/fpga-interchange-schema
+    github.com/chipsalliance/python-fpga-interchange: chipsalliance/python-fpga-interchange
+    github.com/chipsalliance/fpga-interchange-tests: chipsalliance/fpga-interchange-tests
+    github.com/chipsalliance/fpga-tool-perf: chipsalliance/fpga-tool-perf
+    github.com/chipsalliance/f4pga-v2x: chipsalliance/f4pga-v2x
+    github.com/chipsalliance/vtr-xml-utils: chipsalliance/vtr-xml-utils
+    github.com/chipsalliance/f4pga-rr-graph: chipsalliance/f4pga-rr-graph
 
 F4PGA:
   title: FOSS Flows For FPGA (F4PGA)
@@ -294,7 +319,7 @@ F4PGA:
     github.com/SymbiFlow/scratchpad: Meta/scratchpad
     github.com/chipsalliance/f4pga-examples: Examples/f4pga-examples
     github.com/SymbiFlow/make-env: Examples/make-env
-    github.com/SymbiFlow/f4pga-arch-defs: Architectures/f4pga-arch-defs
+    github.com/f4pga/f4pga-arch-defs: Architectures/f4pga-arch-defs
     github.com/SymbiFlow/symbiflow-arch-pkgs: Architectures/f4pga-arch-pkgs
     github.com/f4pga/prjuray: Architectures/U-ray/prjuray
     github.com/f4pga/prjuray-db: Architectures/U-ray/prjuray-db
