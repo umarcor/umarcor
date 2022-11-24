@@ -250,3 +250,19 @@
   title = {Building ARM containers on any x86 machine, even DockerHub},
   url = {https://www.balena.io/blog/building-arm-containers-on-any-x86-machine-even-dockerhub/}
 }
+
+@Article{azuma22,
+  author={Azuma, Hideaki and Matsumoto, Shinsuke and Kamei, Yasutaka and Kusumoto, Shinji},
+  title={An empirical study on self-admitted technical debt in Dockerfiles},
+  journal={Empirical Software Engineering},
+  year={2022},
+  month={Jan},
+  day={31},
+  volume={27},
+  number={2},
+  pages={49},
+  abstract={In software development, ad hoc solutions that are intentionally implemented by developers are called self-admitted technical debt (SATD). Because the existence of SATD spreads poor implementations, it is necessary to remove it as soon as possible. Meanwhile, container virtualization has been attracting attention in recent years as a technology to support infrastructure such as servers. Currently, Docker is the de facto standard for container virtualization. In Docker, a file describing how to build a container (Dockerfile) is a set of procedural instructions; thus, it can be considered as a kind of source code. Moreover, because Docker is a relatively new technology, there are few developers who have accumulated good or bad practices for building Docker container. Hence, it is likely that Dockerfiles contain many SATDs, as is the case with general programming language source code analyzed in previous SATD studies. The goal of this paper is to categorize SATDs in Dockerfiles and to share knowledge with developers and researchers. To achieve this goal, we conducted a manual classification for SATDs in Dockerfile. We found that about 3.0{\%} of the comments in Dockerfile are SATD. In addition, we have classified SATDs into five classes and eleven subclasses. Among them, there are some SATDs specific to Docker, such as SATDs for version fixing and for integrity check. The three most common classes of SATD were related to lowering maintainability, testing, and defects.},
+  issn={1573-7616},
+  doi={10.1007/s10664-021-10081-7},
+  url={https://doi.org/10.1007/s10664-021-10081-7}
+}
