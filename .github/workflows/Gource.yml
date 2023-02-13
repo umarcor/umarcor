@@ -36,7 +36,6 @@ jobs:
     outputs:
       cfg: ${{ steps.params.outputs.cfg }}
       jobs: ${{ steps.params.outputs.jobs }}
-      mailmap: ${{ steps.params.outputs.mailmap }}
     steps:
 
     - name: '🧰 Checkout'
@@ -44,86 +43,32 @@ jobs:
 
     - name: Convert YAML config to JSON string
       id: params
-      shell: python
+      run: ./gource/grc/yaml2json.py
+
+    - shell: python
       run: |
+        from json import dump as json_dump
         from pathlib import Path
         from subprocess import check_call
-        import yaml
 
-        ROOT = Path('gource').resolve()
-        LogDir = ROOT / 'logs'
-        LogDir.mkdir(exist_ok=True)
+        cfg = ${{ steps.params.outputs.cfg }}
+        with open('config.json', "w") as fptr:
+            json_dump(cfg, fptr)
 
-        # TODO Append to the enabled list, when the workflow is triggered by an scheduled event
-        scheduled_only = [
-            'Hitchhiker',
-            'iverilog',
-            'MSYS2',
-            'MSYS2-all',
-            'CHIPSAlliance',
-            'LiteX',
-            'FPGAwars'
-        ]
+    - run: |
+        sudo apt update -qq
+        sudo apt install -y gource
+        ./gource/grc/logs.py -c config.json -m gource/.mailmap
 
-        enabled = [
-            'EDAA',
-            'EDAA-Workflows',
-            'EDAA-Utilities',
-            'pyTooling',
-            'ghdl',
-            'verilator',
-            'osvvm',
-            'osvb',
-            'osvb-noroot',
-            'HDL',
-            'DBHI',
-            'VUnit',
-            'HDLC',
-            'NEORV32',
-            'CoCoTb',
-            'openFPGALoader',
-            'renode',
-            'spf13',
-            'f4pga-core',
-            'F4PGA',
-            'VTR',
-            'YosysHQ',
-            'LibreCores',
-        ]
-
-        with (ROOT / 'config.yml').open('r') as fptr:
-            cfg = yaml.load(fptr, Loader=yaml.FullLoader)
-            for key in cfg:
-                cfg[key]['name'] = key
-            print(f"::set-output name=cfg::{cfg!s}")
-            jobs = [
-                {'name': key, 'title': job['title']}
-                for key, job in cfg.items()
-                if key in enabled
-            ]
-            print(f"::set-output name=jobs::{jobs!s}")
-
-        with (ROOT / '.mailmap').open('r') as fptr:
-            print(f"::set-output name=mailmap::{','.join(fptr.read().splitlines())!s}")
-
-
-  GetLogs:
-    needs: Params
-    runs-on: ubuntu-latest
-    steps:
-
-    - name: Get logs
-      uses: umarcor/umarcor/gource/logs@main
+    - uses: actions/upload-artifact@v3
       with:
-        cfg: ${{ needs.Params.outputs.cfg }}
-        mailmap: ${{ needs.Params.outputs.mailmap }}
-        artifact: glogs
+        name: glogs
+        path: /tmp/glogs
 
 
   GenerateVideo:
     needs:
       - Params
-      - GetLogs
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -132,19 +77,32 @@ jobs:
     name: ${{ matrix.name }} | ${{ matrix.title }}
     steps:
 
+    - name: '🧰 Checkout'
+      uses: actions/checkout@v3
+
+    - uses: actions/download-artifact@v3
+      with:
+        name: glogs
+        path: /tmp/glogs
+
     - name: Get job from config
       shell: python
-      id: job
       run: |
+        from json import dump as json_dump
         job = ${{ needs.Params.outputs.cfg }}['${{ matrix.name }}']
-        print(f"::set-output name=job::{job!s}")
+        with open('job.json', "w") as fptr:
+            json_dump(job, fptr)
 
-    - name: Combine logs and generate video
-      uses: umarcor/umarcor/gource/video@main
+    - run: ./gource/grc/job.py
+      id: job
+
+    - uses: actions/upload-artifact@v3
       with:
-        artifact: glogs
-        job: ${{ steps.job.outputs.job }}
-
+        name: ${{ steps.job.outputs.name }}
+        path: |
+          ${{ steps.job.outputs.artifact }}.mp4
+          ${{ steps.job.outputs.artifact }}.jpg
+        if-no-files-found: error
 
   Release:
     needs: GenerateVideo
