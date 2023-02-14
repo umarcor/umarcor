@@ -34,7 +34,6 @@ jobs:
   Params:
     runs-on: ubuntu-latest
     outputs:
-      cfg: ${{ steps.params.outputs.cfg }}
       jobs: ${{ steps.params.outputs.jobs }}
     steps:
 
@@ -44,16 +43,6 @@ jobs:
     - name: Convert YAML config to JSON string
       id: params
       run: ./gource/grc/yaml2json.py
-
-    - shell: python
-      run: |
-        from json import dump as json_dump
-        from pathlib import Path
-        from subprocess import check_call
-
-        cfg = ${{ steps.params.outputs.cfg }}
-        with open('config.json', "w") as fptr:
-            json_dump(cfg, fptr)
 
     - run: |
         sudo apt update -qq
@@ -89,7 +78,7 @@ jobs:
       shell: python
       run: |
         from json import dump as json_dump
-        job = ${{ needs.Params.outputs.cfg }}['${{ matrix.name }}']
+        job = ${{ matrix }}
         with open('job.json', "w") as fptr:
             json_dump(job, fptr)
 

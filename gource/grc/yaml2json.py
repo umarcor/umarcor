@@ -22,6 +22,7 @@
 from pathlib import Path
 from subprocess import check_call
 import yaml
+from json import dump as json_dump
 
 ROOT = Path('gource').resolve()
 LogDir = ROOT / 'logs'
@@ -68,9 +69,11 @@ with (ROOT / 'config.yml').open('r') as fptr:
     cfg = yaml.load(fptr, Loader=yaml.FullLoader)
     for key in cfg:
         cfg[key]['name'] = key
-    print(f"::set-output name=cfg::{cfg!s}")
+    with open('config.json', "w") as fptr:
+        json_dump(cfg, fptr)
+
     jobs = [
-        {'name': key, 'title': job['title']}
+        job
         for key, job in cfg.items()
         if key in enabled
     ]
