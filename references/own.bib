@@ -1,7 +1,150 @@
+@InProceedings{bildosola14,
+  author={
+    Bildosola, Iñaki and
+    Martinez-Corral, Unai and
+    Basterretxea, Koldo
+  },
+  booktitle={2014 IEEE 25th International Conference on Application-Specific Systems, Architectures and Processors}, 
+  title={Adaptive scalable SVD unit for fast processing of large LSE problems}, 
+  year={2014},
+  volume={},
+  number={},
+  pages={17-24},
+  abstract={Singular Value Decomposition (SVD) is a key linear algebraic operation in many scientific and engineering applications. In particular, many computational intelligence systems rely on machine learning methods involving high dimensionality datasets that have to be fast processed for real-time adaptability. In this paper we describe a practical FPGA (Field Programmable Gate Array) implementation of a SVD processor for accelerating the solution of large LSE problems. The design approach has been comprehensive, from the algorithmic refinement to the numerical analysis to the customization for an efficient hardware realization. The processing scheme rests on an adaptive vector rotation evaluator for error regularization that enhances convergence speed with no penalty on the solution accuracy. The proposed architecture, which follows a data transfer scheme, is scalable and based on the interconnection of simple rotations units, which allows for a trade-off between occupied area and processing acceleration in the final implementation. This permits the SVD processor to be implemented both on low-cost and highend FPGAs, according to the final application requirements.},
+  keywords={},
+  doi={10.1109/ASAP.2014.6868625},
+  ISSN={2160-052X},
+  month={June}
+}
+
+@InProceedings{martinezcorral14,
+  author={
+    Martinez-Corral, Unai and
+    Basterretxea, Koldo and
+    Finker, Raul
+  },
+  booktitle={2014 24th International Conference on Field Programmable Logic and Applications (FPL)}, 
+  title={Scalable parallel architecture for singular value decomposition of large matrices}, 
+  year={2014},
+  volume={},
+  number={},
+  pages={1-4},
+  abstract={Singular Value Decomposition (SVD) is a key linear algebraic operation in many scientific and engineering applications, many of them involving high dimensionality datasets and real-time response. In this paper we describe a scalable parallel processing architecture for accelerating the SVD of large m × n matrices. Based on a linear array of simple processing-units (PUs), the proposed architecture follows a double data-flow paradigm (FIFO memories and a shared-bus) for optimizing the time spent in data transferences. The PUs, which perform elemental column-pair evaluations and rotations, have been designed for an efficient utilization of available FPGA resources and to achieve maximum algorithm speed-ups. The architecture is fully scalable from a two-PU scheme to an arrangement with as many as n/2 PUs. This allows for a trade-off between occupied area and processing acceleration in the final implementation, and permits the SVD processor to be implemented both on low-cost and high-end FPGAs. The system has been prototyped on Spartan-6 and Kintex-7 devices for performance comparison.},
+  keywords={},
+  doi={10.1109/FPL.2014.6927393},
+  ISSN={1946-1488},
+  month={Sep.}
+}
+
+@MastersThesis{martinezcorral13,
+  author = {Martinez-Corral, Unai and Basterretxea{, Dir.}, Koldo},
+  title = {Kontrol esparruan ikasketa eta garapenerako oinarrizko ingurune praktiko, ireki eta askea},
+  month = {April},
+  year = {2013},
+  school = {School of Engineering of Bilbao (UPV/EHU)},
+  url = {http://hdl.handle.net/10810/12438}
+}
+
 @MastersThesis{martinezcorral15,
   author = {Martinez-Corral, Unai and Basterretxea{, Dir.}, Koldo},
   title  = {{Scalable parallel fixed-point processor for hardware acceleration of the singular value decomposition (SVD) of large matrices}},
   month  = {June},
   school = {Master and Doctoral School (UPV/EHU)},
   year   = {2015},
+}
+
+@InProceedings{basterretxea16,
+  author={
+    Basterretxea, Koldo and
+    Martinez-Corral, Unai and
+    Finker, Raúl and del Campo, Inés
+  },
+  booktitle={2016 Conference on Design and Architectures for Signal and Image Processing (DASIP)}, 
+  title={ELM-based hyperspectral imagery processor for onboard real-time classification}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={43-50},
+  abstract={Hyperspectral imagery is being widely used for accurate object detection and terrain feature classification. Modern imaging spectrometers produce huge amounts of data that are compressed onboard and downloaded to ground stations to be processed. Increasing spectral resolution and data acquisition rates demand more efficient compression techniques to meet downlink bandwidth restrictions. A different approach to reducing data-transfer bottlenecks consists of processing hyperspectral imagery information onboard. Real-time onboard processing would, at the same time, broaden the scope of missions that spacecrafts and aircrafts carrying hyperspectral cameras could fulfill by providing them with immediate decision-making capacity in critical circumstances. This paper investigates the use of Extreme Learning Machines (ELMs) for the classification of high dimensional data, and how specialized hardware and application-specific processor design can help to produce high performance, lightweight, and reduced power consumption systems for onboard hyperspectral imagery processing.},
+  keywords={},
+  doi={10.1109/DASIP.2016.7853795},
+  ISSN={},
+  month={Oct}
+}
+
+@InProceedings{martinezcorral17,
+  author={
+    Martinez-Corral, Unai and
+    Basterretxea, Koldo
+  },
+  booktitle={2017 NASA/ESA Conference on Adaptive Hardware and Systems (AHS)}, 
+  title={A fully configurable and scalable neural coprocessor IP for SoC implementations of machine learning applications}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={125-132},
+  abstract={This paper presents a fully configurable and programmable coprocessor IP core to efficiently compute Artificial Neural Networks (ANNs) in heterogeneous System-on-Chips (SoC). There is an increasing interest in moving applications involving streamed data such as those arising in machine-learning systems (machine-vision, speech-recognition, etc.) to highly-integrated low-power embedded devices. In this context efficient memory utilization, which is critical to both performance and energy consumption, requires handling multiple memory resources and different address spaces. The proposed IP core cooperates with a companion interconnect IP that acts as an abstraction layer to allow seamless integration of such heterogeneous resources. Dynamic (re)allocation is supported, so that embedded memory resources (Block RAMs) and external blocks (DDR memory) can be transparently used. The coprocessor itself is a configurable vector-matrix product computer with optional non-linear filtering, thus any single layer and multilayer ANN model can be easily implemented. The applicability of the IPs is demonstrated in a Hyperspectral Image (HSI) real-time classification problem.},
+  keywords={},
+  doi={10.1109/AHS.2017.8046368},
+  ISSN={2471-769X},
+  month={July}
+}
+
+@Misc{basterretxea17ARM,
+  author = {
+    Basterretxea, Koldo and
+    Martínez-Corral, Unai
+  },
+  title = {Hardware Accelerators for Machine Learning and their Integration in SoC},
+  year = {2017},
+  month = {September},
+  booktitle = {ARM Research Summit 2017},
+  location = {Cambridge, UK}
+}
+
+@InProceedings{basterretxea18ARM,
+  author = {
+    Basterretxea, Koldo and
+    Martínez-Corral, Unai
+  },
+  title = {A Research Enablement Kit for Experimenting with Neural Processing SoC},
+  year = {2018},
+  month = {September},
+  booktitle = {ARM Research Summit 2018},
+  location = {Cambridge, UK}
+}
+
+@misc{martinezcorral19,
+  author = {
+    Martínez-Corral, Unai and
+    Basterretxea, Koldo
+  },
+  title = {IP CORE, ARCHITECTURE COMPRISING AN IP CORE AND METHOD OF DESIGNING AN IP CORE},
+  year = 2019,
+  note = {WO/2019/020856 31.01.2019 PCT/ES2018/070526 UPV/EHU:5074568}
+}
+
+@InProceedings{martinezcorral20,
+  author = {
+    Martinez-Corral, Unai and
+    Callaghan, Guillermo and
+    Iordanou, Konstantinos and
+    Gorgovan, Cosmin and
+    Basterretxea, Koldo and
+    Lujan, Mikel
+  },
+  title = {DBHI: A Tool for Decoupled Functional Hardware-Software Co-Design on SoCs},
+  year = {2020},
+  isbn = {9781450370998},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3373087.3375386},
+  doi = {10.1145/3373087.3375386},
+  abstract = {This paper presents a system-level co-simulation and co-verification workflow to ease the transition from a software-only procedure, executed in a General Purpose processor, to the integration of a custom hardware accelerator developed in a Hardware Description Language (HDL).We propose a tool which enables Dynamic Binary Modification to decouple the development of the hardware accelerator from the software-only application to be accelerated. It provides support for rapid iterative exploration and functional verification of hardware designs while keeping the unmodified software application as a reference. DBHI is able to instrument an application and inject compiled hardware. It allows progressive migration from application source code, to non-synthesizable HDL, and to synthesizable HDL. At the same time, it preserves cycle-accurate/bit-accurate results, and provides run-time visibility of the internal data buffers for debugging purposes. Foreign architecture emulation overhead during development is avoided, and early integration with peripherals in the target System-on-Chip is possible.The proposed design flow was evaluated on executions of hardware simulations on x86-64 and Arm. DBHI was developed from existing off-the-shelf tools, and we evaluated it on multiple architectures, however, the technique is not tied to any specific architecture.},
+  booktitle = {Proceedings of the 2020 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+  pages = {326},
+  numpages = {1},
+  keywords = {instrumentation, dynamorio, soc, spinalhdl, vunit, verification, vhdl, ghdl, analysis, fpga, hls, mambo, co-execution},
+  location = {Seaside, CA, USA},
+  series = {FPGA '20}
 }
