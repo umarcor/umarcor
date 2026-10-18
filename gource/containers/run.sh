@@ -33,6 +33,7 @@ gource \
   --colour-images \
   --output-framerate 60 \
   --dir-name-depth 2 \
+  --file-idle-time 0 \
   --frameless \
   -"${GOURCE_RESOLUTION:-1920x1080}" \
   -a "${GOURCE_AUTO_SKIP_SECONDS:-0.05}" \
