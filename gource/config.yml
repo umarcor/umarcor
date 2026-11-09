@@ -471,14 +471,14 @@ Hitchhiker:
     github.com/ghdl/ghdl-cosim: Tools/GHDL/ghdl-cosim
     github.com/ghdl/extended-tests: Tools/GHDL/extended-tests
     github.com/ghdl/setup-ghdl-ci: Tools/GHDL/setup-ghdl-ci
-    github.com/nickg/nvc: Tools/nvc/nvc
-    github.com/nickg/setup-nvc: Tools/nvc/setup-nvc
-    github.com/verilator/verilator: Tools/verilator/verilator
-    github.com/verilator/verilator_ext_tests: Tools/verilator/verilator_ext_tests
-    github.com/verilator/example-systemverilog: Tools/verilator/example-systemverilog
-    github.com/verilator/uvm: Tools/verilator/uvm
-    github.com/steveicarus/iverilog: Tools/IcarusVerilog/iverilog
-    github.com/steveicarus/ivtest: Tools/IcarusVerilog/ivtest
+    github.com/nickg/nvc: Tools/Simulation/nvc/nvc
+    github.com/nickg/setup-nvc: Tools/Simulation/nvc/setup-nvc
+    github.com/verilator/verilator: Tools/Simulation/verilator/verilator
+    github.com/verilator/verilator_ext_tests: Tools/Simulation/verilator/verilator_ext_tests
+    github.com/verilator/example-systemverilog: Tools/Simulation/verilator/example-systemverilog
+    github.com/verilator/uvm: Tools/Simulation/verilator/uvm
+    github.com/steveicarus/iverilog: Tools/Simulation/IcarusVerilog/iverilog
+    github.com/steveicarus/ivtest: Tools/Simulation/IcarusVerilog/ivtest
     github.com/hdl/awesome: Tools/HDL/awesome
     github.com/hdl/constraints: Tools/HDL/constraints
     github.com/hdl/smoke-tests: Tools/HDL/smoke-tests
@@ -497,23 +497,23 @@ Hitchhiker:
     github.com/hdl/conda-prog: Tools/HDL/packages/conda/prog
     github.com/hdl/symbolator: Tools/HDL/symbolator/symbolator
     github.com/hdl/pyHDLParser: Tools/HDL/symbolator/pyHDLParser
-    github.com/trabucayre/openFPGALoader: Tools/openFPGALoader
-    github.com/verilog-to-routing/vtr-verilog-to-routing: Tools/Verilog-To-Routing
-    github.com/SymbiFlow/symbiflow-arch-defs: Tools/SymbiFlow/Architectures/symbiflow-arch-defs
-    github.com/SymbiFlow/prjuray: Tools/SymbiFlow/Architectures/U-ray/prjuray
-    github.com/SymbiFlow/prjxray: Tools/SymbiFlow/Architectures/X-ray/prjxray
-    github.com/SymbiFlow/fasm: Tools/SymbiFlow/FASM/fasm
-    github.com/SymbiFlow/fpga-tool-perf: Tools/SymbiFlow/Perf/fpga-tool-perf
-    github.com/SymbiFlow/fpga-tool-perf-results: Tools/SymbiFlow/Perf/fpga-tool-perf-results
-    github.com/SymbiFlow/sphinxcontrib-hdl-diagrams: Tools/SymbiFlow/sphinx/sphinxcontrib-hdl-diagrams
-    github.com/SymbiFlow/sphinx-verilog-domain: Tools/SymbiFlow/sphinx/sphinx-verilog-domain
-    github.com/SymbiFlow/yosys-symbiflow-plugins: Tools/SymbiFlow/yosys-symbiflow-plugins
-    github.com/SymbiFlow/symbiflow-bitstream-viewer: Tools/SymbiFlow/symbiflow-bitstream-viewer
-    github.com/YosysHQ/yosys: Tools/YosysHQ/yosys
-    github.com/YosysHQ/nextpnr: Tools/YosysHQ//nextpnr
-    github.com/YosysHQ/apicula: Tools/YosysHQ/apicula
-    github.com/YosysHQ/icestorm: Tools/YosysHQ/icestorm
-    github.com/YosysHQ/prjtrellis: Tools/YosysHQ/prjtrellis
+    github.com/trabucayre/openFPGALoader: Tools/Bitstreams/openFPGALoader
+    github.com/verilog-to-routing/vtr-verilog-to-routing: Tools/Implementation/Verilog-To-Routing
+    github.com/SymbiFlow/symbiflow-arch-defs: Tools/Implementation/SymbiFlow/Architectures/symbiflow-arch-defs
+    github.com/SymbiFlow/prjuray: Tools/Implementation/SymbiFlow/Architectures/U-ray/prjuray
+    github.com/SymbiFlow/prjxray: Tools/Implementation/SymbiFlow/Architectures/X-ray/prjxray
+    github.com/SymbiFlow/fasm: Tools/Implementation/SymbiFlow/FASM/fasm
+    github.com/SymbiFlow/fpga-tool-perf: Tools/Implementation/SymbiFlow/Perf/fpga-tool-perf
+    github.com/SymbiFlow/fpga-tool-perf-results: Tools/Implementation/SymbiFlow/Perf/fpga-tool-perf-results
+    github.com/SymbiFlow/sphinxcontrib-hdl-diagrams: Tools/Documentation/SymbiFlow/sphinx/sphinxcontrib-hdl-diagrams
+    github.com/SymbiFlow/sphinx-verilog-domain: Tools/Documentation/SymbiFlow/sphinx/sphinx-verilog-domain
+    github.com/SymbiFlow/yosys-symbiflow-plugins: Tools/Synthesis/SymbiFlow/yosys-symbiflow-plugins
+    github.com/SymbiFlow/symbiflow-bitstream-viewer: Tools/Bitstreams/SymbiFlow/symbiflow-bitstream-viewer
+    github.com/YosysHQ/yosys: Tools/Synthesis/YosysHQ/yosys
+    github.com/YosysHQ/nextpnr: Tools/Implementation/YosysHQ//nextpnr
+    github.com/YosysHQ/apicula: Tools/Implementation/YosysHQ/apicula
+    github.com/YosysHQ/icestorm: Tools/Implementation/YosysHQ/icestorm
+    github.com/YosysHQ/prjtrellis: Tools/Implementation/YosysHQ/prjtrellis
     github.com/chipsalliance/fpga-interchange-schema: Tools/CHIPSAlliance/interchange/fpga-interchange-schema
     github.com/chipsalliance/python-fpga-interchange: Tools/CHIPSAlliance/interchange/python-fpga-interchange
     github.com/chipsalliance/chisel3: Tools/CHIPSAlliance/Chisel/chisel3
