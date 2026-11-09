@@ -1,190 +1,479 @@
+Abdulrahman Ghaleb <118718255+AbdulrahmanGhaleb@users.noreply.github.com> <118718255+AbdulrahmanGhaleb@users.noreply.github.com>
 Adam Appleby <adam.appleby@hotmail.co.uk> <adam.appleby@hotmail.co.uk>
-Adam Jeliński <ajelinski@antmicro.com> <ajelinski@antmicro.com>
 Adam Jeliński <ajelinski@antmicro.com> <59468166+ajelinski@users.noreply.github.com>
+Adam Jeliński <ajelinski@antmicro.com> <ajelinski@antmicro.com>
 Adrian Byszuk <adrian.byszuk@gmail.com> <adrian.byszuk@gmail.com>
-Alessandro Comodi <acomodi@antmicro.com> <acomodi@antmicro.com>
+Adrien Le Masle <adrien.lemasle@gmail.com> <14968086+adrienlemasle@users.noreply.github.com>
+Ahmad Zaklouta <zalouta@kth.se> <ahmad.zaklouta@gmail.com>
+Ahmed Irfan <ahmedirfan1983@gmail.com> <ahmedirfan1983@gmail.com>
+Ahmed Irfan <ahmedirfan1983@gmail.com> <irfan@levert.(none)>
+Ahmed Irfan <ahmedirfan1983@gmail.com> <irfan@ubuntu.(none)>
+Akash Levy <akash@silimate.com> <akashlevy@gmail.com>
+Aki Van Ness <aki@yosyshq.com> <aki@lethalbit.net>
+Aleksander Kiryk <akiryk@antmicro.com> <alkiryk@wp.pl>
 Alessandro Comodi <acomodi@antmicro.com> <44773360+acomodi@users.noreply.github.com>
+Alessandro Comodi <acomodi@antmicro.com> <acomodi@antmicro.com>
+Alexandre Dauquier <85447468+dalex78@users.noreply.github.com> <85447468+dalex78@users.noreply.github.com>
 Alfred M. Szmidt <ams@gnu.org> <ams@gnu.org>
 Andreas Ehliar <ehliar@isy.liu.se> <ehliar@isy.liu.se>
 Andreas Wenzel <Andreas.Wenzel@hs-wismar.de> <Andreas.Wenzel@hs-wismar.de>
-Anton Blanchard <anton@ozlabs.org> <anton@ozlabs.org>
+Andrew Nolte <anolte512@gmail.com> <24322714+AndrewNolte@users.noreply.github.com>
+Andrew Nolte <anolte512@gmail.com> <anolte@hudson-trading.com>
+Andrii Andrieiev <aandrieiev@internships.antmicro.com> <51740774+a-andrieiev@users.noreply.github.com>
+Andrii Andrieiev <aandrieiev@internships.antmicro.com> <aandrieiev@internships.antmicro.com>
 Anton Blanchard <anton@ozlabs.org> <anton@linux.ibm.com>
+Anton Blanchard <anton@ozlabs.org> <anton@ozlabs.org>
+ArkoshEternal <duncanparke@proton.me> <40370706+ArkoshEternal@users.noreply.github.com>
+Artur Bieniek <abieniek@antmicro.com> <abieniek@internships.antmicro.com>
+Artur Bieniek <abieniek@antmicro.com> <ar2rb0k@interia.pl>
+Asherah Connor <ashe@kivikakk.ee> <asherah@hrzn.ee>
+Àlex Torregrosa <78434679+atorregrosasmd@users.noreply.github.com> <78434679+atorregrosa-smd@users.noreply.github.com>
+Bartosz Skorowski <bskorowski@internships.antmicro.com> <110765576+bskorowski@users.noreply.github.com>
+Bartłomiej Chmiel <bchmiel@antmicro.com> <bachm44@gmail.com>
+Bastian Löher <b.loeher@gsi.de> <me@l-dot.de>
 Ben Reynwar <ben@reynwar.net> <ben@reynwar.net>
+Ben Rosser <rosser.bjr@gmail.com> <bjr@sas.upenn.edu>
+Benedikt Tutzer <e1225461@student.tuwien.ac.at> <benedikt.tutzer@gmail.com>
+Benedikt Tutzer <e1225461@student.tuwien.ac.at> <benedikt.tutzer@tuwien.ac.at>
+Benedikt Tutzer <e1225461@student.tuwien.ac.at> <benedikt_tutzer@yahoo.de>
+Bill Lye <wmlye1@gmail.com> <121147975+wmlye@users.noreply.github.com>
+bma <bamarechal@free.fr> <mer0m@users.noreply.github.com>
+Bradley J Harden <bradleyharden@gmail.com> <Bradley.Harden@jhuapl.edu>
 Bradley J Harden <bradleyharden@gmail.com> <bradleyharden@gmail.com>
 Bradley J Harden <bradleyharden@gmail.com> <hardebj1@jhuapl.edu>
 Bradley J Harden <bradleyharden@gmail.com> <hardebj1@ses-sri-srv3.jhuapl.edu>
-Bradley J Harden <bradleyharden@gmail.com> <Bradley.Harden@jhuapl.edu>
 Brian Drummond <brian@shapes.demon.co.uk> <brian@shapes.demon.co.uk>
 Brian Padalino <bpadalino@gmail.com> <bpadalino@gmail.com>
+Carlos Venegas Arrabé <carlos@magnitude.es> <6904865+cavearr@users.noreply.github.com>
 Carlos Venegas Arrabé <carlos@magnitude.es> <carlos@magnitude.es>
 Carlos Venegas Arrabé <carlos@magnitude.es> <charliva@gmail.com>
-Carlos Venegas Arrabé <carlos@magnitude.es> <6904865+cavearr@users.noreply.github.com>
-Chris Higgs <chris.higgs@potentialventures.com> <chris.higgs@potentialventures.com>
-Chris Higgs <chris.higgs@potentialventures.com> <chris@localhost.localdomain>
+Cary R <cygcary@yahoo.com> <cygcary@yahoo.com>
+Charlotte <charlotte@hrzn.ee> <charlotte@hrzn.ee>
+Charlotte <charlotte@hrzn.ee> <charlotte@lottia.net>
+Chris Dailey <nitz@users.noreply.github.com> <nitz@users.noreply.github.com>
 Chris Higgs <chris.higgs@potentialventures.com> <chiggs.99@gmail.com>
 Chris Higgs <chris.higgs@potentialventures.com> <chiggs@localhost.localdomain>
 Chris Higgs <chris.higgs@potentialventures.com> <chris.h@nanospeed.co.uk>
 Chris Higgs <chris.higgs@potentialventures.com> <chris.higgs@nanospeed.co.uk>
+Chris Higgs <chris.higgs@potentialventures.com> <chris.higgs@potentialventures.com>
+Chris Higgs <chris.higgs@potentialventures.com> <chris@localhost.localdomain>
 Christian Cornelssen <ccorn@1tein.de> <ccorn@1tein.de>
+Christian Hecken <christian.hecken@ibm.com> <104357222+Christian-Hecken@users.noreply.github.com>
+Christian Hecken <christian.hecken@ibm.com> <christian.hecken@stud.uni-heidelberg.de>
 Christos Gentsos <christos.gentsos@cern.ch> <christos.gentsos@cern.ch>
+Chuck Benedict <itsme@chuckstechtalk.com> <chuck_benedict@yahoo.com>
+Chun Lin Min <chunlin.min@microchip.com> <chunlin.min@microchip.com>
 Ciro Santilli <ciro.santilli@gmail.com> <ciro.santilli@gmail.com>
 Claire Xenia Wolf <claire@clairexen.net> <claire@clairexen.net>
 Claire Xenia Wolf <claire@clairexen.net> <claire@symbioticeda.com>
+Claire Xenia Wolf <claire@clairexen.net> <claire@yosyshq.com>
 Claire Xenia Wolf <claire@clairexen.net> <clifford@clifford.at>
-Claire Xenia Wolf <claire@clairexen.net> <claire@clairexen.net>
 Claire Xenia Wolf <claire@clairexen.net> <cliffordvienna@gmail.com>
+clemens <cwalter@ethz.ch> <cwalter@ethz.ch>
+Colin Marquardt <github@marquardt-home.de> <cmarqu42@gmail.com>
+Colin Marquardt <github@marquardt-home.de> <colin.marquardt@bosch-sensortec.com>
 Colin Marquardt <github@marquardt-home.de> <github@marquardt-home.de>
-gatecat <gatecat@ds0.me> <gatecat@ds0.me>
+Dan Ravensloft <dan.ravensloft@gmail.com> <dan.ravensloft@gmail.com>
+Dan Ravensloft <dan.ravensloft@gmail.com> <lofty@yosyshq.com>
+Dan Ruelas-Petrisko <petrisko@cs.washington.edu> <petrisko.bsg@gmail.com>
+Dan Ruelas-Petrisko <petrisko@cs.washington.edu> <petrisko@cs.washington.edu>
+Darryl Miles <darryl.miles@darrylmiles.org> <darryl.miles@darrylmiles.org>
+Dave Dribin <dave-vcs@dribin.org> <dave-github@dribin.org>
+Dave Keeshan <dave.keeshan@daxzio.com> <96727608+davekeeshan@users.noreply.github.com>
+Dave Keeshan <dave.keeshan@daxzio.com> <davekeeshan@daxzio.com>
+David Stadelmann <david.stadelmann@gmail.com> <david.stadelmann@gmail.com>
+David Stadelmann <david.stadelmann@gmail.com> <david.stadelmann@scs.ch>
+David Stanford <david.stanford@gmail.com> <david.stanford@gmail.com>
+Dawid Zimonczyk <dawidz@aldec.com.pl> <60438359+dawidzim@users.noreply.github.com>
+Diego H <diego@symbioticeda.com> <dhdezr@gmail.com>
+Diego H <diego@symbioticeda.com> <diego@symbioticeda.com>
+Diego H <diego@symbioticeda.com> <diego@yosyshq.com>
+dragonmux <git@dragonmux.network> <git@dragonmux.network>
+Drew Risinger <drisinger+github@gmail.com> <drew.risinger@intel.com>
+Eddie Hung <eddie@fpgeh.com> <e.hung@imperial.ac.uk>
+Eddie Hung <eddie@fpgeh.com> <eddie.hung+gitlab@gmail.com>
+Eddie Hung <eddie@fpgeh.com> <eddieh@ece.ubc.ca>
+Edu Garcia <28616+Arcnor@users.noreply.github.com> <28616+Arcnor@users.noreply.github.com>
+Elia Lazzeri <elia.lazzeri@polimi.it> <elia.lazzeri@polimi.it>
+Emanuel Schmid <emanuel.schmid@scs.ch> <emanuel.schmid@scs.ch>
+Emard <vordah@gmail.com> <vordah@gmail.com>
+Emil J. Tywoniak <emil@tywoniak.eu> <emil.tywoniak@gmail.com>
+Emil J. Tywoniak <emil@tywoniak.eu> <emil@tywoniak.eu>
+Emmanuel Mogenet <emogenet@gmail.com> <emogenet@gmail.com>
+Emmanuel Pacaud <emmanuel.pacaud@free.fr> <emmanuel.pacaud@lapp.in2p3.fr>
+Erik Waling <erik.waling@gmail.com> <123956296+erikwa@users.noreply.github.com>
+Erik Waling <erik.waling@gmail.com> <erik.waling@qamcom.se>
+Ethan Mahintorabi <ethanmoon@google.com> <emahintorabi@gmail.com>
+Ethan Sifferman <ethan@sifferman.dev> <esifferm@ucsc.edu>
+Fabian Keßler-Schulz <fabian_kessler@gmx.de> <fabian_kessler@gmx.de>
+Fabien Marteau <mail@fabienm.eu> <fabien.marteau@armadeus.com>
+Fabien Marteau <mail@fabienm.eu> <mail@fabienm.eu>
+Felix Neumärker <xdch47@posteo.de> <34678034+xdch47@users.noreply.github.com>
+Felix Nieuwenhuizen <felix@tdlrali.com> <felix@tdlrali.com>
+Flavien Solt <flavien@nus.edu.sg> <flsolt@ethz.ch>
+Franck Jullien <franck.jullien@arm.com> <franck.jullien@gmail.com>
+Gabriel Somlo <gsomlo@gmail.com> <gsomlo@gmail.com>
 gatecat <gatecat@ds0.me> <dave@ds0.me>
 gatecat <gatecat@ds0.me> <davey1576@gmail.com>
+gatecat <gatecat@ds0.me> <gatecat@ds0.me>
+GCHQDeveloper560 <48131108+GCHQDeveloper560@users.noreply.github.com> <48131108+GCHQDeveloper560@users.noreply.github.com>
+George Huebner <george@feyor.sh> <ghuebner@anduril.com>
+George Rennie <georgerennie@gmail.com> <georgerennie@gmail.com>
+Geza Lore <gezalore@gmail.com> <glore@tenstorrent.com>
+Gilberto Abram <gilberto@hudson-trading.com> <gilberto@hudson-trading.com>
+Gilberto Abram <gilberto@hudson-trading.com> <gilbertoabram@tersatech.com>
+Glen Nicholls <dkillers303@gmail.com> <dkillers303@gmail.com>
+Glen Nicholls <dkillers303@gmail.com> <Glen.Nicholls@kratosdefense.com>
 Gordon McGregor <email@gordonmcgregor.net> <email@gordonmcgregor.net>
 Gordon McGregor <email@gordonmcgregor.net> <gordon.mcgregor@nitero.com>
 Gordon McGregor <email@gordonmcgregor.net> <gordon.mcgregor@verilab.com>
-David Stadelmann <david.stadelmann@gmail.com> <david.stadelmann@gmail.com>
-David Stadelmann <david.stadelmann@gmail.com> <david.stadelmann@scs.ch>
-Edu Garcia <28616+Arcnor@users.noreply.github.com> <28616+Arcnor@users.noreply.github.com>
-elgorwi <elgorwi@hotmail.com> <elgorwi@hotmail.com>
-elgorwi <elgorwi@hotmail.com> <elgorwi@users.noreply.github.com>
-Emmanuel Mogenet <emogenet@gmail.com> <emogenet@gmail.com>
-Emanuel Schmid <emanuel.schmid@scs.ch> <emanuel.schmid@scs.ch>
-Fabien Marteau <mail@fabienm.eu> <mail@fabienm.eu>
-Fabien Marteau <mail@fabienm.eu> <fabien.marteau@armadeus.com>
-Felix Nieuwenhuizen <felix@tdlrali.com> <felix@tdlrali.com>
-Glen Nicholls <dkillers303@gmail.com> <dkillers303@gmail.com>
-Glen Nicholls <dkillers303@gmail.com> <Glen.Nicholls@kratosdefense.com>
+Greg Steuck <blackgnezdo@gmail.com> <gnezdo@google.com>
+gtkwave <bybell@rocketmail.com> <146689337+tbybell@users.noreply.github.com>
+gtkwave <bybell@rocketmail.com> <57817856+gtkwave@users.noreply.github.com>
+Guillermo Callaghan <guillermocallaghan@hotmail.com> <guillermocallaghan@hotmail.com>
+Gwenhael Goavec-Merou <gwenhael.goavec-merou@trabucayre.com> <gwe@bricolage>
+Gwenhael Goavec-Merou <gwenhael.goavec-merou@trabucayre.com> <gwe@MacBook-Air-de-Gwenhael.local>
+Gwenhael Goavec-Merou <gwenhael.goavec-merou@trabucayre.com> <gwenhael.goavec@trabucayre.com>
+Gwenhael Goavec-Merou <gwenhael.goavec-merou@trabucayre.com> <gwenhael@enjoy-digital.fr>
+Haakan T. Johansson <f96hajo@chalmers.se> <f96hajo@chalmers.se>
+hakan-demirli <emre.demirli@metu.edu.tr> <78746991+hakan-demirli@users.noreply.github.com>
+Hans Baier <hansfbaier@gmail.com> <foss@hans-baier.de>
+Henner Zeller <h.zeller@acm.org> <hzeller@google.com>
+Icenowy Zheng <uwu@icenowy.me> <icenowy@aosc.io>
+Igor Wodiany <igor.wodiany@manchester.ac.uk> <igor.wodiany@gmail.com>
+Igor Wodiany <igor.wodiany@manchester.ac.uk> <igorwodiany@dhcp-10-177-10-113.dynamic.eduroam.mwn.de>
+Igor Zaworski <izaworski@antmicro.com> <84542280+igorosky@users.noreply.github.com>
+Igor Zaworski <izaworski@antmicro.com> <izaworski@internships.antmicro.com>
+Iris Johnson <iris@modwiz.com> <ijohnson@fnal.gov>
+Ivan Veloz <devel@ivanveloz.com> <146200551+IvanVeloz@users.noreply.github.com>
+Jakub Janeczko <kuba@ev1.pl> <kuba@ev1.pl>
+Jakub Wasilewski <jwasilewski@antmicro.com> <127893851+wasilewskiJ@users.noreply.github.com>
+James Hanlon <jameswhanlon@gmail.com> <mail@jameswhanlon.com>
+Jason Wu <wjq_ecust@163.com> <41063703+offline3@users.noreply.github.com>
+Jasper Homann <jasper.homann@tu-braunschweig.de> <Jasperh.lp@gmail.com>
+Jean THOMAS <jean@lambdaconcept.com> <25333063+jeanthom@users.noreply.github.com>
+Jean THOMAS <jean@lambdaconcept.com> <git0@pub.jeanthomas.me>
+Jean THOMAS <jean@lambdaconcept.com> <virgule@jeanthomas.me>
+Jean-François Nguyen <jf@lambdaconcept.com> <jf@jfng.fr>
+Jiahong Luo <luojh@mail.ustc.edu.cn> <luojh@mail.ustc.edu.cn>
 Jim Lewis <jim@synthworks.com> <jim@synthworks.com>
+Joan Touzet <wohali@atypical.net> <wohali@users.noreply.github.com>
+Johannes Pfau <johannes.pfau@kit.edu> <johannespfau@googlemail.com>
+John Kressel <alistair@kressel.eu> <jkressel@users.noreply.github.com>
+Jon Gutiérrez Zaballa <j.gutierrez@ehu.eus> <j.gutierrez@ehu.eus>
 Jon Klapel <klapel@tethers.com> <klapel@tethers.com>
 Jonas Baggett <jonasb@tranquille.ch> <jonasb@tranquille.ch>
-Jonsba <jonasb@tranquille.ch> <jonasb@tranquille.ch>
+Jonathan Balkind <jbalkind@ucsb.edu> <jbalkind@princeton.edu>
+Jonathan Drolet <jonathan.drolet@gmail.com> <jonathan.drolet@riedel.net>
+Jonathan Kimmitt <jonathan@kimmitt.uk> <jonathan@kimmitt.uk>
 Josh Smith <joshrsmith@gmail.com> <joshrsmith@gmail.com>
 Juan Gonzalez-Gomez <juan@iearobotics.com> <juan@iearobotics.com>
 Juan Gonzalez-Gomez <juan@iearobotics.com> <obijuan.cube@gmail.com>
 Juan Gonzalez-Gomez <juan@iearobotics.com> <obijuan@Obijuans-iMac-Pro.local>
+Julien FAUCHER <suzizecat@free.fr> <julien.faucher@gmx.fr>
+Julien Margetts <julien.margetts@kioxia.com> <56540603+margej@users.noreply.github.com>
 Kaleb Barrett <dev.ktbarrett@gmail.com> <dev.ktbarrett@gmail.com>
 Kaleb Barrett <dev.ktbarrett@gmail.com> <ktbarrett.connectflour@gmail.com>
-Kamil Rakoczy <krakoczy@antmicro.com> <krakoczy@antmicro.com>
+Kaleb Barrett <dev.ktbarrett@gmail.com> <ktbarrett@hudson-trading.com>
+Kamil Danecki <kdanecki@internships.antmicro.com> <danecki.kamil@gmail.com>
 Kamil Rakoczy <krakoczy@antmicro.com> <grey277@wp.pl>
-Kevin Kessels <kevinkessels@gmail.com> <kevinkessels@gmail.com>
+Kamil Rakoczy <krakoczy@antmicro.com> <kamilrakoczy1@gmail.com>
+Kamil Rakoczy <krakoczy@antmicro.com> <krakoczy@antmicro.com>
+Kanad Kanhere <kanad.kanhere@imc.com> <44873394+kkanhere@users.noreply.github.com>
+Keith Rothman <537074+litghost@users.noreply.github.com> <537074+litghost@users.noreply.github.com>
 Kevin Kessels <kevinkessels@gmail.com> <kevin.kessels@oce.com>
-Kevin Murray <k.murray@utoronto.ca> <k.murray@utoronto.ca>
+Kevin Kessels <kevinkessels@gmail.com> <kevinkessels@gmail.com>
+Kevin Kiningham <kkiningh@stanford.edu> <kevinkiningham@gmail.com>
 Kevin Murray <k.murray@utoronto.ca> <k.murray@mail.utoronto.ca>
+Kevin Murray <k.murray@utoronto.ca> <k.murray@utoronto.ca>
 Kevin Murray <k.murray@utoronto.ca> <kevinemurray@gmail.com>
 Kevin Murray <k.murray@utoronto.ca> <kmurray@users.noreply.github.com>
+Kevin Nygaard <nygaard@ibm.com> <162383464+nygaard-ibm@users.noreply.github.com>
+Kris Provoost <provoostkris@hotmail.com> <provoostkris@hotmail.com>
+Kristiyan Dilov <kristian_dilov@abv.bg> <kristian_dilov@abv.bg>
+Kristof Marien <kristofmarien@meta.com> <krmarien@gmail.com>
+Krystine Sherwin <krystinedawn@yosyshq.com> <93062060+KrystalDelusion@users.noreply.github.com>
+Krystine Sherwin <krystinedawn@yosyshq.com> <krystinedawn@yosyshq.com>
 Krzysztof Biegański <kbieganski@antmicro.com> <kbieganski@antmicro.com>
 Krzysztof Biegański <kbieganski@antmicro.com> <krzysztof@biegan.ski>
+Krzysztof Boronski <kboronski@antmicro.com> <94375110+kboronski-ant@users.noreply.github.com>
+Krzysztof Boronski <kboronski@antmicro.com> <kboronski@internships.antmicro.com>
+Lance Eftink <Lance.E.Eftink@raytheon.com> <Lance.E.Eftink@raytheon.com>
+Lance Eftink <Lance.E.Eftink@raytheon.com> <leftink@hotmail.com>
+Larry Doolittle <ldoolitt@recycle.lbl.gov> <LRDoolittle@lbl.gov>
 Lars Asplund <lars.anders.asplund@gmail.com> <lars.anders.asplund@gmail.com>
 Lars Asplund <lars.anders.asplund@gmail.com> <lars.asplund.external@veoneer.com>
 Lars Asplund <lars.anders.asplund@gmail.com> <lars.asplund@autoliv.com>
 Leire Maiztegi <lei.maiztegi@gmail.com> <lei.maiztegi@gmail.com>
+Lovelesh Patel <lovelesh@miselectronics.com> <155565979+lovelesh-mis@users.noreply.github.com>
+Lovelesh Patel <lovelesh@miselectronics.com> <lovelesh@miselectronics.com>
+Luca Colagrande <bigcola.96@gmail.com> <luca.colagrande3@gmail.com>
+Lucas Teske <lucas@teske.com.br> <lucas@teske.net.br>
 Ludvig Vidlid <ludli505@gmail.com> <ludli505@gmail.com>
 Ludvig Vidlid <ludli505@gmail.com> <ludvig.vidlid@autoliv.com>
-Lukasz Dalek <ldalek@antmicro.com> <ldalek@antmicro.com>
-Lukasz Dalek <ldalek@antmicro.com> <48219411+ldalek-antmicro@users.noreply.github.com>
-Lukas Vik <lukas.vik@autoliv.com> <lukas.vik@autoliv.com>
-Lukas Vik <lukas.vik@autoliv.com> <2767848-LukasVik@users.noreply.gitlab.com>
+Ludwig Rogiers <elgorwi@hotmail.com> <elgorwi@hotmail.com>
+Ludwig Rogiers <elgorwi@hotmail.com> <elgorwi@users.noreply.github.com>
+Lukas Pajak <github@pajak.ing> <9783727+LukasP46@users.noreply.github.com>
+Lukas Pajak <github@pajak.ing> <github@pajak.ing>
+Lukas Pajak <github@pajak.ing> <pak@ichaus.de>
 Lukas Vik <lukas.vik@autoliv.com> <10241915+LukasVik@users.noreply.github.com>
+Lukas Vik <lukas.vik@autoliv.com> <2767848-LukasVik@users.noreply.gitlab.com>
 Lukas Vik <lukas.vik@autoliv.com> <lukas.vik.biz@gmail.com>
+Lukas Vik <lukas.vik@autoliv.com> <lukas.vik@autoliv.com>
+Lukasz Dalek <ldalek@antmicro.com> <48219411+ldalek-antmicro@users.noreply.github.com>
+Lukasz Dalek <ldalek@antmicro.com> <ldalek@antmicro.com>
 Luke Darnell <luke.darnell@broadcom.com> <7090851+lukedarnell@users.noreply.github.com>
 Luke Darnell <luke.darnell@broadcom.com> <luke.darnell@broadcom.com>
 Luke Darnell <luke.darnell@broadcom.com> <luke@broadcom.com>
 Luke Darnell <luke.darnell@broadcom.com> <lukedarnell@hotmail.com>
 Maciej Dudek <mdudek@antmicro.com> <mdudek@antmicro.com>
 Maciej Dudek <mdudek@antmicro.com> <mdudek@internships.antmicro.com>
-Marek Cieplucha <mciepluc@gmail.com> <mciepluc@gmail.com>
+Makai Mann <makaim@stanford.edu> <makaim@stanford.edu>
+Marcel Jung <MarcelJung97@web.de> <132259776+IAmMarcelJung@users.noreply.github.com>
+Marcelina Kościelnicka <mwk@0x04.net> <koriakin@0x04.net>
+Marcelina Kościelnicka <mwk@0x04.net> <marcin@symbioticeda.com>
+Marcelina Kościelnicka <mwk@0x04.net> <mwk@0x04.net>
+Marco Ieni <marcoieni94@gmail.com> <11428655+MarcoIeni@users.noreply.github.com>
+Marco Ieni <marcoieni94@gmail.com> <marcoieni94@gmail.com>
+Marcus Comstedt <marcus.comstedt@requtech.se> <81563646+mc-requtech@users.noreply.github.com>
 Marek Cieplucha <mciepluc@gmail.com> <m.cieplucha@imio.pw.edu.pl>
-Marius Hegele <marius.hegele@ibm.com> <marius.hegele@ibm.com>
+Marek Cieplucha <mciepluc@gmail.com> <mciepluc@gmail.com>
+Mario Hoffmann <mario.hoffmann@posteo.de> <mario.hoffmann@posteo.de>
 Marius Hegele <marius.hegele@ibm.com> <32207204+mariushegele@users.noreply.github.com>
-Mariusz Glebocki <mglebocki@antmicro.com> <mglebocki@antmicro.com>
+Marius Hegele <marius.hegele@ibm.com> <marius.hegele@ibm.com>
 Mariusz Glebocki <mglebocki@antmicro.com> <mglb@arccos-1.net>
-Marlon James <marlon.james@gmail.com> <marlon.james@gmail.com>
-Marlon James <marlon.james@gmail.com> <marlon.james@garmin.com>
-Marlon James <marlon.james@gmail.com> <Marlon.James@garmin.com>
+Mariusz Glebocki <mglebocki@antmicro.com> <mglebocki@antmicro.com>
 Marlon James <marlon.james@gmail.com> <47790688+garmin-mjames@users.noreply.github.com>
+Marlon James <marlon.james@gmail.com> <marlon.james@garmin.com>
+Marlon James <marlon.james@gmail.com> <marlon.james@gmail.com>
+Martijn Wobbes <mwobbes@antmicro.com> <martijn.wob@gmail.com>
+Martin Pittermann <pittermann@formled.com> <martinp2250@gmail.com>
+Martin Schmölzer <martin.schmoelzer@student.tuwien.ac.at> <martin@schmoelzer.at>
+Martin Schmölzer <martin.schmoelzer@student.tuwien.ac.at> <mschmoelzer@gmail.com>
+Martin Whitaker <icarus@martin-whitaker.me.uk> <icarus@martin-whitaker.me.uk>
+Martin Whitaker <icarus@martin-whitaker.me.uk> <mageia@martin-whitaker.me.uk>
+Martin Whitaker <icarus@martin-whitaker.me.uk> <mailin-list@martin-whitaker.me.uk>
+Martin Whitaker <icarus@martin-whitaker.me.uk> <mailing-list@martin-whitaker.me.uk>
+Martin Whitaker <icarus@martin-whitaker.me.uk> <martin@wotan.local.net>
+Martin Whitaker <icarus@martin-whitaker.me.uk> <martinwhitaker@users.sourceforge.net>
+Martin Whitaker <icarus@martin-whitaker.me.uk> <martinwhitaker@users.sourcerforge.net>
+Mateusz Gancarz <mgancarz@antmicro.com> <67756666+magancarz@users.noreply.github.com>
+Matt Abdul-Rahim <matthewar@users.noreply.github.com> <matthewar@users.noreply.github.com>
 Matt Venn <matt@mattvenn.net> <matt@mattvenn.net>
+Mehul Tikekar <mehultikekar@gmail.com> <mtikekar@users.noreply.github.com>
+Merry <git@mary.rs> <8682882+merryhime@users.noreply.github.com>
+Michael Fischer <git@emb4fun.de> <emb4fun@users.noreply.github.com>
+Michael Fischer <git@emb4fun.de> <git@emb4fun.de>
+Michael Nolan <mtnolan2640@gmail.com> <mtnolan2640@gmail.com>
 Michał Kruszewski <mkru@protonmail.com> <mkru@protonmail.com>
+Mikael Mortensen <mikael.mortensen@skyworksinc.com> <119539842+mikaelsky@users.noreply.github.com>
+Mike Inouye <mikeinouye@google.com> <mikeinouye@google.com>
+Mike Inouye <mikeinouye@google.com> <mikesinouye@gmail.com>
 Miodrag Milanović <mmicko@gmail.com> <mmicko@gmail.com>
+miserva <miserva93@hotmail.com> <106504171+miserva@users.noreply.github.com>
+Mohamed Gaber <me@donn.website> <donn@efabless.com>
+Mohamed Gaber <me@donn.website> <me@donn.website>
+Muthu Annamalai <photonique@hey.com> <muthu@panmo.cloud>
+N. Engelhardt <nak@yosyshq.com> <nak@symbioticeda.com>
+N. Engelhardt <nak@yosyshq.com> <nakengelhardt@gmail.com>
+Natalia Kokoromyti <nataliakokoromyti@gmail.com> <126305457+nataliakokoromyti@users.noreply.github.com>
+Natalia Kokoromyti <nataliakokoromyti@gmail.com> <nataliakokoromyti@gmail.com>
+Natalia Kokoromyti <nataliakokoromyti@gmail.com> <nataliakokoromyti@users.noreply.github.com>
+nella <simontupy64@gmail.com> <71839692+Goubermouche@users.noreply.github.com>
+nella <simontupy64@gmail.com> <71839692+hexratcc@users.noreply.github.com>
+Nico Rumpeltin <nico@rumpeltin.de> <nico.rumpeltin@ims-as.uni-hannover.de>
+Niels Moseley <n.a.moseley@moseleyinstruments.com> <n.a.moseley@moseleyinstrumnets.com>
+Niklaus Leuenberger <niklaus.leuenb+github@gmail.com> <39563554+NikLeberg@users.noreply.github.com>
+Niklaus Leuenberger <niklaus.leuenb+github@gmail.com> <niklaus.leuenb+github@gmail.com>
+Nikolay Puzanov <punzik@gmail.com> <np@embddr.xyz>
+nopeslide <drechsler@tu-berlin.de> <drechsler@tu-berlin.de>
 Olaf van den Berg <olaf.vandenberg@siemens.com> <olaf.vandenberg@siemens.com>
 Olof Kindgren <olof.kindgren@gmail.com> <olof.kindgren@gmail.com>
 Olof Kindgren <olof.kindgren@gmail.com> <olof@autobahn.(none)>
 Olof Kindgren <olof.kindgren@gmail.com> <olof@opencores.org>
-Olof Kraigher <olof.kraigher@gmail.com> <olof.kraigher@gmail.com>
-Olof Kraigher <olof.kraigher@gmail.com> <olof.kraigher@autoliv.com>
 Olof Kraigher <olof.kraigher@gmail.com> <olof.kraigher@AES-PC0138.eu.autoliv.int>
+Olof Kraigher <olof.kraigher@gmail.com> <olof.kraigher@autoliv.com>
+Olof Kraigher <olof.kraigher@gmail.com> <olof.kraigher@gmail.com>
 Ondrej Ille <ondrej.ille@gmail.com> <ondrej.ille@gmail.com>
+Onodera Tsusaki <apertureelectronic@outlook.com> <apertureelectronic@outlook.com>
 Pascal Cotret <pascal.cotret@gmail.com> <pascal.cotret@gmail.com>
+Patrick Dussud <phdussud@hotmail.com> <phdussud@hotmail.com>
+Patrick Dussud <phdussud@hotmail.com> <phdussud@users.noreply.github.com>
+Patrick Lehmann <Paebbels@gmail.com> <Paebbels@gmail.com>
 Patrick Lehmann <Paebbels@gmail.com> <Patrick.Lehmann@plc2.de>
 Patrick Lehmann <Paebbels@gmail.com> <Patrick.Lehmann@tu-dresden.de>
-Patrick Lehmann <Paebbels@gmail.com> <Paebbels@gmail.com>
-Pepijn de Vos <pepijndevos@gmail.com> <pepijndevos@gmail.com>
+Patrick Stewart <patrick@rfcreations.com> <patstew@gmail.com>
+Patrick Urban <patrick.urban@colognechip.com> <patrick.urban@web.de>
+Paul Gatewood <paul.gatewood@capellaspace.com> <pggatewood@gmail.com>
+Paul Swirhun <paul.swirhun@gmail.com> <63216497+paul-demo@users.noreply.github.com>
+Pawel Klopotek <pklopotek@internships.antmicro.com> <pawel.klopotek@gmail.com>
+Pawel Kojma <pkojma@internships.antmicro.com> <95043203+pawel-kojma@users.noreply.github.com>
+Pawel Szostek <pawel.szostek@gmail.com> <pawel.szostek@cern.ch>
+Paweł Czarnecki <pczarnecki@antmicro.com> <pczarnecki@antmicro.com>
 Pepijn de Vos <pepijndevos@gmail.com> <pepijn@vps.pepijndevos.nl>
+Pepijn de Vos <pepijndevos@gmail.com> <pepijndevos@gmail.com>
+Per Larsson <pela@opencores.org> <per.larsson@orsoc.se>
+Peter Crozier <peter@crozier.com> <peter@crozier.com>
+Peter Gadfort <peter.gadfort@gmail.com> <gadfort@zeroasic.com>
+Peter Gadfort <peter.gadfort@gmail.com> <peter@gadfort.com>
+Philip Axer <philip@axonne.com> <philip.axer@googlemail.com>
 Philipp Wagner <mail@philipp-wagner.com> <mail@philipp-wagner.com>
 Philipp Wagner <mail@philipp-wagner.com> <philipp.wagner@tum.de>
+Philipp Wagner <mail@philipp-wagner.com> <phw@ibm.com>
 Philipp Wagner <mail@philipp-wagner.com> <phw@lowrisc.org>
-Rafal Kapuscik <rkapuscik@antmicro.com> <rkapuscik@antmicro.com>
+Philippe Sauter <phsauter@iis.ee.ethz.ch> <phsauter@ethz.ch>
+Philippe Sauter <phsauter@iis.ee.ethz.ch> <phsauter@student.ethz.ch>
+Prasad Joshi <prasadjoshi124@gmail.com> <prasad@canopusconsultancy.com>
+Purdea Andrei <andrei@purdea.ro> <andrei.purdea@intel.com>
+Purdea Andrei <andrei@purdea.ro> <purdeaandrei@yahoo.com>
+Rafael Corsi <rafael.corsi@insper.edu.br> <corsiferrao@gmail.com>
+rafaeltp <rafaeltp@soe.ucsc.edu> <rafael.tp@gmail.com>
 Rafal Kapuscik <rkapuscik@antmicro.com> <54976862+rkapuscik@users.noreply.github.com>
-Ray Salemi <ray@raysalemi.com> <ray@raysalemi.com>
+Rafal Kapuscik <rkapuscik@antmicro.com> <rkapuscik@antmicro.com>
+Rahul Behl <rbehl@tenstorrent.com> <104073408+rbehl-tt@users.noreply.github.com>
+Rasmus Olsen <zordid+simplhdl@gmail.com> <22944947+RasmusGOlsen@users.noreply.github.com>
 Ray Salemi <ray@raysalemi.com> <ray@bostonlightpress.com>
-Robert Winkler <rwinkler@antmicro.com> <rwinkler@antmicro.com>
+Ray Salemi <ray@raysalemi.com> <ray@raysalemi.com>
+Rémi Marche <remimarche@gmail.com> <35939574+ecstrema@users.noreply.github.com>
+Rémi Marche <remimarche@gmail.com> <remimarche@gmail.com>
+Ricardo Barbedo <ricardo@barbedo.me> <13098357+barbedo@users.noreply.github.com>
+Richard Herveille <richard.herveille@roalogic.com> <richard.herveille@roalogic.com>
+Robert O'Callahan <rocallahan@google.com> <robert@ocallahan.org>
+Robert Ou <rqou@robertou.com> <rqou@robertou.com>
 Robert Winkler <rwinkler@antmicro.com> <robertwinkler147@gmail.com>
+Robert Winkler <rwinkler@antmicro.com> <rwinkler@antmicro.com>
 Robert Winkler <rwinkler@antmicro.com> <rwinkler@internships.antmicro.com>
-Rodrigo A. Melo <rodrigomelo9@gmail.com> <rodrigomelo9@gmail.com>
+RocketRoss <code@radonn.co.za> <mr@radonn.co.za>
 Rodrigo A. Melo <rodrigomelo9@gmail.com> <rmelo@inti.gob.ar>
+Rodrigo A. Melo <rodrigomelo9@gmail.com> <rodrigomelo9@gmail.com>
+Rowan Goemans <goemansrowan@gmail.com> <goemansrowan@gmail.com>
+Rupert Swarbrick <rswarbrick@gmail.com> <rswarbrick@lowrisc.org>
 Ryszard Różak <rrozak@antmicro.com> <rrozak@antmicro.com>
-Slawomir Siluk <slaweksiluk@gazeta.pl> <slaweksiluk@gazeta.pl>
-Sigve Tjora <tjora@users.noreply.github.com> <tjora@users.noreply.github.com>
+Ryszard Różak <rrozak@antmicro.com> <ryszard.rozak@gmail.com>
+S. Chitty <S.chitty2@gmx.de> <115991187+SirBramble@users.noreply.github.com>
+S. Chitty <S.chitty2@gmx.de> <S.chitty2@gmx.de>
+Sahand Kashani <sahand.kashani@gmail.com> <sahand.kashani@gmail.com>
+Saqib Khan <saqibkhan@utexas.edu> <11544614+saqibkh@users.noreply.github.com>
+Satya Jhaveri <satya.jhaveri@canonical.com> <satyajhaveri@protonmail.ch>
+sdjasj <1594576288@qq.com> <89853352+sdjasj@users.noreply.github.com>
+Sergiusz Bazanski <q3k@q3k.org> <q3k@q3k.org>
+Sergiusz Bazanski <q3k@q3k.org> <q3k@symbioticeda.com>
+Sergiusz Bazanski <q3k@q3k.org> <serge@bazanski.pl>
+Sergiusz Bazanski <q3k@q3k.org> <sergiusz@q3k.org>
+Shareef Jalloq <shareef.jalloq@nu-quantum.com> <shareef.jalloq@idexbiometrics.com>
+Shareef Jalloq <shareef.jalloq@nu-quantum.com> <shareef.jalloq@raspberrypi.com>
+Shareef Jalloq <shareef.jalloq@nu-quantum.com> <shareef@jalloq.co.uk>
+Shareef Jalloq <shareef.jalloq@nu-quantum.com> <shareef@phoelex.com>
+Siddharth Singla <siddharth22052006@gmail.com> <193789006+Siddharth-singla@users.noreply.github.com>
+Siddharth Singla <siddharth22052006@gmail.com> <siddharth22052006@gmail.com>
 Sigve Tjora <tjora@users.noreply.github.com> <tjora@users.noreplay.github.com>
-Stephan Nolting <stnolting@gmail.com> <stnolting@gmail.com>
-Stefan Wallentowitz <stefan@wallentowitz.de> <stefan@wallentowitz.de>
+Sigve Tjora <tjora@users.noreply.github.com> <tjora@users.noreply.github.com>
+Simon Richter <sjr@debian.org> <Simon.Richter@hogyros.de>
+Slawomir Siluk <slaweksiluk@gazeta.pl> <slaweksiluk@gazeta.pl>
+Srinivasan Venkataramanan <svenka3@gmail.com> <srini@verifworks.com>
+Stefan Biereigel <stefan@biereigel.de> <stefan.biereigel@cern.ch>
 Stefan Wallentowitz <stefan@wallentowitz.de> <stefan.wallentowitz@gi-de.com>
 Stefan Wallentowitz <stefan@wallentowitz.de> <stefan.wallentowitz@hm.edu>
 Stefan Wallentowitz <stefan@wallentowitz.de> <stefan.wallentowitz@tum.de>
-Stuart Hodgson <stuart.hodgson@potentialventures.com> <stuart.hodgson@potentialventures.com>
+Stefan Wallentowitz <stefan@wallentowitz.de> <stefan@wallentowitz.de>
+Stefan Wallentowitz <stefan@wallentowitz.de> <swallentowitz@antmicro.com>
+Stephan I. Böttcher <boettcher@physik.uni-kiel.de> <sib64@psjt.org>
+Stephan Nolting <stnolting@gmail.com> <22944758+stnolting@users.noreply.github.com>
+Stephan Nolting <stnolting@gmail.com> <stnolting@gmail.com>
+Stephen Williams <steve@icarus.com> <steve>
+Stephen Williams <steve@icarus.com> <steve@MacBook-Pro.local>
+Stephen Williams <steve@icarus.com> <steve@wing.icarus.com>
+Steward Fu <steward.fu@gmail.com> <steward.fu@gmail.com>
+Steward Fu <steward.fu@gmail.com> <steward_fu@trendmicro.com>
+Stéphane Chevigny <infphyny@gmail.com> <infphyny@gmail.com>
 Stuart Hodgson <stuart.hodgson@potentialventures.com> <staurt.hodgson@potentialventures.com>
+Stuart Hodgson <stuart.hodgson@potentialventures.com> <stuart.hodgson@potentialventures.com>
+Sven Köhler <sven.koehler@gmail.com> <sven.koehler@gmail.com>
+Szymon Gizler <sgizler@antmicro.com> <151655464+sgizler@users.noreply.github.com>
+Szymon Gizler <sgizler@antmicro.com> <sgizler@internships.antmicro.com>
+Teguh Hofstee <teguhhofstee@gmail.com> <5227572+hofstee@users.noreply.github.com>
+Téo Biton <teo.biton@gmail.com> <teo.biton@gmail.com>
+Thomas Cenova <thomas.cenova@azuresummit.com> <Tcenova@users.noreply.github.com>
+Thomas Hornschuh <thomas@hornschuh-family.de> <thomas@bonfirecpu.eu>
 Tim Ansell <me@mith.ro> <me@mith.ro>
 Tim Ansell <me@mith.ro> <mithro@mithis.com>
 Tim Ansell <me@mith.ro> <tansell@google.com>
-Tim Callahan <tcal@google.com> <tcal@google.com>
 Tim Callahan <tcal@google.com> <63030309+tcal-x@users.noreply.github.com>
-Tomasz Gorochowik <tgorochowik@antmicro.com> <tgorochowik@antmicro.com>
+Tim Callahan <tcal@google.com> <tcal@google.com>
+TJ Scherer <timothy.scherer@nasa.gov> <tjtractorboy@gmail.com>
+TK Lam <tklam@easylogic.hk> <tklam@easylogic.hk>
+Tobias Rosenkranz <t.rosenkranz@quapona.com> <trosenkranz@users.noreply.github.com>
+Tobias Wölfel <tobias.woelfel@mailbox.org> <tobias.woelfel@mailbox.org>
+Todd Strader <tstrader@hudson-trading.com> <todd.strader@gmail.com>
+Todd Strader <tstrader@hudson-trading.com> <todd.strader@twosigma.com>
 Tomasz Gorochowik <tgorochowik@antmicro.com> <t@gorochowik.com>
+Tomasz Gorochowik <tgorochowik@antmicro.com> <tgorochowik@antmicro.com>
 Tomasz Gorochowik <tgorochowik@antmicro.com> <tgorochowik@gmail.com>
-Tomasz Hemperek <themperek@gmail.com> <themperek@gmail.com>
 Tomasz Hemperek <themperek@gmail.com> <hemperek@physik.uni-bonn.de>
+Tomasz Hemperek <themperek@gmail.com> <themperek@gmail.com>
 Tomasz Hemperek <themperek@gmail.com> <themperek@users.noreply.github.com>
+Tomasz Hemperek <themperek@gmail.com> <tomasz.hemperek@dectris.com>
 Torsten Maehne <Torsten.Maehne@gmx.de> <Torsten.Maehne@gmx.de>
 Torsten Meissner <programming@goodcleanfun.de> <programming@goodcleanfun.de>
-Tristan Gingold <tgingold@free.fr> <tgingold@free.fr>
-Tristan Gingold <tgingold@free.fr> <gingold@b72b5c32-5f01-0410-b925-b5c7b92870f7>
 Tristan Gingold <tgingold@free.fr> <gingold@adacore.com>
+Tristan Gingold <tgingold@free.fr> <gingold@b72b5c32-5f01-0410-b925-b5c7b92870f7>
+Tristan Gingold <tgingold@free.fr> <tgingold@free.fr>
+Tristan Gingold <tgingold@free.fr> <tgingold@noreply.codeberg.org>
 Tristan Gingold <tgingold@free.fr> <tgingold@users.noreply.github.com>
+Tristan Gingold <tgingold@free.fr> <tristan.gingold@cern.ch>
 Tudor Timi <tudor.timi@gmail.com> <tudor.timi@gmail.com>
 Tudor Timi <tudor.timi@gmail.com> <tudortimi@users.noreply.github.com>
-Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <unai.martinezcorral@ehu.eus>
-Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <unai.martinezcorral@ehu.es>
-Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <38422348+umarcor@users.noreply.github.com>
-Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <eine@users.noreply.github.com>
-Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <6628437+eine@users.noreply.github.com>
+tux3 <barrdetwix@gmail.com> <tux3@users.noreply.github.com>
+Tymoteusz Blazejczyk <tymoteusz.blazejczyk@tymonx.com> <tymoteusz.blazejczyk.pl@gmail.com>
 Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <1138-4EB@users.noreply.github.com>
-Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <unai.martinezcorral@manchester.ac.uk>
+Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <38422348+umarcor@users.noreply.github.com>
+Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <6628437+eine@users.noreply.github.com>
+Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <eine@users.noreply.github.com>
+Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <umarcor@users.noreply.github.com>
 Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <umartinezcorral@antmicro.com>
+Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <unai.martinezcorral@ehu.es>
+Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <unai.martinezcorral@ehu.eus>
+Unai Martinez-Corral <unai.martinezcorral@ehu.eus> <unai.martinezcorral@manchester.ac.uk>
+Unai Sainz-Estebanez <unike267@gmail.com> <36209778+Unike267@users.noreply.github.com>
+Vadim V. <vadimv@ieee.org> <CodeWarrior1241@users.noreply.github.com>
+Vadim V. <vadimv@ieee.org> <vadimv@ieee.org>
+Varun Koyyalagunta <vkoyyalagunta@tenstorrent.com> <varun@centtech.com>
 Vaughn Betz <vaughnbetz@gmail.com> <vaughnbetz@gmail.com>
-Wouter van Verre <woutervanverre@gmail.com> <woutervanverre@gmail.com>
-Wouter van Verre <woutervanverre@gmail.com> <vvvverre@users.noreply.github.com>
-Wojciech Tatarski <wtatarski@antmicro.com> <wtatarski@antmicro.com>
+Vincenzo Marturano <mart.vivi@hotmail.it> <35976157+vivi202@users.noreply.github.com>
+Wanda Phinode <wanda@phinode.net> <wanda@phinode.net>
+whitequark <whitequark@whitequark.org> <whitequark@whitequark.org>
+Wilson Snyder <wsnyder@wsnyder.org> <wsnyder@marvell.com>
+Wilson Snyder <wsnyder@wsnyder.org> <wsnyder@wsnyder.org>
 Wojciech Tatarski <wtatarski@antmicro.com> <49695277+wtatarski@users.noreply.github.com>
-Xiretza <xiretza@xiretza.xyz> <xiretza@xiretza.xyz>
+Wojciech Tatarski <wtatarski@antmicro.com> <wtatarski@antmicro.com>
+Wouter van Verre <woutervanverre@gmail.com> <vvvverre@users.noreply.github.com>
+Wouter van Verre <woutervanverre@gmail.com> <woutervanverre@gmail.com>
 Xiretza <xiretza@xiretza.xyz> <Xiretza@users.noreply.github.com>
+Xiretza <xiretza@xiretza.xyz> <xiretza@xiretza.xyz>
+Yash Raj <166590584+cynicalmindset@users.noreply.github.com> <166590584+cynicalmindset@users.noreply.github.com>
+Yilou Wang <wangyilou123@gmail.com> <140522618+YilouWang@users.noreply.github.com>
+Yves Mathieu <yves.mathieu@telecom-paristech.fr> <75626303+mathieu-tp@users.noreply.github.com>
+Zane Hambly <zanehambly@gmail.com> <zanehambly@gmail.com>
+Zia Cheema <ziaurrehman1145@gmail.com> <ziaurrehman1145@gmail.com>
 zipotron <zipotron@gmail.com> <zipotron@gmail.com>
 zipotron <zipotron@gmail.com> <zipotron@localhost.localdomain>
-Circle-CI[bot] <circleci@cf-graph.regro.github.com> <circleci@cf-graph.regro.github.com>
-Conda-Forge[bot] <conda-forge@googlegroups.com> <conda-forge@googlegroups.com>
-Conda-Forge[bot] <conda-forge@googlegroups.com> <pelson.pub+conda-forge@gmail.com>
-dependabot-preview[bot] <dependabot-preview[bot]@users.noreply.github.com> <27856297+dependabot-preview[bot]@users.noreply.github.com>
-dependabot-preview[bot] <dependabot-preview[bot]@users.noreply.github.com> <dependabot-preview[bot]@users.noreply.github.com>
-dependabot[bot] <support@dependabot.com> <49699333+dependabot[bot]@users.noreply.github.com>
-dependabot[bot] <support@dependabot.com> <support@dependabot.com>
-SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools@google.com>
-SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot+kokoro@google.com>
-SymbiFlow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot@google.com>
-Symbiflow[bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot+kokoro@google.com>
-Travis-CI[bot] <travis@example.org> <travis@example.org>
+Circle-CI [bot] <circleci@cf-graph.regro.github.com> <circleci@cf-graph.regro.github.com>
+Claude [bot] <claude@anthropic.com> <claude-code@users.noreply.github.com>
+Claude [bot] <claude@anthropic.com> <claude@anthropic.com>
+Conda-Forge [bot] <conda-forge@googlegroups.com> <conda-forge@googlegroups.com>
+Conda-Forge [bot] <conda-forge@googlegroups.com> <pelson.pub+conda-forge@gmail.com>
+Dependabot [bot] <dependabot-preview[bot]@users.noreply.github.com> <27856297+dependabot-preview[bot]@users.noreply.github.com>
+Dependabot [bot] <dependabot-preview[bot]@users.noreply.github.com> <dependabot-preview[bot]@users.noreply.github.com>
+Dependabot [bot] <support@dependabot.com> <49699333+dependabot[bot]@users.noreply.github.com>
+Dependabot [bot] <support@dependabot.com> <support@dependabot.com>
+Github Actions [bot] <41898282+github-actions[bot]@users.noreply.github.com> <action@example.com>
+Ruff Formatter [bot] <unknown> ruff <>
+Ruff Formatter [bot] <unknown> Ruff Formatter <unknown>
+SymbiFlow [bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot+kokoro@google.com>
+SymbiFlow [bot] <foss-fpga-tools@google.com> <foss-fpga-tools-bot@google.com>
+SymbiFlow [bot] <foss-fpga-tools@google.com> <foss-fpga-tools@google.com>
+Travis-CI [bot] <travis@example.org> <travis@example.org>
+Verilator [bot] <215497007+verilator-bot[bot]@users.noreply.github.com> <215497007+verilator-bot[bot]@users.noreply.github.com>
+Verilator [bot] <poolmaster@veripool.org> <57024651+veripoolbot@users.noreply.github.com>
+Verilator [bot] <poolmaster@veripool.org> <poolmaster@veripool.org>
+Yosys Bot[bot] <yosys-bot@symbioticeda.com> <yosys-bot@symbioticeda.com>
