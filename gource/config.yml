@@ -86,6 +86,12 @@ ghdl:
     github.com/ghdl/extended-tests: extended-tests
     github.com/ghdl/setup-ghdl-ci: setup-ghdl-ci
 
+nvc:
+  title: github.com/nickg/nvc
+  tree:
+    github.com/nickg/nvc: nickg/nvc
+    github.com/nickg/setup-nvc: nickg/setup-nvc
+
 verilator:
   title: github.com/verilator
   tree:
@@ -465,6 +471,8 @@ Hitchhiker:
     github.com/ghdl/ghdl-cosim: Tools/GHDL/ghdl-cosim
     github.com/ghdl/extended-tests: Tools/GHDL/extended-tests
     github.com/ghdl/setup-ghdl-ci: Tools/GHDL/setup-ghdl-ci
+    github.com/nickg/nvc: Tools/nvc/nvc
+    github.com/nickg/setup-nvc: Tools/nvc/setup-nvc
     github.com/verilator/verilator: Tools/verilator/verilator
     github.com/verilator/verilator_ext_tests: Tools/verilator/verilator_ext_tests
     github.com/verilator/example-systemverilog: Tools/verilator/example-systemverilog

@@ -54,23 +54,13 @@ jobs:
         LogDir = ROOT / 'logs'
         LogDir.mkdir(exist_ok=True)
 
-        # TODO Append to the enabled list, when the workflow is triggered by an scheduled event
-        scheduled_only = [
-            'Hitchhiker',
-            'iverilog',
-            'MSYS2',
-            'MSYS2-all',
-            'CHIPSAlliance',
-            'LiteX',
-            'FPGAwars'
-        ]
-
         enabled = [
             'EDAA',
             'EDAA-Workflows',
             'EDAA-Utilities',
             'pyTooling',
             'ghdl',
+            'nvc',
             'verilator',
             'osvvm',
             'osvb',
@@ -89,6 +79,13 @@ jobs:
             'VTR',
             'YosysHQ',
             'LibreCores',
+            'Hitchhiker',
+            'iverilog',
+            'MSYS2',
+            'MSYS2-all',
+            'CHIPSAlliance',
+            'LiteX',
+            'FPGAwars'
         ]
 
         with (ROOT / 'config.yml').open('r') as fptr:
