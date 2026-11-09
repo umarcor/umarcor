@@ -154,6 +154,7 @@ jobs:
         cd artifact
         tar czvf glogs.tar.gz glogs
         rm -rf glogs
+        find . -size +2G -exec rm {} \;
     - uses: pyTooling/Actions/releaser@r0
       with:
         token: ${{ github.token }}
