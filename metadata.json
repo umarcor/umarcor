@@ -1,0 +1,16 @@
+{
+  "ghdl": {
+    "changes": 46968,
+    "contributors": 153,
+    "first": "2005-09",
+    "last": "2026-11",
+    "title": "github.com/ghdl"
+  },
+  "nvc": {
+    "changes": 33786,
+    "contributors": 52,
+    "first": "2011-06",
+    "last": "2026-11",
+    "title": "github.com/nickg/nvc"
+  }
+}
