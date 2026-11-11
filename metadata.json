@@ -1,4 +1,18 @@
 {
+  "DBHI": {
+    "changes": 1826,
+    "contributors": 6,
+    "first": "2019-02",
+    "last": "2026-06",
+    "title": "Dynamic Binary Hardware Injection (DBHI)"
+  },
+  "HDLC": {
+    "changes": 6052,
+    "contributors": 21,
+    "first": "2018-05",
+    "last": "2026-11",
+    "title": "HDL Containers"
+  },
   "ghdl": {
     "changes": 46968,
     "contributors": 166,
